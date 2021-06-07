@@ -1,0 +1,44 @@
+Started GET "/" for ::1 at 2021-06-07 22:47:08 +0100
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/site
+  Rendered home/index.html.erb within layouts/site (Duration: 5.3ms | Allocations: 3314)
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
+  ↳ app/views/layouts/_header_two.html.erb:30
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = ?[0m  [["ancestry", "1"]]
+  ↳ app/views/layouts/_header_two.html.erb:41
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = ?[0m  [["ancestry", "4"]]
+  ↳ app/views/layouts/_header_two.html.erb:41
+  Rendered layouts/_header_two.html.erb (Duration: 17.4ms | Allocations: 7123)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = ?[0m  [["ancestry", "1"]]
+  ↳ app/views/layouts/_header.html.erb:117
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = ?[0m  [["ancestry", "4"]]
+  ↳ app/views/layouts/_header.html.erb:117
+  Rendered layouts/_header.html.erb (Duration: 22.5ms | Allocations: 9261)
+  Rendered layouts/_footer.html.erb (Duration: 3.4ms | Allocations: 326)
+Completed 200 OK in 1474ms (Views: 1412.0ms | ActiveRecord: 2.7ms | Allocations: 168844)
+
+
+Started GET "/" for ::1 at 2021-06-07 22:58:07 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/site
+  Rendered home/index.html.erb within layouts/site (Duration: 5.7ms | Allocations: 3200)
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
+  ↳ app/views/layouts/_header_two.html.erb:30
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = ?[0m  [["ancestry", "1"]]
+  ↳ app/views/layouts/_header_two.html.erb:41
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = ?[0m  [["ancestry", "4"]]
+  ↳ app/views/layouts/_header_two.html.erb:41
+  Rendered layouts/_header_two.html.erb (Duration: 21.7ms | Allocations: 6814)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = ?[0m  [["ancestry", "1"]]
+  ↳ app/views/layouts/_header.html.erb:117
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = ?[0m  [["ancestry", "4"]]
+  ↳ app/views/layouts/_header.html.erb:117
+  Rendered layouts/_header.html.erb (Duration: 26.7ms | Allocations: 8947)
+  Rendered layouts/_footer.html.erb (Duration: 1.2ms | Allocations: 326)
+Completed 200 OK in 216ms (Views: 141.6ms | ActiveRecord: 3.6ms | Allocations: 48978)
+
+

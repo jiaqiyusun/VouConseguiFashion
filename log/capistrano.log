@@ -1,0 +1,68 @@
+# Logfile created on 2021-06-05 21:46:37 +0100 by logger.rb/v1.4.2
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-05 21:46:37 +0100 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [46859d44] Running [ -d ~/.rvm ] as deploy@216.137.181.32
+ DEBUG [46859d44] Command: [ -d ~/.rvm ]
+ DEBUG [09693539] Running [ -d ~/.rvm ] on 216.137.181.32
+ DEBUG [09693539] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-05 21:59:15 +0100 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [5e6d4eed] Running [ -d ~/.rvm ] as deploy@216.137.181.32
+ DEBUG [5e6d4eed] Command: [ -d ~/.rvm ]
+ DEBUG [6ef9f16e] Running [ -d ~/.rvm ] on 216.137.181.32
+ DEBUG [6ef9f16e] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-05 22:01:07 +0100 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [c97ae916] Running [ -d ~/.rvm ] as deploy@216.137.181.32
+ DEBUG [c97ae916] Command: [ -d ~/.rvm ]
+ DEBUG [344dcf40] Running [ -d ~/.rvm ] on 216.137.181.32
+ DEBUG [344dcf40] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-05 22:07:47 +0100 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [e0b91c2d] Running [ -d ~/.rvm ] on 216.137.181.32
+ DEBUG [e0b91c2d] Command: [ -d ~/.rvm ]
+ DEBUG [97be9988] Running [ -d ~/.rvm ] as deploy@216.137.181.32
+ DEBUG [97be9988] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-05 22:08:05 +0100 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [330597eb] Running [ -d ~/.rvm ] as deploy@216.137.181.32
+ DEBUG [330597eb] Command: [ -d ~/.rvm ]
+ DEBUG [7570b714] Running [ -d ~/.rvm ] on 216.137.181.32
+ DEBUG [7570b714] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-05 23:07:01 +0100 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [c4cb47ce] Running [ -d ~/.rvm ] on 216.137.181.32
+ DEBUG [c4cb47ce] Command: [ -d ~/.rvm ]
+ DEBUG [668f8039] Running [ -d ~/.rvm ] as deploy@216.137.181.32
+ DEBUG [668f8039] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-06 12:33:15 +0100 cap production deploy:initial
+  INFO ---------------------------------------------------------------------------
+ DEBUG [ff74c636] Running [ -d ~/.rvm ] as deploy@216.137.181.32
+ DEBUG [ff74c636] Command: [ -d ~/.rvm ]
+ DEBUG [35dbfc9d] Running [ -d ~/.rvm ] on 216.137.181.32
+ DEBUG [35dbfc9d] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-06 12:34:12 +0100 cap production deploy:initial
+  INFO ---------------------------------------------------------------------------
+ DEBUG [eed7d7df] Running [ -d ~/.rvm ] on 216.137.181.32
+ DEBUG [eed7d7df] Command: [ -d ~/.rvm ]
+ DEBUG [3b645fe4] Running [ -d ~/.rvm ] as root@216.137.181.32
+ DEBUG [3b645fe4] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-06 12:34:27 +0100 cap production deploy:initial
+  INFO ---------------------------------------------------------------------------
+ DEBUG [ead4173f] Running [ -d ~/.rvm ] as root@216.137.181.32
+ DEBUG [ead4173f] Command: [ -d ~/.rvm ]
+ DEBUG [b73785cd] Running [ -d ~/.rvm ] on 216.137.181.32
+ DEBUG [b73785cd] Command: [ -d ~/.rvm ]
+ DEBUG [b73785cd] Finished in 9.358 seconds with exit status 1 (failed).
+ DEBUG [0efe7e6e] Running [ -d /usr/local/rvm ] on 216.137.181.32
+ DEBUG [0efe7e6e] Command: [ -d /usr/local/rvm ]
+ DEBUG [0efe7e6e] Finished in 0.207 seconds with exit status 1 (failed).

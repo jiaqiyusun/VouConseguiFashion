@@ -1,0 +1,64 @@
+<!--=======  overlay-navigation-menu  =======-->
+
+  <div class="overlay-navigation-menu overlay-navigation-inactive" id="overlay-navigation-menu">
+    <!--=======  close icon  =======-->
+
+    <span class="close-icon overlay-menu-close-icon">
+      <a href="javascript:void(0)" id="overlay-menu-close-icon">
+        <i class="ti-close"></i>
+      </a>
+    </span>
+
+    <!--=======  End of close icon  =======-->
+
+    <!--=======  overlay navigation menu  =======-->
+
+    <div class="overlay-navigation-menu-container">
+      <nav>
+        <ul id="vertical-collapsible-menu">
+          <li class="has-children">
+            <a href="#">NEW</a>
+            <ul class="sub-menu">
+              <li><a href="/roupas/vestidos">MULHER</a></li>
+              <li><a href="/roupas/0">CRIANÇAS</a></li>
+            </ul>
+          </li>
+          <li class="has-children">
+          
+            <a href="#" style="color:red;">SPECIAL PRICES</a>
+            <ul class="sub-menu">
+              <% @root_categories.each do |category|%>
+               <li class="has-children"><a href="/roupas/desconto/<%= category.id %>"><%= category.title %></a>
+               </li>
+              <% end -%>
+              
+            </ul>
+          </li>
+          
+          <% @root_categories.each do |category| %>
+            <li class="has-children"><a href="/roupas/<%= category.id %>"><%= category.title %></a>
+              <ul class="sub-menu">
+                <% category.children.each do |sub_category| %>
+                  <li class="has-children-submenu"> <a href="/roupas/<%= sub_category.id %>"><%= sub_category.title %></a></li>
+                <% end -%>
+              </ul>
+            </li>
+          <% end -%>
+
+          <li class="has-children"><a href="#">MAIS INFORMAÇÕES</a>
+            <ul class="sub-menu">
+              <li><li><%= link_to "QUEM SOMOS", home_about_path%></li></li>
+              <li class="has-children-submenu"><%= link_to "CONTACTOS", home_contact_path%>
+            </ul>
+            
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!--=======  End of overlay navigation menu  =======-->
+
+
+  </div>
+
+  <!--=======  End of overlay-navigation-menu  =======-->

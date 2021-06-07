@@ -1,0 +1,35 @@
+<div class="row"></div>
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+<div class="row">
+  <div class="col-lg-12">
+									<!--=======  login title  =======-->
+    <div class="section-title section-title--login text-center mb-50">
+      <h2 class="mb-20">Login</h2>
+      <p>Great to have you back!</p>
+    </div>
+									<!--=======  End of login title  =======-->
+	</div>
+  <div class="col-lg-12 mb-60">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="col-lg-12 mb-60">
+    <%= f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "current-password" %>
+  </div>
+
+  <% if devise_mapping.rememberable? %>
+    <div class="field">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </div>
+  <% end %>
+
+  <div class="actions col-lg-12 text-center mb-30">
+    <%= f.submit "Log in", class:"lezada-button lezada-button--medium" %>
+  </div>
+</div>
+<% end %>
+
+<%= render "admins/shared/links" %>

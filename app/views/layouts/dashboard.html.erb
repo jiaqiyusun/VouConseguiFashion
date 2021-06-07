@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fashion</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/img/icon/vestir.png">
+
+    <!-- CSS
+    ============================================ -->
+    <!-- Bootstrap CSS -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome CSS -->
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Ionicons CSS -->
+    <link href="/assets/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- Themify CSS -->
+    <link href="/assets/css/themify-icons.css" rel="stylesheet">
+
+    <!-- Plugins CSS -->
+    <link href="/assets/css/plugins.css" rel="stylesheet">
+
+    <!-- Helper CSS -->
+    <link href="/assets/css/helper.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link href="/assets/css/main.css" rel="stylesheet">
+
+    <!-- Revolution Slider CSS -->
+    <link href="/assets/revolution/css/settings.css" rel="stylesheet">
+    <link href="/assets/revolution/css/navigation.css" rel="stylesheet">
+    <link href="/assets/revolution/custom-setting.css" rel="stylesheet">
+
+
+    <!-- Modernizer JS -->
+    <script src="/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+   <% #javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body >
+    <div id="app">
+        <div class="main-wrapper">
+            <div class="navbar-bg"></div>
+                <%= render "layouts/menu_top_dash" %>
+                <%= render "layouts/menu_dash" %>
+                <div class="main-content">
+                <%= yield %>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <!-- General JS Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="/assets/js/stisla.js"></script>
+
+  <!-- JS Libraies -->
+
+  <!-- Template JS File -->
+  <script src="/assets/js/scripts.js"></script>
+  <script src="/assets/js/custom.js"></script>
+
+  </body>
+</html>

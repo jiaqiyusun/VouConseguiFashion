@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin-Fashion 管理平台</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/img/icon/vestir.png">
+
+    <!-- CSS
+    ============================================ -->
+    <!-- Bootstrap CSS -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome CSS -->
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Ionicons CSS -->
+    <link href="/assets/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- Themify CSS -->
+    <link href="/assets/css/themify-icons.css" rel="stylesheet">
+
+    <!-- Plugins CSS -->
+    <link href="/assets/css/plugins.css" rel="stylesheet">
+
+    <!-- Helper CSS -->
+    <link href="/assets/css/helper.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link href="/assets/css/main.css" rel="stylesheet">
+
+    <!-- Revolution Slider CSS -->
+    <link href="/assets/revolution/css/settings.css" rel="stylesheet">
+    <link href="/assets/revolution/css/navigation.css" rel="stylesheet">
+    <link href="/assets/revolution/custom-setting.css" rel="stylesheet">
+
+
+    <!-- Modernizer JS -->
+    <script src="/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+   <% #javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class="no-js">
+    <%= render "admin/layouts/menu" %>
+    
+    <%= yield %>
+
+  </body>
+</html>
