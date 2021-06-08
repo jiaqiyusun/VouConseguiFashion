@@ -1442,3 +1442,18 @@ error Command "webpack" not found.
  DEBUG [4797bfba] 	yarn install v1.22.5
  DEBUG [4797bfba] 	[1/4] Resolving packages...
  DEBUG [4797bfba] 	[2/4] Fetching packages...
+ DEBUG [4797bfba] 	info fsevents@1.2.13: The platform "linux" is incompatible with this module.
+ DEBUG [4797bfba] 	info "fsevents@1.2.13" is an optional dependency and failed compatibility check. Excluding it from installation.
+ DEBUG [4797bfba] 	[3/4] Linking dependencies...
+ DEBUG [4797bfba] 	warning " > webpack-dev-server@3.11.2" has unmet peer dependency "webpack@^4.0.0 || ^5.0.0".
+ DEBUG [4797bfba] 	warning "webpack-dev-server > webpack-dev-middleware@3.7.3" has unmet peer dependency "webpack@^4.0.0 || ^5.0.0".
+ DEBUG [4797bfba] 	[4/4] Building fresh packages...
+ DEBUG [4797bfba] 	Done in 1.94s.
+ DEBUG [4797bfba] 	Compiling...
+ DEBUG [4797bfba] 	Compilation failed:
+yarn run v1.22.5
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
