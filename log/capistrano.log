@@ -66,3 +66,59 @@
  DEBUG [0efe7e6e] Running [ -d /usr/local/rvm ] on 216.137.181.32
  DEBUG [0efe7e6e] Command: [ -d /usr/local/rvm ]
  DEBUG [0efe7e6e] Finished in 0.207 seconds with exit status 1 (failed).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-07 23:12:11 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [8521db13] Running [ -d $HOME/.rbenv/versions/2.7.1 ] as deploy@216.137.181.32
+ DEBUG [8521db13] Command: [ -d $HOME/.rbenv/versions/2.7.1 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-07 23:14:05 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [0855473f] Running [ -d $HOME/.rbenv/versions/2.7.1 ] as deploy@216.137.181.32
+ DEBUG [0855473f] Command: [ -d $HOME/.rbenv/versions/2.7.1 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-07 23:19:10 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [b6075334] Running [ -d $HOME/.rbenv/versions/2.7.1 ] as deploy@216.137.181.32
+ DEBUG [b6075334] Command: [ -d $HOME/.rbenv/versions/2.7.1 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-07 23:22:37 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [df2124c3] Running [ -d $HOME/.rbenv/versions/2.7.1 ] as deploy@216.137.181.32
+ DEBUG [df2124c3] Command: [ -d $HOME/.rbenv/versions/2.7.1 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-07 23:23:45 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [4c522f8f] Running [ -d $HOME/.rbenv/versions/2.7.1 ] as deploy@216.137.181.32
+ DEBUG [4c522f8f] Command: [ -d $HOME/.rbenv/versions/2.7.1 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-07 23:26:07 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [743ddc8c] Running [ -d $HOME/.rbenv/versions/2.7.1 ] as deploy@216.137.181.32
+ DEBUG [743ddc8c] Command: [ -d $HOME/.rbenv/versions/2.7.1 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-08 01:06:17 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [92b53b33] Running [ -d $HOME/.rbenv/versions/2.7.1 ] as deploy@216.137.181.32
+ DEBUG [92b53b33] Command: [ -d $HOME/.rbenv/versions/2.7.1 ]
+ DEBUG [92b53b33] Finished in 0.663 seconds with exit status 0 (successful).
+ DEBUG [35ede206] Running /usr/bin/env which passenger as deploy@216.137.181.32
+ DEBUG [35ede206] Command: /usr/bin/env which passenger
+ DEBUG [35ede206] 	/usr/bin/passenger
+ DEBUG [35ede206] Finished in 0.180 seconds with exit status 0 (successful).
+  INFO [412b9b73] Running /usr/bin/env mkdir -p /tmp as deploy@216.137.181.32
+ DEBUG [412b9b73] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [412b9b73] Finished in 0.180 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-4d0c791e13cc4bcd0056.sh 0.0%
+  INFO Uploading /tmp/git-ssh-4d0c791e13cc4bcd0056.sh 100.0%
+  INFO [1f85c700] Running /usr/bin/env chmod 700 /tmp/git-ssh-4d0c791e13cc4bcd0056.sh as deploy@216.137.181.32
+ DEBUG [1f85c700] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-4d0c791e13cc4bcd0056.sh )
+  INFO [1f85c700] Finished in 0.175 seconds with exit status 0 (successful).
+  INFO [a04a4115] Running /usr/bin/env git ls-remote git@github.com:jiaqiyusun/VouConseguiFashion.git HEAD as deploy@216.137.181.32
+ DEBUG [a04a4115] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4d0c791e13cc4bcd0056.sh" ; /usr/bin/env git ls-remote git@github.com:jiaqiyusun/VouConseguiFashion.git HEAD )
+ DEBUG [a04a4115] 	Warning: Permanently added 'github.com,140.82.113.4' (RSA) to the list of known hosts.
+ DEBUG [a04a4115] 	git@github.com: Permission denied (publickey).
+ DEBUG [a04a4115] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.

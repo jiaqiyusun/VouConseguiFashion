@@ -28,6 +28,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'devise'
 #ancestry gem para filho e pai
 gem 'ancestry'
+gem 'ed25519', '~> 1.2', '>= 1.2.4'
+gem 'bcrypt_pbkdf', '~> 1.0.0.alpha1'
 
 gem 'will_paginate'
 gem 'pg', '~> 0.18'
@@ -51,11 +53,10 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'sqlite3', '~> 1.4'
 
-  gem 'capistrano',         require: false
-  gem 'capistrano-rvm',     require: false
-  gem 'capistrano-rails',   require: false
-  gem 'capistrano-bundler', require: false
-  gem 'capistrano3-puma',   require: false
+  gem 'capistrano', '~> 3.11'
+  gem 'capistrano-rails', '~> 1.4'
+  gem 'capistrano-passenger', '~> 0.2.0'
+  gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
 end
 
 group :test do
