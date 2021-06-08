@@ -1,0 +1,34 @@
+{
+  "application.js": "/packs/js/application-db97eac8a97bcc491357.js",
+  "application.js.map": "/packs/js/application-db97eac8a97bcc491357.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-db97eac8a97bcc491357.js"
+      ],
+      "js.map": [
+        "/packs/js/application-db97eac8a97bcc491357.js.map"
+      ]
+    },
+    "nested-forms/addFields": {
+      "js": [
+        "/packs/js/nested-forms/addFields-e739f56c18c15c3fb62f.js"
+      ],
+      "js.map": [
+        "/packs/js/nested-forms/addFields-e739f56c18c15c3fb62f.js.map"
+      ]
+    },
+    "nested-forms/removeFields": {
+      "js": [
+        "/packs/js/nested-forms/removeFields-aa459aa98c5c65c1bfa5.js"
+      ],
+      "js.map": [
+        "/packs/js/nested-forms/removeFields-aa459aa98c5c65c1bfa5.js.map"
+      ]
+    }
+  },
+  "nested-forms/addFields.js": "/packs/js/nested-forms/addFields-e739f56c18c15c3fb62f.js",
+  "nested-forms/addFields.js.map": "/packs/js/nested-forms/addFields-e739f56c18c15c3fb62f.js.map",
+  "nested-forms/removeFields.js": "/packs/js/nested-forms/removeFields-aa459aa98c5c65c1bfa5.js",
+  "nested-forms/removeFields.js.map": "/packs/js/nested-forms/removeFields-aa459aa98c5c65c1bfa5.js.map"
+}
