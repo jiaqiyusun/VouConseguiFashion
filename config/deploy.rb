@@ -2,7 +2,7 @@
 lock "~> 3.16.0"
 
 set :application, "mydivafashion"
-set :repo_url, "git@github.com:jiaqiyusun/VouConseguiFashion.git"
+set :repo_url, "https://github.com/jiaqiyusun/VouConseguiFashion.git"
 set :deploy_to, "/home/deploy/#{fetch :application}"
 
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads', 'public/assets'

@@ -122,3 +122,29 @@
 
 Please make sure you have the correct access rights
 and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-08 01:10:17 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [9e076206] Running [ -d $HOME/.rbenv/versions/2.7.1 ] as deploy@216.137.181.32
+ DEBUG [9e076206] Command: [ -d $HOME/.rbenv/versions/2.7.1 ]
+ DEBUG [9e076206] Finished in 12.214 seconds with exit status 0 (successful).
+ DEBUG [7c390ba7] Running /usr/bin/env which passenger as deploy@216.137.181.32
+ DEBUG [7c390ba7] Command: /usr/bin/env which passenger
+ DEBUG [7c390ba7] 	/usr/bin/passenger
+ DEBUG [7c390ba7] Finished in 0.189 seconds with exit status 0 (successful).
+  INFO [0ff94860] Running /usr/bin/env mkdir -p /tmp as deploy@216.137.181.32
+ DEBUG [0ff94860] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [0ff94860] Finished in 0.182 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-2a2e6ea8ecdc73338de9.sh 0.0%
+  INFO Uploading /tmp/git-ssh-2a2e6ea8ecdc73338de9.sh 100.0%
+  INFO [b3de3fb9] Running /usr/bin/env chmod 700 /tmp/git-ssh-2a2e6ea8ecdc73338de9.sh as deploy@216.137.181.32
+ DEBUG [b3de3fb9] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-2a2e6ea8ecdc73338de9.sh )
+  INFO [b3de3fb9] Finished in 0.179 seconds with exit status 0 (successful).
+  INFO [30c27d64] Running /usr/bin/env git ls-remote git@github.com:jiaqiyusun/VouConseguiFashion.git HEAD as deploy@216.137.181.32
+ DEBUG [30c27d64] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2a2e6ea8ecdc73338de9.sh" ; /usr/bin/env git ls-remote git@github.com:jiaqiyusun/VouConseguiFashion.git HEAD )
+ DEBUG [30c27d64] 	Warning: Permanently added the RSA host key for IP address '140.82.114.3' to the list of known hosts.
+ DEBUG [30c27d64] 	git@github.com: Permission denied (publickey).
+ DEBUG [30c27d64] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
