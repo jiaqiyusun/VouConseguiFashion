@@ -7,12 +7,12 @@ require 'rails/all'
 Bundler.require(*Rails.groups)
 
 
-config.generators do |g|
-  g.assets false
-end
+#config.generators do |g|
+ # g.assets false
+#end
 
 
-config.assets.paths << Rails.root.join("lib", "videoplayer", "flash")
+#config.assets.paths << Rails.root.join("lib", "videoplayer", "flash")
 
 module Fashion
   class Application < Rails::Application
