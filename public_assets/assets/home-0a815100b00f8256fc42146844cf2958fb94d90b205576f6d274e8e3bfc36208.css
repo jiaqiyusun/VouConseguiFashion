@@ -1,0 +1,39 @@
+/* line 1, app/assets/stylesheets/home.scss */
+.list-group-item a {
+  display: block;
+}
+
+/* line 4, app/assets/stylesheets/home.scss */
+.msrp {
+  text-decoration: line-through;
+}
+
+/* line 7, app/assets/stylesheets/home.scss */
+.thumbnail {
+  height: 290px;
+}
+
+/* line 9, app/assets/stylesheets/home.scss */
+.thumbnail.detail {
+  height: auto;
+}
+
+/* line 12, app/assets/stylesheets/home.scss */
+.thumbnail a.title {
+  color: #333;
+}
+
+/* line 18, app/assets/stylesheets/home.scss */
+.media.shopping-cart-row {
+  border-bottom: 1px solid #ccc;
+}
+
+/* line 21, app/assets/stylesheets/home.scss */
+.media.shopping-cart-row:last-child {
+  border-bottom: 0;
+}
+
+/* line 27, app/assets/stylesheets/home.scss */
+a.add-to-cart-btn i {
+  display: none;
+}

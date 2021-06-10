@@ -5,7 +5,7 @@ set :application, "mydivafashion"
 set :repo_url, "https://github.com/jiaqiyusun/VouConseguiFashion.git"
 set :deploy_to, "/home/deploy/#{fetch :application}"
 
-append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads', 'public/assets'
+append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle'
 set :keep_releases, 5
 # Default branch is :master
 ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
