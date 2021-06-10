@@ -6,6 +6,15 @@ set :repo_url, "https://github.com/jiaqiyusun/VouConseguiFashion.git"
 set :deploy_to, "/home/deploy/#{fetch :application}"
 
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads', 'public/assets'
+append :linked_files, "config/database.yml", "config/storage.yml", "config/master.key"
+set :puma_pid, "#{shared_path}/tmp/pids/puma.pid"
+set :puma_bind, "unix://#{shared_path}/tmp/sockets/puma.sock"
+set :puma_access_log, "#{shared_path}/log/puma_access.log"
+set :puma_error_log, "#{shared_path}/log/puma_error.log"
+ 
+set :nginx_sites_available_path, "/etc/nginx/sites-available"
+set :nginx_sites_enabled_path, "/etc/nginx/sites-enabled"
+
 set :keep_releases, 5
 # Default branch is :master
 ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
