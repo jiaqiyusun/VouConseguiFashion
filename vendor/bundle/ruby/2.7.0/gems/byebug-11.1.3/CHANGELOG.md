@@ -533,7 +533,7 @@
 
 * The `init` option for `Byebug.start`. Information to make the `restart` command work is always saved now.
 
-## [2.7.0] - 2014-02-24
+## [2.7.1] - 2014-02-24
 
 ### Fixed
 
@@ -868,8 +868,8 @@
 [3.1.2]: https://github.com/deivid-rodriguez/byebug/compare/v3.1.1...v3.1.2
 [3.1.1]: https://github.com/deivid-rodriguez/byebug/compare/v3.1.0...v3.1.1
 [3.1.0]: https://github.com/deivid-rodriguez/byebug/compare/v3.0.0...v3.1.0
-[3.0.0]: https://github.com/deivid-rodriguez/byebug/compare/v2.7.0...v3.0.0
-[2.7.0]: https://github.com/deivid-rodriguez/byebug/compare/v2.6.0...v2.7.0
+[3.0.0]: https://github.com/deivid-rodriguez/byebug/compare/v2.7.1...v3.0.0
+[2.7.1]: https://github.com/deivid-rodriguez/byebug/compare/v2.6.0...v2.7.1
 [2.6.0]: https://github.com/deivid-rodriguez/byebug/compare/v2.5.0...v2.6.0
 [2.5.0]: https://github.com/deivid-rodriguez/byebug/compare/v2.4.1...v2.5.0
 [2.4.1]: https://github.com/deivid-rodriguez/byebug/compare/v2.4.0...v2.4.1
