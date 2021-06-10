@@ -9,10 +9,8 @@
 
 #ask(:password, nil, echo: false)
 # Deploy to the user's home directory
-set :server_address, '216.137.181.32:7822'
 server '216.137.181.32:7822', user: 'deploy', roles: %w{app db web}
-set :nginx_server_name, fetch(:server_address)
-set :puma_preload_app, true
+
 # Optionally, you can symlink your database.yml and/or secrets.yml file from the shared directory during deploy
 # This is useful if you don't want to use ENV variables
 # append :linked_files, 'config/database.yml', 'config/secrets.yml'
