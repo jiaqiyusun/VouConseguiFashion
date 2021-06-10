@@ -9,7 +9,7 @@
 
 #ask(:password, nil, echo: false)
 # Deploy to the user's home directory
-server '216.137.181.32:7822', user: 'deploy', roles: %w{app db web}
+server 'www.mydivafashion.com', user: 'deploy', roles: %w{app db web}
 
 # Optionally, you can symlink your database.yml and/or secrets.yml file from the shared directory during deploy
 # This is useful if you don't want to use ENV variables
