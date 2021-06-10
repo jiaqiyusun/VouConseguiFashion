@@ -1067,3 +1067,161 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 0.9ms | Allocations: 10506)
 
 
+Started GET "/" for ::1 at 2021-06-10 23:05:01 +0100
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/site
+  Rendered home/index.html.erb within layouts/site (Duration: 5.8ms | Allocations: 3793)
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
+  ↳ app/views/layouts/_header_two.html.erb:30
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = ?[0m  [["ancestry", "1"]]
+  ↳ app/views/layouts/_header_two.html.erb:41
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = ?[0m  [["ancestry", "4"]]
+  ↳ app/views/layouts/_header_two.html.erb:41
+  Rendered layouts/_header_two.html.erb (Duration: 25.3ms | Allocations: 6847)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = ?[0m  [["ancestry", "1"]]
+  ↳ app/views/layouts/_header.html.erb:117
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = ?[0m  [["ancestry", "4"]]
+  ↳ app/views/layouts/_header.html.erb:117
+  Rendered layouts/_header.html.erb (Duration: 31.1ms | Allocations: 8986)
+  Rendered layouts/_footer.html.erb (Duration: 1.2ms | Allocations: 326)
+Completed 200 OK in 1120ms (Views: 1063.1ms | ActiveRecord: 3.8ms | Allocations: 179986)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/bootstrap.min.css.map"):
+  
+actionpack (6.0.3.7) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.7) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.7) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.7) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3.7) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3.7) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3.7) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3.7) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.7) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.7) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.7) lib/rails/engine.rb:527:in `call'
+puma (4.3.8) lib/puma/configuration.rb:228:in `call'
+puma (4.3.8) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.8) lib/puma/server.rb:472:in `process_client'
+puma (4.3.8) lib/puma/server.rb:328:in `block in run'
+puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/tippy.all.min.js.map"):
+  
+actionpack (6.0.3.7) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.7) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.7) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.7) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3.7) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3.7) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3.7) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3.7) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.7) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.7) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.7) lib/rails/engine.rb:527:in `call'
+puma (4.3.8) lib/puma/configuration.rb:228:in `call'
+puma (4.3.8) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.8) lib/puma/server.rb:472:in `process_client'
+puma (4.3.8) lib/puma/server.rb:328:in `block in run'
+puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap.min.js.map"):
+  
+actionpack (6.0.3.7) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.7) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.7) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.7) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3.7) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3.7) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3.7) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3.7) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.7) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.7) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.7) lib/rails/engine.rb:527:in `call'
+puma (4.3.8) lib/puma/configuration.rb:228:in `call'
+puma (4.3.8) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.8) lib/puma/server.rb:472:in `process_client'
+puma (4.3.8) lib/puma/server.rb:328:in `block in run'
+puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mAdmin Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "admins" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mColorProduct Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "color_products" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCategory Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mProductCharacteristic Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "product_characteristics" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mProduct Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "products" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mSizeProduct Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "size_products" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mSize Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "sizes" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mColor Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "colors" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mProductImage Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "product_images" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "admins"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "admins"[0m
+  [1m[36mAdmin Load (0.6ms)[0m  [1m[34mSELECT "admins".* FROM "admins" LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories"[0m
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" LIMIT ? OFFSET ?[0m  [["LIMIT", 14], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" LIMIT ? OFFSET ?[0m  [["LIMIT", 17], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "product_images"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "product_images"[0m
+  [1m[36mProductImage Load (1.4ms)[0m  [1m[34mSELECT "product_images".* FROM "product_images" LIMIT ? OFFSET ?[0m  [["LIMIT", 77], ["OFFSET", 0]]
