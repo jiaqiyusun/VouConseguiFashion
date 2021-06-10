@@ -1,3 +1,22 @@
+Admin.create!([
+  {email: "admin@gmail.com", encrypted_password: "$2a$12$kxzXkvxxq80nmsVBxNpUme345EeDlNyByeod1.ZcYHJnByVtguXmq", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: "2021-05-23 16:16:06"}
+])
+Category.create!([
+  {title: "MULHER", weight: 0, products_counter: 0, ancestry: nil},
+  {title: "CRIANÇA", weight: 1, products_counter: 0, ancestry: nil},
+  {title: "VESTIDOS  DE \"A\"", weight: 0, products_counter: 0, ancestry: "1"},
+  {title: "VESTIDOS DE RETO", weight: 0, products_counter: 0, ancestry: "1"},
+  {title: "MENINA | 4- 16 ANO", weight: 0, products_counter: 0, ancestry: "4"},
+  {title: "MENINA | 2- 12 ANOS", weight: 0, products_counter: 0, ancestry: "4"},
+  {title: "MENINO | 2- 12 ANOS", weight: 0, products_counter: 0, ancestry: "4"},
+  {title: "MENINO | 4- 16 ANO", weight: 0, products_counter: 0, ancestry: "4"},
+  {title: "VESTIDOS DE PRINCESA", weight: 0, products_counter: 0, ancestry: "1"},
+  {title: "VESTIDOS DE IMPÉRIO", weight: 0, products_counter: 0, ancestry: "1"},
+  {title: "VESTIDO DE SEREIA", weight: 0, products_counter: 0, ancestry: "1"},
+  {title: "VESTIDOS CURTOS", weight: 0, products_counter: 0, ancestry: "1"},
+  {title: "VESTIDOS DE MULLET", weight: 0, products_counter: 0, ancestry: "1"},
+  {title: "FATOS", weight: 0, products_counter: 0, ancestry: "1"}
+])
 Product.create!([
   {category_id: 15, title: "Vestido Cristal", status: "on", uuid: nil, price_current: nil, price: "93.48", description: "Vestido em cetim ornamentado com galão metalizado na frente, sem mangas e saia forrada com folhos em tule e estampado metalizado. "},
   {category_id: 16, title: "Vestido Comprido Mermaid Rosa Claro ", status: "on", uuid: nil, price_current: nil, price: "135.3", description: "Vestido feminino para noite, manga comprida lantejoulas sereia."},
