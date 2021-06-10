@@ -26,4 +26,4 @@ production:
   database: mydivafashion
   pool: 5
   username: deploy
-  password: j@ri2o18
+  password: jari2o18
