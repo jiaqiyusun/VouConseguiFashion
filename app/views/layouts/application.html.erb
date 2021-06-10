@@ -2,7 +2,7 @@
 <html class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths">
   <head>
     
-    <title>Diva Fashion</title>
+    <title>My Diva Fashion</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -40,7 +40,9 @@
   <!-- Modernizer JS -->
   <script src="/assets/js/vendor/modernizr-2.8.3.min.js"></script>
 
-   <% #javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag params[:controller] %>
+
+   <% javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body class="no-js">
