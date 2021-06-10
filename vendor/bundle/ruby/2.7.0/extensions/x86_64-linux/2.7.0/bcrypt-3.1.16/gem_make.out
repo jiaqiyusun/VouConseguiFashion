@@ -1,11 +1,11 @@
-current directory: /home/cuidado/Documentos/projects/fashion/vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/ext/mri
-/home/cuidado/.rbenv/versions/2.7.1/bin/ruby -I /home/cuidado/.rbenv/versions/2.7.1/lib/ruby/2.7.0 -r ./siteconf20210511-40808-e2ljcb.rb extconf.rb
+current directory: /home/cuidado/Documentos/projects/fashion/vendor/bundle/ruby/2.7.1/gems/bcrypt-3.1.16/ext/mri
+/home/cuidado/.rbenv/versions/2.7.1/bin/ruby -I /home/cuidado/.rbenv/versions/2.7.1/lib/ruby/2.7.1 -r ./siteconf20210511-40808-e2ljcb.rb extconf.rb
 creating Makefile
 
-current directory: /home/cuidado/Documentos/projects/fashion/vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/ext/mri
+current directory: /home/cuidado/Documentos/projects/fashion/vendor/bundle/ruby/2.7.1/gems/bcrypt-3.1.16/ext/mri
 make "DESTDIR=" clean
 
-current directory: /home/cuidado/Documentos/projects/fashion/vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/ext/mri
+current directory: /home/cuidado/Documentos/projects/fashion/vendor/bundle/ruby/2.7.1/gems/bcrypt-3.1.16/ext/mri
 make "DESTDIR="
 compiling bcrypt_ext.c
 compiling crypt_blowfish.c
@@ -20,6 +20,6 @@ cc1: warning: unrecognized command line option ‘-Wno-parentheses-equality’
 cc1: warning: unrecognized command line option ‘-Wno-constant-logical-operand’
 linking shared-object bcrypt_ext.so
 
-current directory: /home/cuidado/Documentos/projects/fashion/vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/ext/mri
+current directory: /home/cuidado/Documentos/projects/fashion/vendor/bundle/ruby/2.7.1/gems/bcrypt-3.1.16/ext/mri
 make "DESTDIR=" install
 /usr/bin/install -c -m 0755 bcrypt_ext.so ./.gem.20210511-40808-1iidfe8

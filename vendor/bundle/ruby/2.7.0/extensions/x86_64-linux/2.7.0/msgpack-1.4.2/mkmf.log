@@ -125,7 +125,7 @@ checked program was:
 
 "gcc -o conftest -I/home/cuidado/.rbenv/versions/2.7.1/include/ruby-2.7.1/x86_64-linux -I/home/cuidado/.rbenv/versions/2.7.1/include/ruby-2.7.1/ruby/backward -I/home/cuidado/.rbenv/versions/2.7.1/include/ruby-2.7.1 -I. -I/home/cuidado/.rbenv/versions/2.7.1/include    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/home/cuidado/.rbenv/versions/2.7.1/lib -Wl,-rpath,/home/cuidado/.rbenv/versions/2.7.1/lib -L. -L/home/cuidado/.rbenv/versions/2.7.1/lib  -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/home/cuidado/.rbenv/versions/2.7.1/lib -L/home/cuidado/.rbenv/versions/2.7.1/lib -lruby  -lm   -lc"
 /home/linuxbrew/.linuxbrew/bin/ld: /tmp/cc5Oee9M.o: in function `t':
-/home/cuidado/Documentos/projects/fashion/vendor/bundle/ruby/2.7.0/gems/msgpack-1.4.2/ext/msgpack/conftest.c:17: undefined reference to `rb_enc_interned_str'
+/home/cuidado/Documentos/projects/fashion/vendor/bundle/ruby/2.7.1/gems/msgpack-1.4.2/ext/msgpack/conftest.c:17: undefined reference to `rb_enc_interned_str'
 collect2: error: ld returned 1 exit status
 checked program was:
 /* begin */

@@ -6,7 +6,7 @@
 
 ### Fixed
 
-* [#674](https://github.com/deivid-rodriguez/byebug/pull/674): crash when using byebug on ruby 2.7.0 on Windows.
+* [#674](https://github.com/deivid-rodriguez/byebug/pull/674): crash when using byebug on ruby 2.7.1 on Windows.
 
 ## [11.1.2] - 2020-04-17
 

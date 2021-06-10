@@ -261,7 +261,7 @@ $ egrep '^    ?(ruby|webpacker|rails) ' Gemfile.lock
 
 $ yarn versions
 yarn versions v1.1.0
-{ http_parser: '2.7.0',
+{ http_parser: '2.7.1',
   node: '8.5.0',
   v8: '6.0.287.53',
   uv: '1.14.1',

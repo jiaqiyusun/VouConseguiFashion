@@ -96,7 +96,7 @@ jobs:
       - <<: *unit
   "ruby-2.7":
     docker:
-      - image: circleci/ruby:2.7.0
+      - image: circleci/ruby:2.7.1
     working_directory: ~/method_source
     steps:
       - checkout

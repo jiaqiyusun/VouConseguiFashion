@@ -55,7 +55,7 @@
 
 * [Replace deprecated fragment_cache_key for Rails 5.2 support](https://github.com/rails/jbuilder/pull/430)
 
-2.7.0
+2.7.1
 -----
 
 * [Requires Rails 4+](https://github.com/rails/jbuilder/commit/5207ff394533177fffdd768bfaa6413a0cd16dc8)

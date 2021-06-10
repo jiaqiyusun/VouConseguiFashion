@@ -107,7 +107,7 @@ RUBY_BASE_NAME = ruby
 
 arch = x86_64-linux
 sitearch = $(arch)
-ruby_version = 2.7.0
+ruby_version = 2.7.1
 ruby = $(bindir)/$(RUBY_BASE_NAME)
 RUBY = $(ruby)
 ruby_headers = $(hdrdir)/ruby.h $(hdrdir)/ruby/backward.h $(hdrdir)/ruby/ruby.h $(hdrdir)/ruby/defines.h $(hdrdir)/ruby/missing.h $(hdrdir)/ruby/intern.h $(hdrdir)/ruby/st.h $(hdrdir)/ruby/subst.h $(arch_hdrdir)/ruby/config.h

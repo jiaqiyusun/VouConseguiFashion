@@ -1110,7 +1110,7 @@ The "clearly I don't have enough tests for the config" release.
 
   * Keep STDOUT/STDERR the right mode. Fixes #422
 
-## 2.7.0 / 2013-12-03
+## 2.7.1 / 2013-12-03
 
 * 1 minor feature:
   * Adding TTIN and TTOU to increment/decrement workers

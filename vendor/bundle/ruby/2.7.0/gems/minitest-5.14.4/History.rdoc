@@ -986,7 +986,7 @@ back.
   * Fixed 2 typos and 2 doc glitches. (splattael)
   * Remove unused block arguments to avoid creating Proc objects. (k-tsj)
 
-=== 2.7.0 / 2011-10-25
+=== 2.7.1 / 2011-10-25
 
 * 2 minor enhancements:
 

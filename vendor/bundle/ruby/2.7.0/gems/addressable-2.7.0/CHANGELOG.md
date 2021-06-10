@@ -1,4 +1,4 @@
-# Addressable 2.7.0
+# Addressable 2.7.1
 - added `:compacted` flag to `normalized_query`
 - `heuristic_parse` handles `mailto:` more intuitively
 - refactored validation to use a prepended module
