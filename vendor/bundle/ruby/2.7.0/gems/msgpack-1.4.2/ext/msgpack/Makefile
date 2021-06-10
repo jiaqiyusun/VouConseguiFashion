@@ -12,9 +12,9 @@ NULLCMD = :
 #### Start of system configuration section. ####
 
 srcdir = .
-topdir = /home/cuidado/.rbenv/versions/2.7.1/include/ruby-2.7.0
+topdir = /home/cuidado/.rbenv/versions/2.7.1/include/ruby-2.7.1
 hdrdir = $(topdir)
-arch_hdrdir = /home/cuidado/.rbenv/versions/2.7.1/include/ruby-2.7.0/x86_64-linux
+arch_hdrdir = /home/cuidado/.rbenv/versions/2.7.1/include/ruby-2.7.1/x86_64-linux
 PATH_SEPARATOR = :
 VPATH = $(srcdir):$(arch_hdrdir)/ruby:$(hdrdir)/ruby
 prefix = $(DESTDIR)/home/cuidado/.rbenv/versions/2.7.1

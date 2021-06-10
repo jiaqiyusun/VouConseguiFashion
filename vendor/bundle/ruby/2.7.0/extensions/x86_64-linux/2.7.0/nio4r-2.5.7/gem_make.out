@@ -100,10 +100,10 @@ selector.c:301:26: warning: passing argument 1 of ‘rb_ensure’ from incompati
       |                          ^~~~
       |                          |
       |                          VALUE (*)(VALUE *) {aka long unsigned int (*)(long unsigned int *)}
-In file included from /home/cuidado/.rbenv/versions/2.7.1/include/ruby-2.7.0/ruby.h:33,
+In file included from /home/cuidado/.rbenv/versions/2.7.1/include/ruby-2.7.1/ruby.h:33,
                  from nio4r.h:10,
                  from selector.c:6:
-/home/cuidado/.rbenv/versions/2.7.1/include/ruby-2.7.0/ruby/ruby.h:1990:17: note: expected ‘VALUE (*)(VALUE)’ {aka ‘long unsigned int (*)(long unsigned int)’} but argument is of type ‘VALUE (*)(VALUE *)’ {aka ‘long unsigned int (*)(long unsigned int *)’}
+/home/cuidado/.rbenv/versions/2.7.1/include/ruby-2.7.1/ruby/ruby.h:1990:17: note: expected ‘VALUE (*)(VALUE)’ {aka ‘long unsigned int (*)(long unsigned int)’} but argument is of type ‘VALUE (*)(VALUE *)’ {aka ‘long unsigned int (*)(long unsigned int *)’}
  1990 | VALUE rb_ensure(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE),VALUE);
       |                 ^~~~~~~~~~~~~~~
 selector.c: In function ‘NIO_Selector_wakeup’:
