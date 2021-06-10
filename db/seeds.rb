@@ -1,3 +1,6 @@
+Admin.create!([
+  {email: "admin@gmail.com", encrypted_password: "$2a$12$kxzXkvxxq80nmsVBxNpUme345EeDlNyByeod1.ZcYHJnByVtguXmq", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: "2021-05-23 16:16:06"}
+])
 Category.create!([
   {title: "MULHER", weight: 0, products_counter: 0, ancestry: nil},
   {title: "CRIANÇA", weight: 1, products_counter: 0, ancestry: nil},
