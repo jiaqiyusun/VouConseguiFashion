@@ -5840,3 +5840,1185 @@ Caused by:
   INFO [a0a1e744] Running /usr/bin/env echo "Branch main (at 43918e230e2d98a415ffdff40e043c2c39235346) deployed as release 20210608025227 by jiaqiyu" >> /home/deploy/mydivafashion/revisions.log as deploy@216.137.181.32
  DEBUG [a0a1e744] Command: cd /home/deploy/mydivafashion/releases && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env echo "Branch main (at 43918e230e2d98a415ffdff40e043c2c39235346) deployed as release 20210608025227 by jiaqiyu" >> /home/deploy/mydivafashion/revisions.log )
   INFO [a0a1e744] Finished in 0.180 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-08 04:11:12 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [078f3daf] Running [ -d $HOME/.rbenv/versions/2.7.1 ] as deploy@216.137.181.32
+ DEBUG [078f3daf] Command: [ -d $HOME/.rbenv/versions/2.7.1 ]
+ DEBUG [078f3daf] Finished in 9.236 seconds with exit status 0 (successful).
+ DEBUG [730cf0e8] Running /usr/bin/env which passenger as deploy@216.137.181.32
+ DEBUG [730cf0e8] Command: /usr/bin/env which passenger
+ DEBUG [730cf0e8] 	/usr/bin/passenger
+ DEBUG [730cf0e8] Finished in 0.176 seconds with exit status 0 (successful).
+  INFO [0abe305a] Running /usr/bin/env mkdir -p /tmp as deploy@216.137.181.32
+ DEBUG [0abe305a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [0abe305a] Finished in 0.176 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-6bd6869adf68bbd22803.sh 0.0%
+  INFO Uploading /tmp/git-ssh-6bd6869adf68bbd22803.sh 100.0%
+  INFO [14d9f584] Running /usr/bin/env chmod 700 /tmp/git-ssh-6bd6869adf68bbd22803.sh as deploy@216.137.181.32
+ DEBUG [14d9f584] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-6bd6869adf68bbd22803.sh )
+  INFO [14d9f584] Finished in 0.177 seconds with exit status 0 (successful).
+  INFO [966e5725] Running /usr/bin/env git ls-remote https://github.com/jiaqiyusun/VouConseguiFashion.git HEAD as deploy@216.137.181.32
+ DEBUG [966e5725] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6bd6869adf68bbd22803.sh" ; /usr/bin/env git ls-remote https://github.com/jiaqiyusun/VouConseguiFashion.git HEAD )
+ DEBUG [966e5725] 	2680d20c678baa0f3594333917f93e1517a8332f	HEAD
+  INFO [966e5725] Finished in 0.700 seconds with exit status 0 (successful).
+  INFO [45fd3032] Running /usr/bin/env mkdir -p /home/deploy/mydivafashion/shared /home/deploy/mydivafashion/releases as deploy@216.137.181.32
+ DEBUG [45fd3032] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env mkdir -p /home/deploy/mydivafashion/shared /home/deploy/mydivafashion/releases )
+  INFO [45fd3032] Finished in 0.179 seconds with exit status 0 (successful).
+  INFO [4ed93e7f] Running /usr/bin/env mkdir -p /home/deploy/mydivafashion/shared/log /home/deploy/mydivafashion/shared/tmp/pids /home/deploy/mydivafashion/shared/tmp/cache /home/deploy/mydivafashion/shared/tmp/sockets /home/deploy/mydivafashion/shared/vendor/bundle /home/deploy/mydivafashion/shared/.bundle /home/deploy/mydivafashion/shared/public/system /home/deploy/mydivafashion/shared/public/uploads /home/deploy/mydivafashion/shared/public/assets as deploy@216.137.181.32
+ DEBUG [4ed93e7f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env mkdir -p /home/deploy/mydivafashion/shared/log /home/deploy/mydivafashion/shared/tmp/pids /home/deploy/mydivafashion/shared/tmp/cache /home/deploy/mydivafashion/shared/tmp/sockets /home/deploy/mydivafashion/shared/vendor/bundle /home/deploy/mydivafashion/shared/.bundle /home/deploy/mydivafashion/shared/public/system /home/deploy/mydivafashion/shared/public/uploads /home/deploy/mydivafashion/shared/public/assets )
+  INFO [4ed93e7f] Finished in 0.178 seconds with exit status 0 (successful).
+ DEBUG [d35d66d5] Running [ -f /home/deploy/mydivafashion/current/REVISION ] as deploy@216.137.181.32
+ DEBUG [d35d66d5] Command: [ -f /home/deploy/mydivafashion/current/REVISION ]
+ DEBUG [d35d66d5] Finished in 0.176 seconds with exit status 0 (successful).
+ DEBUG [d0504d58] Running /usr/bin/env cat /home/deploy/mydivafashion/current/REVISION 2>/dev/null as deploy@216.137.181.32
+ DEBUG [d0504d58] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env cat /home/deploy/mydivafashion/current/REVISION 2>/dev/null )
+ DEBUG [d0504d58] 	43918e230e2d98a415ffdff40e043c2c39235346
+ DEBUG [d0504d58] Finished in 0.182 seconds with exit status 0 (successful).
+ DEBUG [f9cf95bf] Running [ -f /home/deploy/mydivafashion/repo/HEAD ] as deploy@216.137.181.32
+ DEBUG [f9cf95bf] Command: [ -f /home/deploy/mydivafashion/repo/HEAD ]
+ DEBUG [f9cf95bf] Finished in 0.176 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/mydivafashion/repo
+ DEBUG [a249a8c8] Running if test ! -d /home/deploy/mydivafashion/repo; then echo "Directory does not exist '/home/deploy/mydivafashion/repo'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [a249a8c8] Command: if test ! -d /home/deploy/mydivafashion/repo; then echo "Directory does not exist '/home/deploy/mydivafashion/repo'" 1>&2; false; fi
+ DEBUG [a249a8c8] Finished in 0.175 seconds with exit status 0 (successful).
+  INFO [907a2941] Running /usr/bin/env git remote set-url origin https://github.com/jiaqiyusun/VouConseguiFashion.git as deploy@216.137.181.32
+ DEBUG [907a2941] Command: cd /home/deploy/mydivafashion/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6bd6869adf68bbd22803.sh" ; /usr/bin/env git remote set-url origin https://github.com/jiaqiyusun/VouConseguiFashion.git )
+  INFO [907a2941] Finished in 0.177 seconds with exit status 0 (successful).
+  INFO [ea004a91] Running /usr/bin/env git remote update --prune as deploy@216.137.181.32
+ DEBUG [ea004a91] Command: cd /home/deploy/mydivafashion/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6bd6869adf68bbd22803.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [ea004a91] 	Fetching origin
+ DEBUG [ea004a91] 	From https://github.com/jiaqiyusun/VouConseguiFashion
+   43918e23..2680d20c  main       -> main
+  INFO [ea004a91] Finished in 0.842 seconds with exit status 0 (successful).
+ DEBUG [4b8d2401] Running if test ! -d /home/deploy/mydivafashion/repo; then echo "Directory does not exist '/home/deploy/mydivafashion/repo'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [4b8d2401] Command: if test ! -d /home/deploy/mydivafashion/repo; then echo "Directory does not exist '/home/deploy/mydivafashion/repo'" 1>&2; false; fi
+ DEBUG [4b8d2401] Finished in 0.118 seconds with exit status 0 (successful).
+  INFO [8321b5f1] Running /usr/bin/env mkdir -p /home/deploy/mydivafashion/releases/20210608031141 as deploy@216.137.181.32
+ DEBUG [8321b5f1] Command: cd /home/deploy/mydivafashion/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6bd6869adf68bbd22803.sh" ; /usr/bin/env mkdir -p /home/deploy/mydivafashion/releases/20210608031141 )
+  INFO [8321b5f1] Finished in 0.242 seconds with exit status 0 (successful).
+  INFO [e4fd3df8] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/mydivafashion/releases/20210608031141 as deploy@216.137.181.32
+ DEBUG [e4fd3df8] Command: cd /home/deploy/mydivafashion/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6bd6869adf68bbd22803.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/mydivafashion/releases/20210608031141 )
+  INFO [e4fd3df8] Finished in 4.227 seconds with exit status 0 (successful).
+ DEBUG [1f0985e5] Running if test ! -d /home/deploy/mydivafashion/repo; then echo "Directory does not exist '/home/deploy/mydivafashion/repo'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [1f0985e5] Command: if test ! -d /home/deploy/mydivafashion/repo; then echo "Directory does not exist '/home/deploy/mydivafashion/repo'" 1>&2; false; fi
+ DEBUG [1f0985e5] Finished in 0.175 seconds with exit status 0 (successful).
+ DEBUG [557d0f7e] Running /usr/bin/env git rev-list --max-count=1 main as deploy@216.137.181.32
+ DEBUG [557d0f7e] Command: cd /home/deploy/mydivafashion/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6bd6869adf68bbd22803.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [557d0f7e] 	2680d20c678baa0f3594333917f93e1517a8332f
+ DEBUG [557d0f7e] Finished in 0.194 seconds with exit status 0 (successful).
+ DEBUG [2a36a081] Running if test ! -d /home/deploy/mydivafashion/releases/20210608031141; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210608031141'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [2a36a081] Command: if test ! -d /home/deploy/mydivafashion/releases/20210608031141; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210608031141'" 1>&2; false; fi
+ DEBUG [2a36a081] Finished in 0.178 seconds with exit status 0 (successful).
+  INFO [7d3223a2] Running /usr/bin/env echo "2680d20c678baa0f3594333917f93e1517a8332f" > REVISION as deploy@216.137.181.32
+ DEBUG [7d3223a2] Command: cd /home/deploy/mydivafashion/releases/20210608031141 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env echo "2680d20c678baa0f3594333917f93e1517a8332f" > REVISION )
+  INFO [7d3223a2] Finished in 0.179 seconds with exit status 0 (successful).
+  INFO [06dfa2f0] Running /usr/bin/env mkdir -p /home/deploy/mydivafashion/releases/20210608031141 /home/deploy/mydivafashion/releases/20210608031141/tmp /home/deploy/mydivafashion/releases/20210608031141/vendor /home/deploy/mydivafashion/releases/20210608031141/public as deploy@216.137.181.32
+ DEBUG [06dfa2f0] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env mkdir -p /home/deploy/mydivafashion/releases/20210608031141 /home/deploy/mydivafashion/releases/20210608031141/tmp /home/deploy/mydivafashion/releases/20210608031141/vendor /home/deploy/mydivafashion/releases/20210608031141/public )
+  INFO [06dfa2f0] Finished in 0.176 seconds with exit status 0 (successful).
+ DEBUG [45a8a2ba] Running [ -L /home/deploy/mydivafashion/releases/20210608031141/log ] as deploy@216.137.181.32
+ DEBUG [45a8a2ba] Command: [ -L /home/deploy/mydivafashion/releases/20210608031141/log ]
+ DEBUG [45a8a2ba] Finished in 0.108 seconds with exit status 1 (failed).
+ DEBUG [140a5ad8] Running [ -d /home/deploy/mydivafashion/releases/20210608031141/log ] as deploy@216.137.181.32
+ DEBUG [140a5ad8] Command: [ -d /home/deploy/mydivafashion/releases/20210608031141/log ]
+ DEBUG [140a5ad8] Finished in 0.174 seconds with exit status 0 (successful).
+  INFO [5705400d] Running /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210608031141/log as deploy@216.137.181.32
+ DEBUG [5705400d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210608031141/log )
+  INFO [5705400d] Finished in 0.185 seconds with exit status 0 (successful).
+  INFO [d5122868] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/log /home/deploy/mydivafashion/releases/20210608031141/log as deploy@216.137.181.32
+ DEBUG [d5122868] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/log /home/deploy/mydivafashion/releases/20210608031141/log )
+  INFO [d5122868] Finished in 0.177 seconds with exit status 0 (successful).
+ DEBUG [412514c8] Running [ -L /home/deploy/mydivafashion/releases/20210608031141/tmp/pids ] as deploy@216.137.181.32
+ DEBUG [412514c8] Command: [ -L /home/deploy/mydivafashion/releases/20210608031141/tmp/pids ]
+ DEBUG [412514c8] Finished in 0.177 seconds with exit status 1 (failed).
+ DEBUG [ef2a7739] Running [ -d /home/deploy/mydivafashion/releases/20210608031141/tmp/pids ] as deploy@216.137.181.32
+ DEBUG [ef2a7739] Command: [ -d /home/deploy/mydivafashion/releases/20210608031141/tmp/pids ]
+ DEBUG [ef2a7739] Finished in 0.177 seconds with exit status 0 (successful).
+  INFO [b7df07e2] Running /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210608031141/tmp/pids as deploy@216.137.181.32
+ DEBUG [b7df07e2] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210608031141/tmp/pids )
+  INFO [b7df07e2] Finished in 0.177 seconds with exit status 0 (successful).
+  INFO [f7c1a9ed] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/tmp/pids /home/deploy/mydivafashion/releases/20210608031141/tmp/pids as deploy@216.137.181.32
+ DEBUG [f7c1a9ed] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/tmp/pids /home/deploy/mydivafashion/releases/20210608031141/tmp/pids )
+  INFO [f7c1a9ed] Finished in 0.177 seconds with exit status 0 (successful).
+ DEBUG [19c5e0df] Running [ -L /home/deploy/mydivafashion/releases/20210608031141/tmp/cache ] as deploy@216.137.181.32
+ DEBUG [19c5e0df] Command: [ -L /home/deploy/mydivafashion/releases/20210608031141/tmp/cache ]
+ DEBUG [19c5e0df] Finished in 0.175 seconds with exit status 1 (failed).
+ DEBUG [a038f498] Running [ -d /home/deploy/mydivafashion/releases/20210608031141/tmp/cache ] as deploy@216.137.181.32
+ DEBUG [a038f498] Command: [ -d /home/deploy/mydivafashion/releases/20210608031141/tmp/cache ]
+ DEBUG [a038f498] Finished in 0.176 seconds with exit status 0 (successful).
+  INFO [5919df96] Running /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210608031141/tmp/cache as deploy@216.137.181.32
+ DEBUG [5919df96] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210608031141/tmp/cache )
+  INFO [5919df96] Finished in 0.253 seconds with exit status 0 (successful).
+  INFO [473e6ae6] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/tmp/cache /home/deploy/mydivafashion/releases/20210608031141/tmp/cache as deploy@216.137.181.32
+ DEBUG [473e6ae6] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/tmp/cache /home/deploy/mydivafashion/releases/20210608031141/tmp/cache )
+  INFO [473e6ae6] Finished in 0.176 seconds with exit status 0 (successful).
+ DEBUG [78c2106f] Running [ -L /home/deploy/mydivafashion/releases/20210608031141/tmp/sockets ] as deploy@216.137.181.32
+ DEBUG [78c2106f] Command: [ -L /home/deploy/mydivafashion/releases/20210608031141/tmp/sockets ]
+ DEBUG [78c2106f] Finished in 0.174 seconds with exit status 1 (failed).
+ DEBUG [95821171] Running [ -d /home/deploy/mydivafashion/releases/20210608031141/tmp/sockets ] as deploy@216.137.181.32
+ DEBUG [95821171] Command: [ -d /home/deploy/mydivafashion/releases/20210608031141/tmp/sockets ]
+ DEBUG [95821171] Finished in 0.176 seconds with exit status 1 (failed).
+  INFO [10818b30] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/tmp/sockets /home/deploy/mydivafashion/releases/20210608031141/tmp/sockets as deploy@216.137.181.32
+ DEBUG [10818b30] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/tmp/sockets /home/deploy/mydivafashion/releases/20210608031141/tmp/sockets )
+  INFO [10818b30] Finished in 0.176 seconds with exit status 0 (successful).
+ DEBUG [12a4f5d4] Running [ -L /home/deploy/mydivafashion/releases/20210608031141/vendor/bundle ] as deploy@216.137.181.32
+ DEBUG [12a4f5d4] Command: [ -L /home/deploy/mydivafashion/releases/20210608031141/vendor/bundle ]
+ DEBUG [12a4f5d4] Finished in 0.177 seconds with exit status 1 (failed).
+ DEBUG [87cd397e] Running [ -d /home/deploy/mydivafashion/releases/20210608031141/vendor/bundle ] as deploy@216.137.181.32
+ DEBUG [87cd397e] Command: [ -d /home/deploy/mydivafashion/releases/20210608031141/vendor/bundle ]
+ DEBUG [87cd397e] Finished in 0.176 seconds with exit status 0 (successful).
+  INFO [d489badb] Running /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210608031141/vendor/bundle as deploy@216.137.181.32
+ DEBUG [d489badb] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210608031141/vendor/bundle )
+  INFO [d489badb] Finished in 0.368 seconds with exit status 0 (successful).
+  INFO [ee251b51] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/vendor/bundle /home/deploy/mydivafashion/releases/20210608031141/vendor/bundle as deploy@216.137.181.32
+ DEBUG [ee251b51] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/vendor/bundle /home/deploy/mydivafashion/releases/20210608031141/vendor/bundle )
+  INFO [ee251b51] Finished in 0.175 seconds with exit status 0 (successful).
+ DEBUG [aca5c9c6] Running [ -L /home/deploy/mydivafashion/releases/20210608031141/.bundle ] as deploy@216.137.181.32
+ DEBUG [aca5c9c6] Command: [ -L /home/deploy/mydivafashion/releases/20210608031141/.bundle ]
+ DEBUG [aca5c9c6] Finished in 0.175 seconds with exit status 1 (failed).
+ DEBUG [aa9db0b0] Running [ -d /home/deploy/mydivafashion/releases/20210608031141/.bundle ] as deploy@216.137.181.32
+ DEBUG [aa9db0b0] Command: [ -d /home/deploy/mydivafashion/releases/20210608031141/.bundle ]
+ DEBUG [aa9db0b0] Finished in 0.176 seconds with exit status 1 (failed).
+  INFO [a51905c1] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/.bundle /home/deploy/mydivafashion/releases/20210608031141/.bundle as deploy@216.137.181.32
+ DEBUG [a51905c1] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/.bundle /home/deploy/mydivafashion/releases/20210608031141/.bundle )
+  INFO [a51905c1] Finished in 0.177 seconds with exit status 0 (successful).
+ DEBUG [459d977f] Running [ -L /home/deploy/mydivafashion/releases/20210608031141/public/system ] as deploy@216.137.181.32
+ DEBUG [459d977f] Command: [ -L /home/deploy/mydivafashion/releases/20210608031141/public/system ]
+ DEBUG [459d977f] Finished in 0.176 seconds with exit status 1 (failed).
+ DEBUG [521c0d8a] Running [ -d /home/deploy/mydivafashion/releases/20210608031141/public/system ] as deploy@216.137.181.32
+ DEBUG [521c0d8a] Command: [ -d /home/deploy/mydivafashion/releases/20210608031141/public/system ]
+ DEBUG [521c0d8a] Finished in 0.176 seconds with exit status 1 (failed).
+  INFO [9ae03fb5] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/public/system /home/deploy/mydivafashion/releases/20210608031141/public/system as deploy@216.137.181.32
+ DEBUG [9ae03fb5] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/public/system /home/deploy/mydivafashion/releases/20210608031141/public/system )
+  INFO [9ae03fb5] Finished in 0.176 seconds with exit status 0 (successful).
+ DEBUG [f2ddac9f] Running [ -L /home/deploy/mydivafashion/releases/20210608031141/public/uploads ] as deploy@216.137.181.32
+ DEBUG [f2ddac9f] Command: [ -L /home/deploy/mydivafashion/releases/20210608031141/public/uploads ]
+ DEBUG [f2ddac9f] Finished in 0.176 seconds with exit status 1 (failed).
+ DEBUG [2c16cb12] Running [ -d /home/deploy/mydivafashion/releases/20210608031141/public/uploads ] as deploy@216.137.181.32
+ DEBUG [2c16cb12] Command: [ -d /home/deploy/mydivafashion/releases/20210608031141/public/uploads ]
+ DEBUG [2c16cb12] Finished in 0.177 seconds with exit status 0 (successful).
+  INFO [e963f72a] Running /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210608031141/public/uploads as deploy@216.137.181.32
+ DEBUG [e963f72a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210608031141/public/uploads )
+  INFO [e963f72a] Finished in 0.192 seconds with exit status 0 (successful).
+  INFO [77fcf5d8] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/public/uploads /home/deploy/mydivafashion/releases/20210608031141/public/uploads as deploy@216.137.181.32
+ DEBUG [77fcf5d8] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/public/uploads /home/deploy/mydivafashion/releases/20210608031141/public/uploads )
+  INFO [77fcf5d8] Finished in 0.178 seconds with exit status 0 (successful).
+ DEBUG [687b215e] Running [ -L /home/deploy/mydivafashion/releases/20210608031141/public/assets ] as deploy@216.137.181.32
+ DEBUG [687b215e] Command: [ -L /home/deploy/mydivafashion/releases/20210608031141/public/assets ]
+ DEBUG [687b215e] Finished in 0.176 seconds with exit status 1 (failed).
+ DEBUG [3f4de9c0] Running [ -d /home/deploy/mydivafashion/releases/20210608031141/public/assets ] as deploy@216.137.181.32
+ DEBUG [3f4de9c0] Command: [ -d /home/deploy/mydivafashion/releases/20210608031141/public/assets ]
+ DEBUG [3f4de9c0] Finished in 0.176 seconds with exit status 0 (successful).
+  INFO [bc194518] Running /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210608031141/public/assets as deploy@216.137.181.32
+ DEBUG [bc194518] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210608031141/public/assets )
+  INFO [bc194518] Finished in 0.280 seconds with exit status 0 (successful).
+  INFO [6b313155] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/public/assets /home/deploy/mydivafashion/releases/20210608031141/public/assets as deploy@216.137.181.32
+ DEBUG [6b313155] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/public/assets /home/deploy/mydivafashion/releases/20210608031141/public/assets )
+  INFO [6b313155] Finished in 0.219 seconds with exit status 0 (successful).
+ DEBUG [6fcf7fd5] Running if test ! -d /home/deploy/mydivafashion/releases/20210608031141; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210608031141'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [6fcf7fd5] Command: if test ! -d /home/deploy/mydivafashion/releases/20210608031141; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210608031141'" 1>&2; false; fi
+ DEBUG [6fcf7fd5] Finished in 0.178 seconds with exit status 0 (successful).
+  INFO [ffbc0488] Running $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true as deploy@216.137.181.32
+ DEBUG [ffbc0488] Command: cd /home/deploy/mydivafashion/releases/20210608031141 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true )
+  INFO [ffbc0488] Finished in 0.455 seconds with exit status 0 (successful).
+  INFO [f8644ad4] Running $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/deploy/mydivafashion/shared/bundle as deploy@216.137.181.32
+ DEBUG [f8644ad4] Command: cd /home/deploy/mydivafashion/releases/20210608031141 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/deploy/mydivafashion/shared/bundle )
+  INFO [f8644ad4] Finished in 0.418 seconds with exit status 0 (successful).
+  INFO [e953fb1a] Running $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test as deploy@216.137.181.32
+ DEBUG [e953fb1a] Command: cd /home/deploy/mydivafashion/releases/20210608031141 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test )
+  INFO [e953fb1a] Finished in 0.417 seconds with exit status 0 (successful).
+ DEBUG [17fd6ad1] Running if test ! -d /home/deploy/mydivafashion/releases/20210608031141; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210608031141'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [17fd6ad1] Command: if test ! -d /home/deploy/mydivafashion/releases/20210608031141; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210608031141'" 1>&2; false; fi
+ DEBUG [17fd6ad1] Finished in 0.179 seconds with exit status 0 (successful).
+ DEBUG [efed3537] Running $HOME/.rbenv/bin/rbenv exec bundle check as deploy@216.137.181.32
+ DEBUG [efed3537] Command: cd /home/deploy/mydivafashion/releases/20210608031141 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; $HOME/.rbenv/bin/rbenv exec bundle check )
+ DEBUG [efed3537] 	The dependency tzinfo-data (>= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java`.
+ DEBUG [efed3537] 	The Gemfile's dependencies are satisfied
+ DEBUG [efed3537] Finished in 0.451 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+ DEBUG [db14f2c0] Running if test ! -d /home/deploy/mydivafashion/releases/20210608031141; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210608031141'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [db14f2c0] Command: if test ! -d /home/deploy/mydivafashion/releases/20210608031141; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210608031141'" 1>&2; false; fi
+ DEBUG [db14f2c0] Finished in 0.176 seconds with exit status 0 (successful).
+  INFO [da041b56] Running cd /home/deploy/mydivafashion/releases/20210608031141 && yarn install --silent --no-progress --no-audit --no-optional as deploy@216.137.181.32
+ DEBUG [da041b56] Command: cd /home/deploy/mydivafashion/releases/20210608031141 && yarn install --silent --no-progress --no-audit --no-optional
+ DEBUG [da041b56] 	warning " > webpack-dev-server@3.11.2" has unmet peer dependency "webpack@^4.0.0 || ^5.0.0".
+ DEBUG [da041b56] 	warning "webpack-dev-server > webpack-dev-middleware@3.7.3" has unmet peer dependency "webpack@^4.0.0 || ^5.0.0".
+  INFO [da041b56] Finished in 13.708 seconds with exit status 0 (successful).
+ DEBUG [ab1dc98b] Running if test ! -d /home/deploy/mydivafashion/releases/20210608031141; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210608031141'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [ab1dc98b] Command: if test ! -d /home/deploy/mydivafashion/releases/20210608031141; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210608031141'" 1>&2; false; fi
+ DEBUG [ab1dc98b] Finished in 0.179 seconds with exit status 0 (successful).
+  INFO [f8949e2f] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile as deploy@216.137.181.32
+ DEBUG [f8949e2f] Command: cd /home/deploy/mydivafashion/releases/20210608031141 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" RAILS_ENV="production" RAILS_GROUPS="" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile )
+ DEBUG [f8949e2f] 	yarn install v1.22.5
+ DEBUG [f8949e2f] 	[1/4] Resolving packages...
+ DEBUG [f8949e2f] 	success Already up-to-date.
+ DEBUG [f8949e2f] 	Done in 0.85s.
+ DEBUG [f8949e2f] 	yarn install v1.22.5
+ DEBUG [f8949e2f] 	[1/4] Resolving packages...
+ DEBUG [f8949e2f] 	[2/4] Fetching packages...
+ DEBUG [f8949e2f] 	info fsevents@2.3.2: The platform "linux" is incompatible with this module.
+ DEBUG [f8949e2f] 	info "fsevents@2.3.2" is an optional dependency and failed compatibility check. Excluding it from installation.
+ DEBUG [f8949e2f] 	info fsevents@1.2.13: The platform "linux" is incompatible with this module.
+ DEBUG [f8949e2f] 	info "fsevents@1.2.13" is an optional dependency and failed compatibility check. Excluding it from installation.
+ DEBUG [f8949e2f] 	[3/4] Linking dependencies...
+ DEBUG [f8949e2f] 	warning " > webpack-dev-server@3.11.2" has unmet peer dependency "webpack@^4.0.0 || ^5.0.0".
+ DEBUG [f8949e2f] 	warning "webpack-dev-server > webpack-dev-middleware@3.7.3" has unmet peer dependency "webpack@^4.0.0 || ^5.0.0".
+ DEBUG [f8949e2f] 	[4/4] Building fresh packages...
+ DEBUG [f8949e2f] 	Done in 4.36s.
+ DEBUG [f8949e2f] 	Everything's up-to-date. Nothing to do
+  INFO [f8949e2f] Finished in 7.965 seconds with exit status 0 (successful).
+ DEBUG [179b4621] Running if test ! -d /home/deploy/mydivafashion/releases/20210608031141; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210608031141'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [179b4621] Command: if test ! -d /home/deploy/mydivafashion/releases/20210608031141; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210608031141'" 1>&2; false; fi
+ DEBUG [179b4621] Finished in 0.176 seconds with exit status 0 (successful).
+  INFO [09158faf] Running /usr/bin/env mkdir -p /home/deploy/mydivafashion/releases/20210608031141/assets_manifest_backup as deploy@216.137.181.32
+ DEBUG [09158faf] Command: cd /home/deploy/mydivafashion/releases/20210608031141 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env mkdir -p /home/deploy/mydivafashion/releases/20210608031141/assets_manifest_backup )
+  INFO [09158faf] Finished in 0.177 seconds with exit status 0 (successful).
+ DEBUG [27743136] Running /usr/bin/env ls /home/deploy/mydivafashion/releases/20210608031141/public/assets/.sprockets-manifest* as deploy@216.137.181.32
+ DEBUG [27743136] Command: cd /home/deploy/mydivafashion/releases/20210608031141 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ls /home/deploy/mydivafashion/releases/20210608031141/public/assets/.sprockets-manifest* )
+ DEBUG [27743136] 	/home/deploy/mydivafashion/releases/20210608031141/public/assets/.sprockets-manifest-46f61c7c34e1dade128c38c1be8c52f9.json
+ DEBUG [27743136] Finished in 0.176 seconds with exit status 0 (successful).
+ DEBUG [0b380e0a] Running /usr/bin/env ls /home/deploy/mydivafashion/releases/20210608031141/public/assets/.sprockets-manifest* as deploy@216.137.181.32
+ DEBUG [0b380e0a] Command: cd /home/deploy/mydivafashion/releases/20210608031141 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ls /home/deploy/mydivafashion/releases/20210608031141/public/assets/.sprockets-manifest* )
+ DEBUG [0b380e0a] 	/home/deploy/mydivafashion/releases/20210608031141/public/assets/.sprockets-manifest-46f61c7c34e1dade128c38c1be8c52f9.json
+ DEBUG [0b380e0a] Finished in 0.177 seconds with exit status 0 (successful).
+  INFO [6631cc95] Running /usr/bin/env cp /home/deploy/mydivafashion/releases/20210608031141/public/assets/.sprockets-manifest-46f61c7c34e1dade128c38c1be8c52f9.json /home/deploy/mydivafashion/releases/20210608031141/assets_manifest_backup as deploy@216.137.181.32
+ DEBUG [6631cc95] Command: cd /home/deploy/mydivafashion/releases/20210608031141 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env cp /home/deploy/mydivafashion/releases/20210608031141/public/assets/.sprockets-manifest-46f61c7c34e1dade128c38c1be8c52f9.json /home/deploy/mydivafashion/releases/20210608031141/assets_manifest_backup )
+  INFO [6631cc95] Finished in 0.179 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [3f46bdb3] Running if test ! -d /home/deploy/mydivafashion/releases/20210608031141; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210608031141'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [3f46bdb3] Command: if test ! -d /home/deploy/mydivafashion/releases/20210608031141; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210608031141'" 1>&2; false; fi
+ DEBUG [3f46bdb3] Finished in 0.175 seconds with exit status 0 (successful).
+  INFO [713220b9] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate as deploy@216.137.181.32
+ DEBUG [713220b9] Command: cd /home/deploy/mydivafashion/releases/20210608031141 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" RAILS_ENV="production" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate )
+  INFO [713220b9] Finished in 1.335 seconds with exit status 0 (successful).
+  INFO [6734a90a] Running /usr/bin/env ln -s /home/deploy/mydivafashion/releases/20210608031141 /home/deploy/mydivafashion/releases/current as deploy@216.137.181.32
+ DEBUG [6734a90a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/releases/20210608031141 /home/deploy/mydivafashion/releases/current )
+  INFO [6734a90a] Finished in 0.176 seconds with exit status 0 (successful).
+  INFO [edfa4e5a] Running /usr/bin/env mv /home/deploy/mydivafashion/releases/current /home/deploy/mydivafashion as deploy@216.137.181.32
+ DEBUG [edfa4e5a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env mv /home/deploy/mydivafashion/releases/current /home/deploy/mydivafashion )
+  INFO [edfa4e5a] Finished in 0.177 seconds with exit status 0 (successful).
+ DEBUG [5aec33f3] Running /usr/bin/env pwd as deploy@216.137.181.32
+ DEBUG [5aec33f3] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env pwd )
+ DEBUG [5aec33f3] 	/home/deploy
+ DEBUG [5aec33f3] Finished in 0.179 seconds with exit status 0 (successful).
+ DEBUG [3819407f] Running if test ! -d /home/deploy; then echo "Directory does not exist '/home/deploy'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [3819407f] Command: if test ! -d /home/deploy; then echo "Directory does not exist '/home/deploy'" 1>&2; false; fi
+ DEBUG [3819407f] Finished in 0.177 seconds with exit status 0 (successful).
+ DEBUG [a04fecfe] Running /usr/bin/env passenger -v as deploy@216.137.181.32
+ DEBUG [a04fecfe] Command: cd /home/deploy && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env passenger -v )
+ DEBUG [a04fecfe] 	Phusion Passenger(R) 6.0.9
+ DEBUG [a04fecfe] Finished in 0.276 seconds with exit status 0 (successful).
+  INFO [881bf2d9] Running /usr/bin/env passenger-config restart-app /home/deploy/mydivafashion --ignore-app-not-running as deploy@216.137.181.32
+ DEBUG [881bf2d9] Command: cd /home/deploy && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env passenger-config restart-app /home/deploy/mydivafashion --ignore-app-not-running )
+ DEBUG [881bf2d9] 	*** Cleaning stale instance directory /tmp/passenger.HgrSP2V
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.HgrSP2V/.
+Restarting /home/deploy/mydivafashion/current (production)
+  INFO [881bf2d9] Finished in 0.371 seconds with exit status 0 (successful).
+ DEBUG [8ba4f044] Running /usr/bin/env ls -x /home/deploy/mydivafashion/releases as deploy@216.137.181.32
+ DEBUG [8ba4f044] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ls -x /home/deploy/mydivafashion/releases )
+ DEBUG [8ba4f044] 	20210608022326	20210608023630	20210608023944	20210608024940	20210608025227
+20210608031141
+ DEBUG [8ba4f044] Finished in 0.167 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on 216.137.181.32
+ DEBUG [fde8386b] Running [ -d /home/deploy/mydivafashion/current ] as deploy@216.137.181.32
+ DEBUG [fde8386b] Command: [ -d /home/deploy/mydivafashion/current ]
+ DEBUG [fde8386b] Finished in 0.188 seconds with exit status 0 (successful).
+ DEBUG [1ba33c01] Running /usr/bin/env readlink /home/deploy/mydivafashion/current as deploy@216.137.181.32
+ DEBUG [1ba33c01] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env readlink /home/deploy/mydivafashion/current )
+ DEBUG [1ba33c01] 	/home/deploy/mydivafashion/releases/20210608031141
+ DEBUG [1ba33c01] Finished in 0.213 seconds with exit status 0 (successful).
+  INFO [5956d213] Running /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210608022326 as deploy@216.137.181.32
+ DEBUG [5956d213] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210608022326 )
+  INFO [5956d213] Finished in 1.412 seconds with exit status 0 (successful).
+ DEBUG [2661209c] Running if test ! -d /home/deploy/mydivafashion/releases; then echo "Directory does not exist '/home/deploy/mydivafashion/releases'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [2661209c] Command: if test ! -d /home/deploy/mydivafashion/releases; then echo "Directory does not exist '/home/deploy/mydivafashion/releases'" 1>&2; false; fi
+ DEBUG [2661209c] Finished in 0.176 seconds with exit status 0 (successful).
+  INFO [47c29399] Running /usr/bin/env echo "Branch main (at 2680d20c678baa0f3594333917f93e1517a8332f) deployed as release 20210608031141 by jiaqiyu" >> /home/deploy/mydivafashion/revisions.log as deploy@216.137.181.32
+ DEBUG [47c29399] Command: cd /home/deploy/mydivafashion/releases && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env echo "Branch main (at 2680d20c678baa0f3594333917f93e1517a8332f) deployed as release 20210608031141 by jiaqiyu" >> /home/deploy/mydivafashion/revisions.log )
+  INFO [47c29399] Finished in 0.176 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-09 11:27:10 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [05e9374f] Running [ -d $HOME/.rbenv/versions/2.7.1 ] as deploy@216.137.181.32
+ DEBUG [05e9374f] Command: [ -d $HOME/.rbenv/versions/2.7.1 ]
+ DEBUG [05e9374f] Finished in 6.282 seconds with exit status 0 (successful).
+ DEBUG [f07a22c9] Running /usr/bin/env which passenger as deploy@216.137.181.32
+ DEBUG [f07a22c9] Command: /usr/bin/env which passenger
+ DEBUG [f07a22c9] 	/usr/bin/passenger
+ DEBUG [f07a22c9] Finished in 0.192 seconds with exit status 0 (successful).
+  INFO [570d072a] Running /usr/bin/env mkdir -p /tmp as deploy@216.137.181.32
+ DEBUG [570d072a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [570d072a] Finished in 0.193 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-2b2dfa6d471cd8dbd79a.sh 0.0%
+  INFO Uploading /tmp/git-ssh-2b2dfa6d471cd8dbd79a.sh 100.0%
+  INFO [82f8abe1] Running /usr/bin/env chmod 700 /tmp/git-ssh-2b2dfa6d471cd8dbd79a.sh as deploy@216.137.181.32
+ DEBUG [82f8abe1] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-2b2dfa6d471cd8dbd79a.sh )
+  INFO [82f8abe1] Finished in 0.196 seconds with exit status 0 (successful).
+  INFO [f1a15fcc] Running /usr/bin/env git ls-remote https://github.com/jiaqiyusun/VouConseguiFashion.git HEAD as deploy@216.137.181.32
+ DEBUG [f1a15fcc] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2b2dfa6d471cd8dbd79a.sh" ; /usr/bin/env git ls-remote https://github.com/jiaqiyusun/VouConseguiFashion.git HEAD )
+ DEBUG [f1a15fcc] 	2680d20c678baa0f3594333917f93e1517a8332f	HEAD
+  INFO [f1a15fcc] Finished in 0.678 seconds with exit status 0 (successful).
+  INFO [da7d1a44] Running /usr/bin/env mkdir -p /home/deploy/mydivafashion/shared /home/deploy/mydivafashion/releases as deploy@216.137.181.32
+ DEBUG [da7d1a44] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env mkdir -p /home/deploy/mydivafashion/shared /home/deploy/mydivafashion/releases )
+  INFO [da7d1a44] Finished in 0.193 seconds with exit status 0 (successful).
+  INFO [cfe7322c] Running /usr/bin/env mkdir -p /home/deploy/mydivafashion/shared/log /home/deploy/mydivafashion/shared/tmp/pids /home/deploy/mydivafashion/shared/tmp/cache /home/deploy/mydivafashion/shared/tmp/sockets /home/deploy/mydivafashion/shared/vendor/bundle /home/deploy/mydivafashion/shared/.bundle /home/deploy/mydivafashion/shared/public/system /home/deploy/mydivafashion/shared/public/uploads /home/deploy/mydivafashion/shared/public/assets as deploy@216.137.181.32
+ DEBUG [cfe7322c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env mkdir -p /home/deploy/mydivafashion/shared/log /home/deploy/mydivafashion/shared/tmp/pids /home/deploy/mydivafashion/shared/tmp/cache /home/deploy/mydivafashion/shared/tmp/sockets /home/deploy/mydivafashion/shared/vendor/bundle /home/deploy/mydivafashion/shared/.bundle /home/deploy/mydivafashion/shared/public/system /home/deploy/mydivafashion/shared/public/uploads /home/deploy/mydivafashion/shared/public/assets )
+  INFO [cfe7322c] Finished in 0.192 seconds with exit status 0 (successful).
+ DEBUG [7e007f71] Running [ -f /home/deploy/mydivafashion/current/REVISION ] as deploy@216.137.181.32
+ DEBUG [7e007f71] Command: [ -f /home/deploy/mydivafashion/current/REVISION ]
+ DEBUG [7e007f71] Finished in 0.192 seconds with exit status 0 (successful).
+ DEBUG [5c5c6e00] Running /usr/bin/env cat /home/deploy/mydivafashion/current/REVISION 2>/dev/null as deploy@216.137.181.32
+ DEBUG [5c5c6e00] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env cat /home/deploy/mydivafashion/current/REVISION 2>/dev/null )
+ DEBUG [5c5c6e00] 	2680d20c678baa0f3594333917f93e1517a8332f
+ DEBUG [5c5c6e00] Finished in 0.193 seconds with exit status 0 (successful).
+ DEBUG [6d475f09] Running [ -f /home/deploy/mydivafashion/repo/HEAD ] as deploy@216.137.181.32
+ DEBUG [6d475f09] Command: [ -f /home/deploy/mydivafashion/repo/HEAD ]
+ DEBUG [6d475f09] Finished in 0.188 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/mydivafashion/repo
+ DEBUG [03d7ee2b] Running if test ! -d /home/deploy/mydivafashion/repo; then echo "Directory does not exist '/home/deploy/mydivafashion/repo'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [03d7ee2b] Command: if test ! -d /home/deploy/mydivafashion/repo; then echo "Directory does not exist '/home/deploy/mydivafashion/repo'" 1>&2; false; fi
+ DEBUG [03d7ee2b] Finished in 0.181 seconds with exit status 0 (successful).
+  INFO [1a9f95fc] Running /usr/bin/env git remote set-url origin https://github.com/jiaqiyusun/VouConseguiFashion.git as deploy@216.137.181.32
+ DEBUG [1a9f95fc] Command: cd /home/deploy/mydivafashion/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2b2dfa6d471cd8dbd79a.sh" ; /usr/bin/env git remote set-url origin https://github.com/jiaqiyusun/VouConseguiFashion.git )
+  INFO [1a9f95fc] Finished in 0.193 seconds with exit status 0 (successful).
+  INFO [388eec18] Running /usr/bin/env git remote update --prune as deploy@216.137.181.32
+ DEBUG [388eec18] Command: cd /home/deploy/mydivafashion/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2b2dfa6d471cd8dbd79a.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [388eec18] 	Fetching origin
+  INFO [388eec18] Finished in 0.612 seconds with exit status 0 (successful).
+ DEBUG [6153d7ca] Running if test ! -d /home/deploy/mydivafashion/repo; then echo "Directory does not exist '/home/deploy/mydivafashion/repo'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [6153d7ca] Command: if test ! -d /home/deploy/mydivafashion/repo; then echo "Directory does not exist '/home/deploy/mydivafashion/repo'" 1>&2; false; fi
+ DEBUG [6153d7ca] Finished in 0.192 seconds with exit status 0 (successful).
+  INFO [caa42b2b] Running /usr/bin/env mkdir -p /home/deploy/mydivafashion/releases/20210609102722 as deploy@216.137.181.32
+ DEBUG [caa42b2b] Command: cd /home/deploy/mydivafashion/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2b2dfa6d471cd8dbd79a.sh" ; /usr/bin/env mkdir -p /home/deploy/mydivafashion/releases/20210609102722 )
+  INFO [caa42b2b] Finished in 0.193 seconds with exit status 0 (successful).
+  INFO [9ea60c9d] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/mydivafashion/releases/20210609102722 as deploy@216.137.181.32
+ DEBUG [9ea60c9d] Command: cd /home/deploy/mydivafashion/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2b2dfa6d471cd8dbd79a.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/mydivafashion/releases/20210609102722 )
+  INFO [9ea60c9d] Finished in 4.359 seconds with exit status 0 (successful).
+ DEBUG [ca9372c7] Running if test ! -d /home/deploy/mydivafashion/repo; then echo "Directory does not exist '/home/deploy/mydivafashion/repo'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [ca9372c7] Command: if test ! -d /home/deploy/mydivafashion/repo; then echo "Directory does not exist '/home/deploy/mydivafashion/repo'" 1>&2; false; fi
+ DEBUG [ca9372c7] Finished in 0.194 seconds with exit status 0 (successful).
+ DEBUG [9f06efb8] Running /usr/bin/env git rev-list --max-count=1 main as deploy@216.137.181.32
+ DEBUG [9f06efb8] Command: cd /home/deploy/mydivafashion/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2b2dfa6d471cd8dbd79a.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [9f06efb8] 	2680d20c678baa0f3594333917f93e1517a8332f
+ DEBUG [9f06efb8] Finished in 0.183 seconds with exit status 0 (successful).
+ DEBUG [5526b37b] Running if test ! -d /home/deploy/mydivafashion/releases/20210609102722; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210609102722'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [5526b37b] Command: if test ! -d /home/deploy/mydivafashion/releases/20210609102722; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210609102722'" 1>&2; false; fi
+ DEBUG [5526b37b] Finished in 0.191 seconds with exit status 0 (successful).
+  INFO [c307c639] Running /usr/bin/env echo "2680d20c678baa0f3594333917f93e1517a8332f" > REVISION as deploy@216.137.181.32
+ DEBUG [c307c639] Command: cd /home/deploy/mydivafashion/releases/20210609102722 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env echo "2680d20c678baa0f3594333917f93e1517a8332f" > REVISION )
+  INFO [c307c639] Finished in 0.195 seconds with exit status 0 (successful).
+  INFO [e0f3673c] Running /usr/bin/env mkdir -p /home/deploy/mydivafashion/releases/20210609102722 /home/deploy/mydivafashion/releases/20210609102722/tmp /home/deploy/mydivafashion/releases/20210609102722/vendor /home/deploy/mydivafashion/releases/20210609102722/public as deploy@216.137.181.32
+ DEBUG [e0f3673c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env mkdir -p /home/deploy/mydivafashion/releases/20210609102722 /home/deploy/mydivafashion/releases/20210609102722/tmp /home/deploy/mydivafashion/releases/20210609102722/vendor /home/deploy/mydivafashion/releases/20210609102722/public )
+  INFO [e0f3673c] Finished in 0.193 seconds with exit status 0 (successful).
+ DEBUG [7fa210e5] Running [ -L /home/deploy/mydivafashion/releases/20210609102722/log ] as deploy@216.137.181.32
+ DEBUG [7fa210e5] Command: [ -L /home/deploy/mydivafashion/releases/20210609102722/log ]
+ DEBUG [7fa210e5] Finished in 0.192 seconds with exit status 1 (failed).
+ DEBUG [b543e746] Running [ -d /home/deploy/mydivafashion/releases/20210609102722/log ] as deploy@216.137.181.32
+ DEBUG [b543e746] Command: [ -d /home/deploy/mydivafashion/releases/20210609102722/log ]
+ DEBUG [b543e746] Finished in 0.194 seconds with exit status 0 (successful).
+  INFO [c8914426] Running /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210609102722/log as deploy@216.137.181.32
+ DEBUG [c8914426] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210609102722/log )
+  INFO [c8914426] Finished in 0.195 seconds with exit status 0 (successful).
+  INFO [fe4b0914] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/log /home/deploy/mydivafashion/releases/20210609102722/log as deploy@216.137.181.32
+ DEBUG [fe4b0914] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/log /home/deploy/mydivafashion/releases/20210609102722/log )
+  INFO [fe4b0914] Finished in 0.194 seconds with exit status 0 (successful).
+ DEBUG [909c8363] Running [ -L /home/deploy/mydivafashion/releases/20210609102722/tmp/pids ] as deploy@216.137.181.32
+ DEBUG [909c8363] Command: [ -L /home/deploy/mydivafashion/releases/20210609102722/tmp/pids ]
+ DEBUG [909c8363] Finished in 0.191 seconds with exit status 1 (failed).
+ DEBUG [b48940f8] Running [ -d /home/deploy/mydivafashion/releases/20210609102722/tmp/pids ] as deploy@216.137.181.32
+ DEBUG [b48940f8] Command: [ -d /home/deploy/mydivafashion/releases/20210609102722/tmp/pids ]
+ DEBUG [b48940f8] Finished in 0.194 seconds with exit status 0 (successful).
+  INFO [9e96a032] Running /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210609102722/tmp/pids as deploy@216.137.181.32
+ DEBUG [9e96a032] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210609102722/tmp/pids )
+  INFO [9e96a032] Finished in 0.194 seconds with exit status 0 (successful).
+  INFO [cf63f11e] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/tmp/pids /home/deploy/mydivafashion/releases/20210609102722/tmp/pids as deploy@216.137.181.32
+ DEBUG [cf63f11e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/tmp/pids /home/deploy/mydivafashion/releases/20210609102722/tmp/pids )
+  INFO [cf63f11e] Finished in 0.195 seconds with exit status 0 (successful).
+ DEBUG [33e76795] Running [ -L /home/deploy/mydivafashion/releases/20210609102722/tmp/cache ] as deploy@216.137.181.32
+ DEBUG [33e76795] Command: [ -L /home/deploy/mydivafashion/releases/20210609102722/tmp/cache ]
+ DEBUG [33e76795] Finished in 0.194 seconds with exit status 1 (failed).
+ DEBUG [7c04a5fb] Running [ -d /home/deploy/mydivafashion/releases/20210609102722/tmp/cache ] as deploy@216.137.181.32
+ DEBUG [7c04a5fb] Command: [ -d /home/deploy/mydivafashion/releases/20210609102722/tmp/cache ]
+ DEBUG [7c04a5fb] Finished in 0.192 seconds with exit status 0 (successful).
+  INFO [0247ba41] Running /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210609102722/tmp/cache as deploy@216.137.181.32
+ DEBUG [0247ba41] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210609102722/tmp/cache )
+  INFO [0247ba41] Finished in 0.273 seconds with exit status 0 (successful).
+  INFO [d6018bc6] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/tmp/cache /home/deploy/mydivafashion/releases/20210609102722/tmp/cache as deploy@216.137.181.32
+ DEBUG [d6018bc6] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/tmp/cache /home/deploy/mydivafashion/releases/20210609102722/tmp/cache )
+  INFO [d6018bc6] Finished in 0.194 seconds with exit status 0 (successful).
+ DEBUG [d20f59d3] Running [ -L /home/deploy/mydivafashion/releases/20210609102722/tmp/sockets ] as deploy@216.137.181.32
+ DEBUG [d20f59d3] Command: [ -L /home/deploy/mydivafashion/releases/20210609102722/tmp/sockets ]
+ DEBUG [d20f59d3] Finished in 0.194 seconds with exit status 1 (failed).
+ DEBUG [3e8507d2] Running [ -d /home/deploy/mydivafashion/releases/20210609102722/tmp/sockets ] as deploy@216.137.181.32
+ DEBUG [3e8507d2] Command: [ -d /home/deploy/mydivafashion/releases/20210609102722/tmp/sockets ]
+ DEBUG [3e8507d2] Finished in 0.193 seconds with exit status 1 (failed).
+  INFO [c2f6e5ee] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/tmp/sockets /home/deploy/mydivafashion/releases/20210609102722/tmp/sockets as deploy@216.137.181.32
+ DEBUG [c2f6e5ee] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/tmp/sockets /home/deploy/mydivafashion/releases/20210609102722/tmp/sockets )
+  INFO [c2f6e5ee] Finished in 0.196 seconds with exit status 0 (successful).
+ DEBUG [51136980] Running [ -L /home/deploy/mydivafashion/releases/20210609102722/vendor/bundle ] as deploy@216.137.181.32
+ DEBUG [51136980] Command: [ -L /home/deploy/mydivafashion/releases/20210609102722/vendor/bundle ]
+ DEBUG [51136980] Finished in 0.193 seconds with exit status 1 (failed).
+ DEBUG [e1fb8fc4] Running [ -d /home/deploy/mydivafashion/releases/20210609102722/vendor/bundle ] as deploy@216.137.181.32
+ DEBUG [e1fb8fc4] Command: [ -d /home/deploy/mydivafashion/releases/20210609102722/vendor/bundle ]
+ DEBUG [e1fb8fc4] Finished in 0.195 seconds with exit status 0 (successful).
+  INFO [542ac932] Running /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210609102722/vendor/bundle as deploy@216.137.181.32
+ DEBUG [542ac932] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210609102722/vendor/bundle )
+  INFO [542ac932] Finished in 0.431 seconds with exit status 0 (successful).
+  INFO [8125de24] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/vendor/bundle /home/deploy/mydivafashion/releases/20210609102722/vendor/bundle as deploy@216.137.181.32
+ DEBUG [8125de24] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/vendor/bundle /home/deploy/mydivafashion/releases/20210609102722/vendor/bundle )
+  INFO [8125de24] Finished in 0.195 seconds with exit status 0 (successful).
+ DEBUG [cecc85ce] Running [ -L /home/deploy/mydivafashion/releases/20210609102722/.bundle ] as deploy@216.137.181.32
+ DEBUG [cecc85ce] Command: [ -L /home/deploy/mydivafashion/releases/20210609102722/.bundle ]
+ DEBUG [cecc85ce] Finished in 0.195 seconds with exit status 1 (failed).
+ DEBUG [4838efca] Running [ -d /home/deploy/mydivafashion/releases/20210609102722/.bundle ] as deploy@216.137.181.32
+ DEBUG [4838efca] Command: [ -d /home/deploy/mydivafashion/releases/20210609102722/.bundle ]
+ DEBUG [4838efca] Finished in 0.194 seconds with exit status 1 (failed).
+  INFO [d7d7ce72] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/.bundle /home/deploy/mydivafashion/releases/20210609102722/.bundle as deploy@216.137.181.32
+ DEBUG [d7d7ce72] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/.bundle /home/deploy/mydivafashion/releases/20210609102722/.bundle )
+  INFO [d7d7ce72] Finished in 0.194 seconds with exit status 0 (successful).
+ DEBUG [5a839127] Running [ -L /home/deploy/mydivafashion/releases/20210609102722/public/system ] as deploy@216.137.181.32
+ DEBUG [5a839127] Command: [ -L /home/deploy/mydivafashion/releases/20210609102722/public/system ]
+ DEBUG [5a839127] Finished in 0.194 seconds with exit status 1 (failed).
+ DEBUG [b0541cbf] Running [ -d /home/deploy/mydivafashion/releases/20210609102722/public/system ] as deploy@216.137.181.32
+ DEBUG [b0541cbf] Command: [ -d /home/deploy/mydivafashion/releases/20210609102722/public/system ]
+ DEBUG [b0541cbf] Finished in 0.194 seconds with exit status 1 (failed).
+  INFO [787b3701] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/public/system /home/deploy/mydivafashion/releases/20210609102722/public/system as deploy@216.137.181.32
+ DEBUG [787b3701] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/public/system /home/deploy/mydivafashion/releases/20210609102722/public/system )
+  INFO [787b3701] Finished in 0.196 seconds with exit status 0 (successful).
+ DEBUG [4500951d] Running [ -L /home/deploy/mydivafashion/releases/20210609102722/public/uploads ] as deploy@216.137.181.32
+ DEBUG [4500951d] Command: [ -L /home/deploy/mydivafashion/releases/20210609102722/public/uploads ]
+ DEBUG [4500951d] Finished in 0.194 seconds with exit status 1 (failed).
+ DEBUG [9c506d5e] Running [ -d /home/deploy/mydivafashion/releases/20210609102722/public/uploads ] as deploy@216.137.181.32
+ DEBUG [9c506d5e] Command: [ -d /home/deploy/mydivafashion/releases/20210609102722/public/uploads ]
+ DEBUG [9c506d5e] Finished in 0.191 seconds with exit status 0 (successful).
+  INFO [502e19ad] Running /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210609102722/public/uploads as deploy@216.137.181.32
+ DEBUG [502e19ad] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210609102722/public/uploads )
+  INFO [502e19ad] Finished in 0.202 seconds with exit status 0 (successful).
+  INFO [3cbeee71] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/public/uploads /home/deploy/mydivafashion/releases/20210609102722/public/uploads as deploy@216.137.181.32
+ DEBUG [3cbeee71] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/public/uploads /home/deploy/mydivafashion/releases/20210609102722/public/uploads )
+  INFO [3cbeee71] Finished in 0.196 seconds with exit status 0 (successful).
+ DEBUG [02a62018] Running [ -L /home/deploy/mydivafashion/releases/20210609102722/public/assets ] as deploy@216.137.181.32
+ DEBUG [02a62018] Command: [ -L /home/deploy/mydivafashion/releases/20210609102722/public/assets ]
+ DEBUG [02a62018] Finished in 0.192 seconds with exit status 1 (failed).
+ DEBUG [2fba1b87] Running [ -d /home/deploy/mydivafashion/releases/20210609102722/public/assets ] as deploy@216.137.181.32
+ DEBUG [2fba1b87] Command: [ -d /home/deploy/mydivafashion/releases/20210609102722/public/assets ]
+ DEBUG [2fba1b87] Finished in 0.193 seconds with exit status 0 (successful).
+  INFO [6e80113c] Running /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210609102722/public/assets as deploy@216.137.181.32
+ DEBUG [6e80113c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210609102722/public/assets )
+  INFO [6e80113c] Finished in 0.263 seconds with exit status 0 (successful).
+  INFO [42168dfd] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/public/assets /home/deploy/mydivafashion/releases/20210609102722/public/assets as deploy@216.137.181.32
+ DEBUG [42168dfd] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/public/assets /home/deploy/mydivafashion/releases/20210609102722/public/assets )
+  INFO [42168dfd] Finished in 0.195 seconds with exit status 0 (successful).
+ DEBUG [0c07ac13] Running if test ! -d /home/deploy/mydivafashion/releases/20210609102722; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210609102722'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [0c07ac13] Command: if test ! -d /home/deploy/mydivafashion/releases/20210609102722; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210609102722'" 1>&2; false; fi
+ DEBUG [0c07ac13] Finished in 0.194 seconds with exit status 0 (successful).
+  INFO [47b46503] Running $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true as deploy@216.137.181.32
+ DEBUG [47b46503] Command: cd /home/deploy/mydivafashion/releases/20210609102722 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true )
+  INFO [47b46503] Finished in 0.394 seconds with exit status 0 (successful).
+  INFO [18e4c376] Running $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/deploy/mydivafashion/shared/bundle as deploy@216.137.181.32
+ DEBUG [18e4c376] Command: cd /home/deploy/mydivafashion/releases/20210609102722 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/deploy/mydivafashion/shared/bundle )
+  INFO [18e4c376] Finished in 0.404 seconds with exit status 0 (successful).
+  INFO [c621fcd1] Running $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test as deploy@216.137.181.32
+ DEBUG [c621fcd1] Command: cd /home/deploy/mydivafashion/releases/20210609102722 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test )
+  INFO [c621fcd1] Finished in 0.409 seconds with exit status 0 (successful).
+ DEBUG [3917b58d] Running if test ! -d /home/deploy/mydivafashion/releases/20210609102722; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210609102722'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [3917b58d] Command: if test ! -d /home/deploy/mydivafashion/releases/20210609102722; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210609102722'" 1>&2; false; fi
+ DEBUG [3917b58d] Finished in 0.193 seconds with exit status 0 (successful).
+ DEBUG [7118e671] Running $HOME/.rbenv/bin/rbenv exec bundle check as deploy@216.137.181.32
+ DEBUG [7118e671] Command: cd /home/deploy/mydivafashion/releases/20210609102722 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; $HOME/.rbenv/bin/rbenv exec bundle check )
+ DEBUG [7118e671] 	The dependency tzinfo-data (>= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java`.
+ DEBUG [7118e671] 	The Gemfile's dependencies are satisfied
+ DEBUG [7118e671] Finished in 0.522 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+ DEBUG [f80478b3] Running if test ! -d /home/deploy/mydivafashion/releases/20210609102722; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210609102722'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [f80478b3] Command: if test ! -d /home/deploy/mydivafashion/releases/20210609102722; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210609102722'" 1>&2; false; fi
+ DEBUG [f80478b3] Finished in 0.136 seconds with exit status 0 (successful).
+  INFO [658a9907] Running cd /home/deploy/mydivafashion/releases/20210609102722 && yarn install --silent --no-progress --no-audit --no-optional as deploy@216.137.181.32
+ DEBUG [658a9907] Command: cd /home/deploy/mydivafashion/releases/20210609102722 && yarn install --silent --no-progress --no-audit --no-optional
+ DEBUG [658a9907] 	warning " > webpack-dev-server@3.11.2" has unmet peer dependency "webpack@^4.0.0 || ^5.0.0".
+ DEBUG [658a9907] 	warning "webpack-dev-server > webpack-dev-middleware@3.7.3" has unmet peer dependency "webpack@^4.0.0 || ^5.0.0".
+  INFO [658a9907] Finished in 12.999 seconds with exit status 0 (successful).
+ DEBUG [f64bdb68] Running if test ! -d /home/deploy/mydivafashion/releases/20210609102722; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210609102722'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [f64bdb68] Command: if test ! -d /home/deploy/mydivafashion/releases/20210609102722; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210609102722'" 1>&2; false; fi
+ DEBUG [f64bdb68] Finished in 0.467 seconds with exit status 0 (successful).
+  INFO [9018730f] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile as deploy@216.137.181.32
+ DEBUG [9018730f] Command: cd /home/deploy/mydivafashion/releases/20210609102722 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" RAILS_ENV="production" RAILS_GROUPS="" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile )
+ DEBUG [9018730f] 	yarn install v1.22.5
+ DEBUG [9018730f] 	[1/4] Resolving packages...
+ DEBUG [9018730f] 	success Already up-to-date.
+ DEBUG [9018730f] 	Done in 0.83s.
+ DEBUG [9018730f] 	yarn install v1.22.5
+ DEBUG [9018730f] 	[1/4] Resolving packages...
+ DEBUG [9018730f] 	[2/4] Fetching packages...
+ DEBUG [9018730f] 	info fsevents@2.3.2: The platform "linux" is incompatible with this module.
+ DEBUG [9018730f] 	info "fsevents@2.3.2" is an optional dependency and failed compatibility check. Excluding it from installation.
+ DEBUG [9018730f] 	info fsevents@1.2.13: The platform "linux" is incompatible with this module.
+ DEBUG [9018730f] 	info "fsevents@1.2.13" is an optional dependency and failed compatibility check. Excluding it from installation.
+ DEBUG [9018730f] 	[3/4] Linking dependencies...
+ DEBUG [9018730f] 	warning " > webpack-dev-server@3.11.2" has unmet peer dependency "webpack@^4.0.0 || ^5.0.0".
+ DEBUG [9018730f] 	warning "webpack-dev-server > webpack-dev-middleware@3.7.3" has unmet peer dependency "webpack@^4.0.0 || ^5.0.0".
+ DEBUG [9018730f] 	[4/4] Building fresh packages...
+ DEBUG [9018730f] 	Done in 4.34s.
+ DEBUG [9018730f] 	Everything's up-to-date. Nothing to do
+  INFO [9018730f] Finished in 7.695 seconds with exit status 0 (successful).
+ DEBUG [acf258eb] Running if test ! -d /home/deploy/mydivafashion/releases/20210609102722; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210609102722'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [acf258eb] Command: if test ! -d /home/deploy/mydivafashion/releases/20210609102722; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210609102722'" 1>&2; false; fi
+ DEBUG [acf258eb] Finished in 0.195 seconds with exit status 0 (successful).
+  INFO [3c33ea2a] Running /usr/bin/env mkdir -p /home/deploy/mydivafashion/releases/20210609102722/assets_manifest_backup as deploy@216.137.181.32
+ DEBUG [3c33ea2a] Command: cd /home/deploy/mydivafashion/releases/20210609102722 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env mkdir -p /home/deploy/mydivafashion/releases/20210609102722/assets_manifest_backup )
+  INFO [3c33ea2a] Finished in 0.196 seconds with exit status 0 (successful).
+ DEBUG [930c016b] Running /usr/bin/env ls /home/deploy/mydivafashion/releases/20210609102722/public/assets/.sprockets-manifest* as deploy@216.137.181.32
+ DEBUG [930c016b] Command: cd /home/deploy/mydivafashion/releases/20210609102722 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ls /home/deploy/mydivafashion/releases/20210609102722/public/assets/.sprockets-manifest* )
+ DEBUG [930c016b] 	/home/deploy/mydivafashion/releases/20210609102722/public/assets/.sprockets-manifest-46f61c7c34e1dade128c38c1be8c52f9.json
+ DEBUG [930c016b] Finished in 0.195 seconds with exit status 0 (successful).
+ DEBUG [96a10972] Running /usr/bin/env ls /home/deploy/mydivafashion/releases/20210609102722/public/assets/.sprockets-manifest* as deploy@216.137.181.32
+ DEBUG [96a10972] Command: cd /home/deploy/mydivafashion/releases/20210609102722 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ls /home/deploy/mydivafashion/releases/20210609102722/public/assets/.sprockets-manifest* )
+ DEBUG [96a10972] 	/home/deploy/mydivafashion/releases/20210609102722/public/assets/.sprockets-manifest-46f61c7c34e1dade128c38c1be8c52f9.json
+ DEBUG [96a10972] Finished in 0.196 seconds with exit status 0 (successful).
+  INFO [749ca01b] Running /usr/bin/env cp /home/deploy/mydivafashion/releases/20210609102722/public/assets/.sprockets-manifest-46f61c7c34e1dade128c38c1be8c52f9.json /home/deploy/mydivafashion/releases/20210609102722/assets_manifest_backup as deploy@216.137.181.32
+ DEBUG [749ca01b] Command: cd /home/deploy/mydivafashion/releases/20210609102722 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env cp /home/deploy/mydivafashion/releases/20210609102722/public/assets/.sprockets-manifest-46f61c7c34e1dade128c38c1be8c52f9.json /home/deploy/mydivafashion/releases/20210609102722/assets_manifest_backup )
+  INFO [749ca01b] Finished in 0.196 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [87c6cbfc] Running if test ! -d /home/deploy/mydivafashion/releases/20210609102722; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210609102722'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [87c6cbfc] Command: if test ! -d /home/deploy/mydivafashion/releases/20210609102722; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210609102722'" 1>&2; false; fi
+ DEBUG [87c6cbfc] Finished in 0.192 seconds with exit status 0 (successful).
+  INFO [457d2172] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate as deploy@216.137.181.32
+ DEBUG [457d2172] Command: cd /home/deploy/mydivafashion/releases/20210609102722 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" RAILS_ENV="production" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate )
+  INFO [457d2172] Finished in 1.272 seconds with exit status 0 (successful).
+  INFO [63e95608] Running /usr/bin/env ln -s /home/deploy/mydivafashion/releases/20210609102722 /home/deploy/mydivafashion/releases/current as deploy@216.137.181.32
+ DEBUG [63e95608] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/releases/20210609102722 /home/deploy/mydivafashion/releases/current )
+  INFO [63e95608] Finished in 0.193 seconds with exit status 0 (successful).
+  INFO [59a1be32] Running /usr/bin/env mv /home/deploy/mydivafashion/releases/current /home/deploy/mydivafashion as deploy@216.137.181.32
+ DEBUG [59a1be32] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env mv /home/deploy/mydivafashion/releases/current /home/deploy/mydivafashion )
+  INFO [59a1be32] Finished in 0.195 seconds with exit status 0 (successful).
+ DEBUG [21bc26bc] Running /usr/bin/env pwd as deploy@216.137.181.32
+ DEBUG [21bc26bc] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env pwd )
+ DEBUG [21bc26bc] 	/home/deploy
+ DEBUG [21bc26bc] Finished in 0.193 seconds with exit status 0 (successful).
+ DEBUG [7dc843a1] Running if test ! -d /home/deploy; then echo "Directory does not exist '/home/deploy'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [7dc843a1] Command: if test ! -d /home/deploy; then echo "Directory does not exist '/home/deploy'" 1>&2; false; fi
+ DEBUG [7dc843a1] Finished in 0.193 seconds with exit status 0 (successful).
+ DEBUG [333d00ed] Running /usr/bin/env passenger -v as deploy@216.137.181.32
+ DEBUG [333d00ed] Command: cd /home/deploy && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env passenger -v )
+ DEBUG [333d00ed] 	Phusion Passenger(R) 6.0.9
+ DEBUG [333d00ed] Finished in 0.275 seconds with exit status 0 (successful).
+  INFO [1378aa1e] Running /usr/bin/env passenger-config restart-app /home/deploy/mydivafashion --ignore-app-not-running as deploy@216.137.181.32
+ DEBUG [1378aa1e] Command: cd /home/deploy && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env passenger-config restart-app /home/deploy/mydivafashion --ignore-app-not-running )
+ DEBUG [1378aa1e] 	*** Cleaning stale instance directory /tmp/passenger.HgrSP2V
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.HgrSP2V/.
+Restarting /home/deploy/mydivafashion/current (production)
+  INFO [1378aa1e] Finished in 0.386 seconds with exit status 0 (successful).
+ DEBUG [c3d96971] Running /usr/bin/env ls -x /home/deploy/mydivafashion/releases as deploy@216.137.181.32
+ DEBUG [c3d96971] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ls -x /home/deploy/mydivafashion/releases )
+ DEBUG [c3d96971] 	20210608023630	20210608023944	20210608024940	20210608025227	20210608031141
+20210609102722
+ DEBUG [c3d96971] Finished in 0.174 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on 216.137.181.32
+ DEBUG [5a1e1ea5] Running [ -d /home/deploy/mydivafashion/current ] as deploy@216.137.181.32
+ DEBUG [5a1e1ea5] Command: [ -d /home/deploy/mydivafashion/current ]
+ DEBUG [5a1e1ea5] Finished in 0.202 seconds with exit status 0 (successful).
+ DEBUG [0c5ad9a7] Running /usr/bin/env readlink /home/deploy/mydivafashion/current as deploy@216.137.181.32
+ DEBUG [0c5ad9a7] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env readlink /home/deploy/mydivafashion/current )
+ DEBUG [0c5ad9a7] 	/home/deploy/mydivafashion/releases/20210609102722
+ DEBUG [0c5ad9a7] Finished in 0.229 seconds with exit status 0 (successful).
+  INFO [277982a2] Running /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210608023630 as deploy@216.137.181.32
+ DEBUG [277982a2] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210608023630 )
+  INFO [277982a2] Finished in 1.031 seconds with exit status 0 (successful).
+ DEBUG [277ad963] Running if test ! -d /home/deploy/mydivafashion/releases; then echo "Directory does not exist '/home/deploy/mydivafashion/releases'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [277ad963] Command: if test ! -d /home/deploy/mydivafashion/releases; then echo "Directory does not exist '/home/deploy/mydivafashion/releases'" 1>&2; false; fi
+ DEBUG [277ad963] Finished in 0.194 seconds with exit status 0 (successful).
+  INFO [ff5c322f] Running /usr/bin/env echo "Branch main (at 2680d20c678baa0f3594333917f93e1517a8332f) deployed as release 20210609102722 by jiaqiyu" >> /home/deploy/mydivafashion/revisions.log as deploy@216.137.181.32
+ DEBUG [ff5c322f] Command: cd /home/deploy/mydivafashion/releases && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env echo "Branch main (at 2680d20c678baa0f3594333917f93e1517a8332f) deployed as release 20210609102722 by jiaqiyu" >> /home/deploy/mydivafashion/revisions.log )
+  INFO [ff5c322f] Finished in 0.195 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-09 19:52:46 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [1800386f] Running [ -d $HOME/.rbenv/versions/2.7.1 ] as deploy@216.137.181.32
+ DEBUG [1800386f] Command: [ -d $HOME/.rbenv/versions/2.7.1 ]
+ DEBUG [1800386f] Finished in 5.573 seconds with exit status 0 (successful).
+ DEBUG [b25b1c60] Running /usr/bin/env which passenger as deploy@216.137.181.32
+ DEBUG [b25b1c60] Command: /usr/bin/env which passenger
+ DEBUG [b25b1c60] 	/usr/bin/passenger
+ DEBUG [b25b1c60] Finished in 0.195 seconds with exit status 0 (successful).
+  INFO [7e5fa573] Running /usr/bin/env mkdir -p /tmp as deploy@216.137.181.32
+ DEBUG [7e5fa573] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [7e5fa573] Finished in 0.195 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-b9b78d41c537cce7baf9.sh 0.0%
+  INFO Uploading /tmp/git-ssh-b9b78d41c537cce7baf9.sh 100.0%
+  INFO [60426dfc] Running /usr/bin/env chmod 700 /tmp/git-ssh-b9b78d41c537cce7baf9.sh as deploy@216.137.181.32
+ DEBUG [60426dfc] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-b9b78d41c537cce7baf9.sh )
+  INFO [60426dfc] Finished in 0.197 seconds with exit status 0 (successful).
+  INFO [5e9aa83e] Running /usr/bin/env git ls-remote https://github.com/jiaqiyusun/VouConseguiFashion.git HEAD as deploy@216.137.181.32
+ DEBUG [5e9aa83e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-b9b78d41c537cce7baf9.sh" ; /usr/bin/env git ls-remote https://github.com/jiaqiyusun/VouConseguiFashion.git HEAD )
+ DEBUG [5e9aa83e] 	2680d20c678baa0f3594333917f93e1517a8332f	HEAD
+  INFO [5e9aa83e] Finished in 0.617 seconds with exit status 0 (successful).
+  INFO [f25aa84e] Running /usr/bin/env mkdir -p /home/deploy/mydivafashion/shared /home/deploy/mydivafashion/releases as deploy@216.137.181.32
+ DEBUG [f25aa84e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env mkdir -p /home/deploy/mydivafashion/shared /home/deploy/mydivafashion/releases )
+  INFO [f25aa84e] Finished in 0.128 seconds with exit status 0 (successful).
+  INFO [cfb57726] Running /usr/bin/env mkdir -p /home/deploy/mydivafashion/shared/log /home/deploy/mydivafashion/shared/tmp/pids /home/deploy/mydivafashion/shared/tmp/cache /home/deploy/mydivafashion/shared/tmp/sockets /home/deploy/mydivafashion/shared/vendor/bundle /home/deploy/mydivafashion/shared/.bundle /home/deploy/mydivafashion/shared/public/system /home/deploy/mydivafashion/shared/public/uploads /home/deploy/mydivafashion/shared/public/assets as deploy@216.137.181.32
+ DEBUG [cfb57726] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env mkdir -p /home/deploy/mydivafashion/shared/log /home/deploy/mydivafashion/shared/tmp/pids /home/deploy/mydivafashion/shared/tmp/cache /home/deploy/mydivafashion/shared/tmp/sockets /home/deploy/mydivafashion/shared/vendor/bundle /home/deploy/mydivafashion/shared/.bundle /home/deploy/mydivafashion/shared/public/system /home/deploy/mydivafashion/shared/public/uploads /home/deploy/mydivafashion/shared/public/assets )
+  INFO [cfb57726] Finished in 0.196 seconds with exit status 0 (successful).
+ DEBUG [e212cd43] Running [ -f /home/deploy/mydivafashion/current/REVISION ] as deploy@216.137.181.32
+ DEBUG [e212cd43] Command: [ -f /home/deploy/mydivafashion/current/REVISION ]
+ DEBUG [e212cd43] Finished in 0.194 seconds with exit status 0 (successful).
+ DEBUG [35658654] Running /usr/bin/env cat /home/deploy/mydivafashion/current/REVISION 2>/dev/null as deploy@216.137.181.32
+ DEBUG [35658654] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env cat /home/deploy/mydivafashion/current/REVISION 2>/dev/null )
+ DEBUG [35658654] 	2680d20c678baa0f3594333917f93e1517a8332f
+ DEBUG [35658654] Finished in 0.194 seconds with exit status 0 (successful).
+ DEBUG [9da56583] Running [ -f /home/deploy/mydivafashion/repo/HEAD ] as deploy@216.137.181.32
+ DEBUG [9da56583] Command: [ -f /home/deploy/mydivafashion/repo/HEAD ]
+ DEBUG [9da56583] Finished in 0.192 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/mydivafashion/repo
+ DEBUG [901ee48c] Running if test ! -d /home/deploy/mydivafashion/repo; then echo "Directory does not exist '/home/deploy/mydivafashion/repo'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [901ee48c] Command: if test ! -d /home/deploy/mydivafashion/repo; then echo "Directory does not exist '/home/deploy/mydivafashion/repo'" 1>&2; false; fi
+ DEBUG [901ee48c] Finished in 0.193 seconds with exit status 0 (successful).
+  INFO [128dfcde] Running /usr/bin/env git remote set-url origin https://github.com/jiaqiyusun/VouConseguiFashion.git as deploy@216.137.181.32
+ DEBUG [128dfcde] Command: cd /home/deploy/mydivafashion/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-b9b78d41c537cce7baf9.sh" ; /usr/bin/env git remote set-url origin https://github.com/jiaqiyusun/VouConseguiFashion.git )
+  INFO [128dfcde] Finished in 0.195 seconds with exit status 0 (successful).
+  INFO [10849529] Running /usr/bin/env git remote update --prune as deploy@216.137.181.32
+ DEBUG [10849529] Command: cd /home/deploy/mydivafashion/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-b9b78d41c537cce7baf9.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [10849529] 	Fetching origin
+  INFO [10849529] Finished in 0.611 seconds with exit status 0 (successful).
+ DEBUG [4efb7481] Running if test ! -d /home/deploy/mydivafashion/repo; then echo "Directory does not exist '/home/deploy/mydivafashion/repo'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [4efb7481] Command: if test ! -d /home/deploy/mydivafashion/repo; then echo "Directory does not exist '/home/deploy/mydivafashion/repo'" 1>&2; false; fi
+ DEBUG [4efb7481] Finished in 0.193 seconds with exit status 0 (successful).
+  INFO [51bb02fd] Running /usr/bin/env mkdir -p /home/deploy/mydivafashion/releases/20210609185257 as deploy@216.137.181.32
+ DEBUG [51bb02fd] Command: cd /home/deploy/mydivafashion/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-b9b78d41c537cce7baf9.sh" ; /usr/bin/env mkdir -p /home/deploy/mydivafashion/releases/20210609185257 )
+  INFO [51bb02fd] Finished in 0.196 seconds with exit status 0 (successful).
+  INFO [a84efc70] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/mydivafashion/releases/20210609185257 as deploy@216.137.181.32
+ DEBUG [a84efc70] Command: cd /home/deploy/mydivafashion/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-b9b78d41c537cce7baf9.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/mydivafashion/releases/20210609185257 )
+  INFO [a84efc70] Finished in 3.901 seconds with exit status 0 (successful).
+ DEBUG [67ac437f] Running if test ! -d /home/deploy/mydivafashion/repo; then echo "Directory does not exist '/home/deploy/mydivafashion/repo'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [67ac437f] Command: if test ! -d /home/deploy/mydivafashion/repo; then echo "Directory does not exist '/home/deploy/mydivafashion/repo'" 1>&2; false; fi
+ DEBUG [67ac437f] Finished in 0.194 seconds with exit status 0 (successful).
+ DEBUG [4b73117c] Running /usr/bin/env git rev-list --max-count=1 main as deploy@216.137.181.32
+ DEBUG [4b73117c] Command: cd /home/deploy/mydivafashion/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-b9b78d41c537cce7baf9.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [4b73117c] 	2680d20c678baa0f3594333917f93e1517a8332f
+ DEBUG [4b73117c] Finished in 0.196 seconds with exit status 0 (successful).
+ DEBUG [855b6062] Running if test ! -d /home/deploy/mydivafashion/releases/20210609185257; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210609185257'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [855b6062] Command: if test ! -d /home/deploy/mydivafashion/releases/20210609185257; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210609185257'" 1>&2; false; fi
+ DEBUG [855b6062] Finished in 0.195 seconds with exit status 0 (successful).
+  INFO [b790dde4] Running /usr/bin/env echo "2680d20c678baa0f3594333917f93e1517a8332f" > REVISION as deploy@216.137.181.32
+ DEBUG [b790dde4] Command: cd /home/deploy/mydivafashion/releases/20210609185257 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env echo "2680d20c678baa0f3594333917f93e1517a8332f" > REVISION )
+  INFO [b790dde4] Finished in 0.195 seconds with exit status 0 (successful).
+  INFO [7c4eb4ab] Running /usr/bin/env mkdir -p /home/deploy/mydivafashion/releases/20210609185257 /home/deploy/mydivafashion/releases/20210609185257/tmp /home/deploy/mydivafashion/releases/20210609185257/vendor /home/deploy/mydivafashion/releases/20210609185257/public as deploy@216.137.181.32
+ DEBUG [7c4eb4ab] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env mkdir -p /home/deploy/mydivafashion/releases/20210609185257 /home/deploy/mydivafashion/releases/20210609185257/tmp /home/deploy/mydivafashion/releases/20210609185257/vendor /home/deploy/mydivafashion/releases/20210609185257/public )
+  INFO [7c4eb4ab] Finished in 0.195 seconds with exit status 0 (successful).
+ DEBUG [edbecce1] Running [ -L /home/deploy/mydivafashion/releases/20210609185257/log ] as deploy@216.137.181.32
+ DEBUG [edbecce1] Command: [ -L /home/deploy/mydivafashion/releases/20210609185257/log ]
+ DEBUG [edbecce1] Finished in 0.195 seconds with exit status 1 (failed).
+ DEBUG [452c9b36] Running [ -d /home/deploy/mydivafashion/releases/20210609185257/log ] as deploy@216.137.181.32
+ DEBUG [452c9b36] Command: [ -d /home/deploy/mydivafashion/releases/20210609185257/log ]
+ DEBUG [452c9b36] Finished in 0.196 seconds with exit status 0 (successful).
+  INFO [eff0543e] Running /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210609185257/log as deploy@216.137.181.32
+ DEBUG [eff0543e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210609185257/log )
+  INFO [eff0543e] Finished in 0.196 seconds with exit status 0 (successful).
+  INFO [35c36490] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/log /home/deploy/mydivafashion/releases/20210609185257/log as deploy@216.137.181.32
+ DEBUG [35c36490] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/log /home/deploy/mydivafashion/releases/20210609185257/log )
+  INFO [35c36490] Finished in 0.194 seconds with exit status 0 (successful).
+ DEBUG [db83dd3d] Running [ -L /home/deploy/mydivafashion/releases/20210609185257/tmp/pids ] as deploy@216.137.181.32
+ DEBUG [db83dd3d] Command: [ -L /home/deploy/mydivafashion/releases/20210609185257/tmp/pids ]
+ DEBUG [db83dd3d] Finished in 0.194 seconds with exit status 1 (failed).
+ DEBUG [8794fc33] Running [ -d /home/deploy/mydivafashion/releases/20210609185257/tmp/pids ] as deploy@216.137.181.32
+ DEBUG [8794fc33] Command: [ -d /home/deploy/mydivafashion/releases/20210609185257/tmp/pids ]
+ DEBUG [8794fc33] Finished in 0.193 seconds with exit status 0 (successful).
+  INFO [8fef5482] Running /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210609185257/tmp/pids as deploy@216.137.181.32
+ DEBUG [8fef5482] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210609185257/tmp/pids )
+  INFO [8fef5482] Finished in 0.200 seconds with exit status 0 (successful).
+  INFO [d42bfb0d] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/tmp/pids /home/deploy/mydivafashion/releases/20210609185257/tmp/pids as deploy@216.137.181.32
+ DEBUG [d42bfb0d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/tmp/pids /home/deploy/mydivafashion/releases/20210609185257/tmp/pids )
+  INFO [d42bfb0d] Finished in 0.195 seconds with exit status 0 (successful).
+ DEBUG [d87f482d] Running [ -L /home/deploy/mydivafashion/releases/20210609185257/tmp/cache ] as deploy@216.137.181.32
+ DEBUG [d87f482d] Command: [ -L /home/deploy/mydivafashion/releases/20210609185257/tmp/cache ]
+ DEBUG [d87f482d] Finished in 0.194 seconds with exit status 1 (failed).
+ DEBUG [e644200f] Running [ -d /home/deploy/mydivafashion/releases/20210609185257/tmp/cache ] as deploy@216.137.181.32
+ DEBUG [e644200f] Command: [ -d /home/deploy/mydivafashion/releases/20210609185257/tmp/cache ]
+ DEBUG [e644200f] Finished in 0.193 seconds with exit status 0 (successful).
+  INFO [9b5eb49d] Running /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210609185257/tmp/cache as deploy@216.137.181.32
+ DEBUG [9b5eb49d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210609185257/tmp/cache )
+  INFO [9b5eb49d] Finished in 0.271 seconds with exit status 0 (successful).
+  INFO [f37cb651] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/tmp/cache /home/deploy/mydivafashion/releases/20210609185257/tmp/cache as deploy@216.137.181.32
+ DEBUG [f37cb651] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/tmp/cache /home/deploy/mydivafashion/releases/20210609185257/tmp/cache )
+  INFO [f37cb651] Finished in 0.195 seconds with exit status 0 (successful).
+ DEBUG [fbee657d] Running [ -L /home/deploy/mydivafashion/releases/20210609185257/tmp/sockets ] as deploy@216.137.181.32
+ DEBUG [fbee657d] Command: [ -L /home/deploy/mydivafashion/releases/20210609185257/tmp/sockets ]
+ DEBUG [fbee657d] Finished in 0.193 seconds with exit status 1 (failed).
+ DEBUG [b8101a01] Running [ -d /home/deploy/mydivafashion/releases/20210609185257/tmp/sockets ] as deploy@216.137.181.32
+ DEBUG [b8101a01] Command: [ -d /home/deploy/mydivafashion/releases/20210609185257/tmp/sockets ]
+ DEBUG [b8101a01] Finished in 0.200 seconds with exit status 1 (failed).
+  INFO [c9fb5333] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/tmp/sockets /home/deploy/mydivafashion/releases/20210609185257/tmp/sockets as deploy@216.137.181.32
+ DEBUG [c9fb5333] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/tmp/sockets /home/deploy/mydivafashion/releases/20210609185257/tmp/sockets )
+  INFO [c9fb5333] Finished in 0.195 seconds with exit status 0 (successful).
+ DEBUG [dbd26cd2] Running [ -L /home/deploy/mydivafashion/releases/20210609185257/vendor/bundle ] as deploy@216.137.181.32
+ DEBUG [dbd26cd2] Command: [ -L /home/deploy/mydivafashion/releases/20210609185257/vendor/bundle ]
+ DEBUG [dbd26cd2] Finished in 0.194 seconds with exit status 1 (failed).
+ DEBUG [ffa4f260] Running [ -d /home/deploy/mydivafashion/releases/20210609185257/vendor/bundle ] as deploy@216.137.181.32
+ DEBUG [ffa4f260] Command: [ -d /home/deploy/mydivafashion/releases/20210609185257/vendor/bundle ]
+ DEBUG [ffa4f260] Finished in 0.194 seconds with exit status 0 (successful).
+  INFO [cb74c668] Running /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210609185257/vendor/bundle as deploy@216.137.181.32
+ DEBUG [cb74c668] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210609185257/vendor/bundle )
+  INFO [cb74c668] Finished in 0.370 seconds with exit status 0 (successful).
+  INFO [eb8b78d1] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/vendor/bundle /home/deploy/mydivafashion/releases/20210609185257/vendor/bundle as deploy@216.137.181.32
+ DEBUG [eb8b78d1] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/vendor/bundle /home/deploy/mydivafashion/releases/20210609185257/vendor/bundle )
+  INFO [eb8b78d1] Finished in 0.194 seconds with exit status 0 (successful).
+ DEBUG [019b6b62] Running [ -L /home/deploy/mydivafashion/releases/20210609185257/.bundle ] as deploy@216.137.181.32
+ DEBUG [019b6b62] Command: [ -L /home/deploy/mydivafashion/releases/20210609185257/.bundle ]
+ DEBUG [019b6b62] Finished in 0.193 seconds with exit status 1 (failed).
+ DEBUG [cf964dec] Running [ -d /home/deploy/mydivafashion/releases/20210609185257/.bundle ] as deploy@216.137.181.32
+ DEBUG [cf964dec] Command: [ -d /home/deploy/mydivafashion/releases/20210609185257/.bundle ]
+ DEBUG [cf964dec] Finished in 0.193 seconds with exit status 1 (failed).
+  INFO [c367bda3] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/.bundle /home/deploy/mydivafashion/releases/20210609185257/.bundle as deploy@216.137.181.32
+ DEBUG [c367bda3] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/.bundle /home/deploy/mydivafashion/releases/20210609185257/.bundle )
+  INFO [c367bda3] Finished in 0.195 seconds with exit status 0 (successful).
+ DEBUG [40ed25d9] Running [ -L /home/deploy/mydivafashion/releases/20210609185257/public/system ] as deploy@216.137.181.32
+ DEBUG [40ed25d9] Command: [ -L /home/deploy/mydivafashion/releases/20210609185257/public/system ]
+ DEBUG [40ed25d9] Finished in 0.194 seconds with exit status 1 (failed).
+ DEBUG [af1e4e2f] Running [ -d /home/deploy/mydivafashion/releases/20210609185257/public/system ] as deploy@216.137.181.32
+ DEBUG [af1e4e2f] Command: [ -d /home/deploy/mydivafashion/releases/20210609185257/public/system ]
+ DEBUG [af1e4e2f] Finished in 0.195 seconds with exit status 1 (failed).
+  INFO [f79288b4] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/public/system /home/deploy/mydivafashion/releases/20210609185257/public/system as deploy@216.137.181.32
+ DEBUG [f79288b4] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/public/system /home/deploy/mydivafashion/releases/20210609185257/public/system )
+  INFO [f79288b4] Finished in 0.196 seconds with exit status 0 (successful).
+ DEBUG [ec16011c] Running [ -L /home/deploy/mydivafashion/releases/20210609185257/public/uploads ] as deploy@216.137.181.32
+ DEBUG [ec16011c] Command: [ -L /home/deploy/mydivafashion/releases/20210609185257/public/uploads ]
+ DEBUG [ec16011c] Finished in 0.192 seconds with exit status 1 (failed).
+ DEBUG [cea39e58] Running [ -d /home/deploy/mydivafashion/releases/20210609185257/public/uploads ] as deploy@216.137.181.32
+ DEBUG [cea39e58] Command: [ -d /home/deploy/mydivafashion/releases/20210609185257/public/uploads ]
+ DEBUG [cea39e58] Finished in 0.194 seconds with exit status 0 (successful).
+  INFO [c6dbc510] Running /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210609185257/public/uploads as deploy@216.137.181.32
+ DEBUG [c6dbc510] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210609185257/public/uploads )
+  INFO [c6dbc510] Finished in 0.202 seconds with exit status 0 (successful).
+  INFO [947a9356] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/public/uploads /home/deploy/mydivafashion/releases/20210609185257/public/uploads as deploy@216.137.181.32
+ DEBUG [947a9356] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/public/uploads /home/deploy/mydivafashion/releases/20210609185257/public/uploads )
+  INFO [947a9356] Finished in 0.196 seconds with exit status 0 (successful).
+ DEBUG [ab44f902] Running [ -L /home/deploy/mydivafashion/releases/20210609185257/public/assets ] as deploy@216.137.181.32
+ DEBUG [ab44f902] Command: [ -L /home/deploy/mydivafashion/releases/20210609185257/public/assets ]
+ DEBUG [ab44f902] Finished in 0.193 seconds with exit status 1 (failed).
+ DEBUG [92b0d038] Running [ -d /home/deploy/mydivafashion/releases/20210609185257/public/assets ] as deploy@216.137.181.32
+ DEBUG [92b0d038] Command: [ -d /home/deploy/mydivafashion/releases/20210609185257/public/assets ]
+ DEBUG [92b0d038] Finished in 0.197 seconds with exit status 0 (successful).
+  INFO [610398c5] Running /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210609185257/public/assets as deploy@216.137.181.32
+ DEBUG [610398c5] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210609185257/public/assets )
+  INFO [610398c5] Finished in 0.258 seconds with exit status 0 (successful).
+  INFO [cff77646] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/public/assets /home/deploy/mydivafashion/releases/20210609185257/public/assets as deploy@216.137.181.32
+ DEBUG [cff77646] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/public/assets /home/deploy/mydivafashion/releases/20210609185257/public/assets )
+  INFO [cff77646] Finished in 0.194 seconds with exit status 0 (successful).
+ DEBUG [e00d7ed0] Running if test ! -d /home/deploy/mydivafashion/releases/20210609185257; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210609185257'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [e00d7ed0] Command: if test ! -d /home/deploy/mydivafashion/releases/20210609185257; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210609185257'" 1>&2; false; fi
+ DEBUG [e00d7ed0] Finished in 0.194 seconds with exit status 0 (successful).
+  INFO [d39826c8] Running $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true as deploy@216.137.181.32
+ DEBUG [d39826c8] Command: cd /home/deploy/mydivafashion/releases/20210609185257 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true )
+  INFO [d39826c8] Finished in 0.393 seconds with exit status 0 (successful).
+  INFO [2089b6f1] Running $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/deploy/mydivafashion/shared/bundle as deploy@216.137.181.32
+ DEBUG [2089b6f1] Command: cd /home/deploy/mydivafashion/releases/20210609185257 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/deploy/mydivafashion/shared/bundle )
+  INFO [2089b6f1] Finished in 0.409 seconds with exit status 0 (successful).
+  INFO [7822f011] Running $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test as deploy@216.137.181.32
+ DEBUG [7822f011] Command: cd /home/deploy/mydivafashion/releases/20210609185257 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test )
+  INFO [7822f011] Finished in 0.406 seconds with exit status 0 (successful).
+ DEBUG [06745ba5] Running if test ! -d /home/deploy/mydivafashion/releases/20210609185257; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210609185257'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [06745ba5] Command: if test ! -d /home/deploy/mydivafashion/releases/20210609185257; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210609185257'" 1>&2; false; fi
+ DEBUG [06745ba5] Finished in 0.194 seconds with exit status 0 (successful).
+ DEBUG [cc50805c] Running $HOME/.rbenv/bin/rbenv exec bundle check as deploy@216.137.181.32
+ DEBUG [cc50805c] Command: cd /home/deploy/mydivafashion/releases/20210609185257 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; $HOME/.rbenv/bin/rbenv exec bundle check )
+ DEBUG [cc50805c] 	The dependency tzinfo-data (>= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java`.
+ DEBUG [cc50805c] 	The Gemfile's dependencies are satisfied
+ DEBUG [cc50805c] Finished in 0.429 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+ DEBUG [659323de] Running if test ! -d /home/deploy/mydivafashion/releases/20210609185257; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210609185257'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [659323de] Command: if test ! -d /home/deploy/mydivafashion/releases/20210609185257; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210609185257'" 1>&2; false; fi
+ DEBUG [659323de] Finished in 0.194 seconds with exit status 0 (successful).
+  INFO [ceaa954b] Running cd /home/deploy/mydivafashion/releases/20210609185257 && yarn install --silent --no-progress --no-audit --no-optional as deploy@216.137.181.32
+ DEBUG [ceaa954b] Command: cd /home/deploy/mydivafashion/releases/20210609185257 && yarn install --silent --no-progress --no-audit --no-optional
+ DEBUG [ceaa954b] 	warning " > webpack-dev-server@3.11.2" has unmet peer dependency "webpack@^4.0.0 || ^5.0.0".
+ DEBUG [ceaa954b] 	warning "webpack-dev-server > webpack-dev-middleware@3.7.3" has unmet peer dependency "webpack@^4.0.0 || ^5.0.0".
+  INFO [ceaa954b] Finished in 11.980 seconds with exit status 0 (successful).
+ DEBUG [666115d9] Running if test ! -d /home/deploy/mydivafashion/releases/20210609185257; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210609185257'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [666115d9] Command: if test ! -d /home/deploy/mydivafashion/releases/20210609185257; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210609185257'" 1>&2; false; fi
+ DEBUG [666115d9] Finished in 0.193 seconds with exit status 0 (successful).
+  INFO [3ad1264f] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile as deploy@216.137.181.32
+ DEBUG [3ad1264f] Command: cd /home/deploy/mydivafashion/releases/20210609185257 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" RAILS_ENV="production" RAILS_GROUPS="" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile )
+ DEBUG [3ad1264f] 	yarn install v1.22.5
+ DEBUG [3ad1264f] 	[1/4] Resolving packages...
+ DEBUG [3ad1264f] 	success Already up-to-date.
+ DEBUG [3ad1264f] 	Done in 0.80s.
+ DEBUG [3ad1264f] 	yarn install v1.22.5
+ DEBUG [3ad1264f] 	[1/4] Resolving packages...
+ DEBUG [3ad1264f] 	[2/4] Fetching packages...
+ DEBUG [3ad1264f] 	info fsevents@2.3.2: The platform "linux" is incompatible with this module.
+ DEBUG [3ad1264f] 	info "fsevents@2.3.2" is an optional dependency and failed compatibility check. Excluding it from installation.
+ DEBUG [3ad1264f] 	info fsevents@1.2.13: The platform "linux" is incompatible with this module.
+ DEBUG [3ad1264f] 	info "fsevents@1.2.13" is an optional dependency and failed compatibility check. Excluding it from installation.
+ DEBUG [3ad1264f] 	[3/4] Linking dependencies...
+ DEBUG [3ad1264f] 	warning " > webpack-dev-server@3.11.2" has unmet peer dependency "webpack@^4.0.0 || ^5.0.0".
+ DEBUG [3ad1264f] 	warning "webpack-dev-server > webpack-dev-middleware@3.7.3" has unmet peer dependency "webpack@^4.0.0 || ^5.0.0".
+ DEBUG [3ad1264f] 	[4/4] Building fresh packages...
+ DEBUG [3ad1264f] 	Done in 4.29s.
+ DEBUG [3ad1264f] 	Everything's up-to-date. Nothing to do
+  INFO [3ad1264f] Finished in 7.386 seconds with exit status 0 (successful).
+ DEBUG [4383f4c1] Running if test ! -d /home/deploy/mydivafashion/releases/20210609185257; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210609185257'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [4383f4c1] Command: if test ! -d /home/deploy/mydivafashion/releases/20210609185257; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210609185257'" 1>&2; false; fi
+ DEBUG [4383f4c1] Finished in 0.192 seconds with exit status 0 (successful).
+  INFO [d8c55a9c] Running /usr/bin/env mkdir -p /home/deploy/mydivafashion/releases/20210609185257/assets_manifest_backup as deploy@216.137.181.32
+ DEBUG [d8c55a9c] Command: cd /home/deploy/mydivafashion/releases/20210609185257 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env mkdir -p /home/deploy/mydivafashion/releases/20210609185257/assets_manifest_backup )
+  INFO [d8c55a9c] Finished in 0.195 seconds with exit status 0 (successful).
+ DEBUG [9b212d2f] Running /usr/bin/env ls /home/deploy/mydivafashion/releases/20210609185257/public/assets/.sprockets-manifest* as deploy@216.137.181.32
+ DEBUG [9b212d2f] Command: cd /home/deploy/mydivafashion/releases/20210609185257 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ls /home/deploy/mydivafashion/releases/20210609185257/public/assets/.sprockets-manifest* )
+ DEBUG [9b212d2f] 	/home/deploy/mydivafashion/releases/20210609185257/public/assets/.sprockets-manifest-46f61c7c34e1dade128c38c1be8c52f9.json
+ DEBUG [9b212d2f] Finished in 0.196 seconds with exit status 0 (successful).
+ DEBUG [fd63e529] Running /usr/bin/env ls /home/deploy/mydivafashion/releases/20210609185257/public/assets/.sprockets-manifest* as deploy@216.137.181.32
+ DEBUG [fd63e529] Command: cd /home/deploy/mydivafashion/releases/20210609185257 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ls /home/deploy/mydivafashion/releases/20210609185257/public/assets/.sprockets-manifest* )
+ DEBUG [fd63e529] 	/home/deploy/mydivafashion/releases/20210609185257/public/assets/.sprockets-manifest-46f61c7c34e1dade128c38c1be8c52f9.json
+ DEBUG [fd63e529] Finished in 0.196 seconds with exit status 0 (successful).
+  INFO [9ac971b9] Running /usr/bin/env cp /home/deploy/mydivafashion/releases/20210609185257/public/assets/.sprockets-manifest-46f61c7c34e1dade128c38c1be8c52f9.json /home/deploy/mydivafashion/releases/20210609185257/assets_manifest_backup as deploy@216.137.181.32
+ DEBUG [9ac971b9] Command: cd /home/deploy/mydivafashion/releases/20210609185257 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env cp /home/deploy/mydivafashion/releases/20210609185257/public/assets/.sprockets-manifest-46f61c7c34e1dade128c38c1be8c52f9.json /home/deploy/mydivafashion/releases/20210609185257/assets_manifest_backup )
+  INFO [9ac971b9] Finished in 0.195 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [4a5e7230] Running if test ! -d /home/deploy/mydivafashion/releases/20210609185257; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210609185257'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [4a5e7230] Command: if test ! -d /home/deploy/mydivafashion/releases/20210609185257; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210609185257'" 1>&2; false; fi
+ DEBUG [4a5e7230] Finished in 0.193 seconds with exit status 0 (successful).
+  INFO [fa5a90fe] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate as deploy@216.137.181.32
+ DEBUG [fa5a90fe] Command: cd /home/deploy/mydivafashion/releases/20210609185257 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" RAILS_ENV="production" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate )
+  INFO [fa5a90fe] Finished in 1.179 seconds with exit status 0 (successful).
+  INFO [cfce5489] Running /usr/bin/env ln -s /home/deploy/mydivafashion/releases/20210609185257 /home/deploy/mydivafashion/releases/current as deploy@216.137.181.32
+ DEBUG [cfce5489] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/releases/20210609185257 /home/deploy/mydivafashion/releases/current )
+  INFO [cfce5489] Finished in 0.193 seconds with exit status 0 (successful).
+  INFO [042d8484] Running /usr/bin/env mv /home/deploy/mydivafashion/releases/current /home/deploy/mydivafashion as deploy@216.137.181.32
+ DEBUG [042d8484] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env mv /home/deploy/mydivafashion/releases/current /home/deploy/mydivafashion )
+  INFO [042d8484] Finished in 0.196 seconds with exit status 0 (successful).
+ DEBUG [38753d56] Running /usr/bin/env pwd as deploy@216.137.181.32
+ DEBUG [38753d56] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env pwd )
+ DEBUG [38753d56] 	/home/deploy
+ DEBUG [38753d56] Finished in 0.195 seconds with exit status 0 (successful).
+ DEBUG [571d9317] Running if test ! -d /home/deploy; then echo "Directory does not exist '/home/deploy'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [571d9317] Command: if test ! -d /home/deploy; then echo "Directory does not exist '/home/deploy'" 1>&2; false; fi
+ DEBUG [571d9317] Finished in 0.193 seconds with exit status 0 (successful).
+ DEBUG [a7a02a42] Running /usr/bin/env passenger -v as deploy@216.137.181.32
+ DEBUG [a7a02a42] Command: cd /home/deploy && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env passenger -v )
+ DEBUG [a7a02a42] 	Phusion Passenger(R) 6.0.9
+ DEBUG [a7a02a42] Finished in 0.266 seconds with exit status 0 (successful).
+  INFO [25ea8386] Running /usr/bin/env passenger-config restart-app /home/deploy/mydivafashion --ignore-app-not-running as deploy@216.137.181.32
+ DEBUG [25ea8386] Command: cd /home/deploy && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env passenger-config restart-app /home/deploy/mydivafashion --ignore-app-not-running )
+ DEBUG [25ea8386] 	There are no Phusion Passenger(R)-served applications running whose paths begin with '/home/deploy/mydivafashion'.
+ DEBUG [25ea8386] 	*** Cleaning stale instance directory /tmp/passenger.Ur7Krkv
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.Ur7Krkv/.
+*** Cleaning stale instance directory /tmp/passenger.HgrSP2V
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.HgrSP2V/.
+  INFO [25ea8386] Finished in 0.388 seconds with exit status 0 (successful).
+ DEBUG [b25cd757] Running /usr/bin/env ls -x /home/deploy/mydivafashion/releases as deploy@216.137.181.32
+ DEBUG [b25cd757] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ls -x /home/deploy/mydivafashion/releases )
+ DEBUG [b25cd757] 	20210608023944	20210608024940	20210608025227	20210608031141	20210609102722
+20210609185257
+ DEBUG [b25cd757] Finished in 0.134 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on 216.137.181.32
+ DEBUG [ec042aee] Running [ -d /home/deploy/mydivafashion/current ] as deploy@216.137.181.32
+ DEBUG [ec042aee] Command: [ -d /home/deploy/mydivafashion/current ]
+ DEBUG [ec042aee] Finished in 0.193 seconds with exit status 0 (successful).
+ DEBUG [8be78488] Running /usr/bin/env readlink /home/deploy/mydivafashion/current as deploy@216.137.181.32
+ DEBUG [8be78488] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env readlink /home/deploy/mydivafashion/current )
+ DEBUG [8be78488] 	/home/deploy/mydivafashion/releases/20210609185257
+ DEBUG [8be78488] Finished in 0.195 seconds with exit status 0 (successful).
+  INFO [c69d0c65] Running /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210608023944 as deploy@216.137.181.32
+ DEBUG [c69d0c65] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210608023944 )
+  INFO [c69d0c65] Finished in 0.568 seconds with exit status 0 (successful).
+ DEBUG [4b1d533c] Running if test ! -d /home/deploy/mydivafashion/releases; then echo "Directory does not exist '/home/deploy/mydivafashion/releases'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [4b1d533c] Command: if test ! -d /home/deploy/mydivafashion/releases; then echo "Directory does not exist '/home/deploy/mydivafashion/releases'" 1>&2; false; fi
+ DEBUG [4b1d533c] Finished in 0.193 seconds with exit status 0 (successful).
+  INFO [e5a73723] Running /usr/bin/env echo "Branch main (at 2680d20c678baa0f3594333917f93e1517a8332f) deployed as release 20210609185257 by jiaqiyu" >> /home/deploy/mydivafashion/revisions.log as deploy@216.137.181.32
+ DEBUG [e5a73723] Command: cd /home/deploy/mydivafashion/releases && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env echo "Branch main (at 2680d20c678baa0f3594333917f93e1517a8332f) deployed as release 20210609185257 by jiaqiyu" >> /home/deploy/mydivafashion/revisions.log )
+  INFO [e5a73723] Finished in 0.195 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-10 12:14:13 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [d78660c8] Running [ -d $HOME/.rbenv/versions/2.7.1 ] as deploy@216.137.181.32
+ DEBUG [d78660c8] Command: [ -d $HOME/.rbenv/versions/2.7.1 ]
+ DEBUG [d78660c8] Finished in 6.702 seconds with exit status 0 (successful).
+ DEBUG [80719aae] Running /usr/bin/env which passenger as deploy@216.137.181.32
+ DEBUG [80719aae] Command: /usr/bin/env which passenger
+ DEBUG [80719aae] 	/usr/bin/passenger
+ DEBUG [80719aae] Finished in 0.168 seconds with exit status 0 (successful).
+  INFO [d2012b57] Running /usr/bin/env mkdir -p /tmp as deploy@216.137.181.32
+ DEBUG [d2012b57] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [d2012b57] Finished in 0.166 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-1afab1692833533a980e.sh 0.0%
+  INFO Uploading /tmp/git-ssh-1afab1692833533a980e.sh 100.0%
+  INFO [419c520e] Running /usr/bin/env chmod 700 /tmp/git-ssh-1afab1692833533a980e.sh as deploy@216.137.181.32
+ DEBUG [419c520e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-1afab1692833533a980e.sh )
+  INFO [419c520e] Finished in 0.169 seconds with exit status 0 (successful).
+  INFO [7bf0b977] Running /usr/bin/env git ls-remote https://github.com/jiaqiyusun/VouConseguiFashion.git HEAD as deploy@216.137.181.32
+ DEBUG [7bf0b977] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-1afab1692833533a980e.sh" ; /usr/bin/env git ls-remote https://github.com/jiaqiyusun/VouConseguiFashion.git HEAD )
+ DEBUG [7bf0b977] 	2680d20c678baa0f3594333917f93e1517a8332f	HEAD
+  INFO [7bf0b977] Finished in 0.611 seconds with exit status 0 (successful).
+  INFO [1290b5e0] Running /usr/bin/env mkdir -p /home/deploy/mydivafashion/shared /home/deploy/mydivafashion/releases as deploy@216.137.181.32
+ DEBUG [1290b5e0] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env mkdir -p /home/deploy/mydivafashion/shared /home/deploy/mydivafashion/releases )
+  INFO [1290b5e0] Finished in 0.164 seconds with exit status 0 (successful).
+  INFO [432cd575] Running /usr/bin/env mkdir -p /home/deploy/mydivafashion/shared/log /home/deploy/mydivafashion/shared/tmp/pids /home/deploy/mydivafashion/shared/tmp/cache /home/deploy/mydivafashion/shared/tmp/sockets /home/deploy/mydivafashion/shared/vendor/bundle /home/deploy/mydivafashion/shared/.bundle /home/deploy/mydivafashion/shared/public/system /home/deploy/mydivafashion/shared/public/uploads /home/deploy/mydivafashion/shared/public/assets as deploy@216.137.181.32
+ DEBUG [432cd575] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env mkdir -p /home/deploy/mydivafashion/shared/log /home/deploy/mydivafashion/shared/tmp/pids /home/deploy/mydivafashion/shared/tmp/cache /home/deploy/mydivafashion/shared/tmp/sockets /home/deploy/mydivafashion/shared/vendor/bundle /home/deploy/mydivafashion/shared/.bundle /home/deploy/mydivafashion/shared/public/system /home/deploy/mydivafashion/shared/public/uploads /home/deploy/mydivafashion/shared/public/assets )
+  INFO [432cd575] Finished in 0.164 seconds with exit status 0 (successful).
+ DEBUG [7795258d] Running [ -f /home/deploy/mydivafashion/current/REVISION ] as deploy@216.137.181.32
+ DEBUG [7795258d] Command: [ -f /home/deploy/mydivafashion/current/REVISION ]
+ DEBUG [7795258d] Finished in 0.166 seconds with exit status 0 (successful).
+ DEBUG [096c43e2] Running /usr/bin/env cat /home/deploy/mydivafashion/current/REVISION 2>/dev/null as deploy@216.137.181.32
+ DEBUG [096c43e2] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env cat /home/deploy/mydivafashion/current/REVISION 2>/dev/null )
+ DEBUG [096c43e2] 	2680d20c678baa0f3594333917f93e1517a8332f
+ DEBUG [096c43e2] Finished in 0.167 seconds with exit status 0 (successful).
+ DEBUG [f08a058f] Running [ -f /home/deploy/mydivafashion/repo/HEAD ] as deploy@216.137.181.32
+ DEBUG [f08a058f] Command: [ -f /home/deploy/mydivafashion/repo/HEAD ]
+ DEBUG [f08a058f] Finished in 0.166 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/mydivafashion/repo
+ DEBUG [8ac60629] Running if test ! -d /home/deploy/mydivafashion/repo; then echo "Directory does not exist '/home/deploy/mydivafashion/repo'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [8ac60629] Command: if test ! -d /home/deploy/mydivafashion/repo; then echo "Directory does not exist '/home/deploy/mydivafashion/repo'" 1>&2; false; fi
+ DEBUG [8ac60629] Finished in 0.164 seconds with exit status 0 (successful).
+  INFO [78e81632] Running /usr/bin/env git remote set-url origin https://github.com/jiaqiyusun/VouConseguiFashion.git as deploy@216.137.181.32
+ DEBUG [78e81632] Command: cd /home/deploy/mydivafashion/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-1afab1692833533a980e.sh" ; /usr/bin/env git remote set-url origin https://github.com/jiaqiyusun/VouConseguiFashion.git )
+  INFO [78e81632] Finished in 0.170 seconds with exit status 0 (successful).
+  INFO [749e0e50] Running /usr/bin/env git remote update --prune as deploy@216.137.181.32
+ DEBUG [749e0e50] Command: cd /home/deploy/mydivafashion/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-1afab1692833533a980e.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [749e0e50] 	Fetching origin
+  INFO [749e0e50] Finished in 0.808 seconds with exit status 0 (successful).
+ DEBUG [a84b06d1] Running if test ! -d /home/deploy/mydivafashion/repo; then echo "Directory does not exist '/home/deploy/mydivafashion/repo'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [a84b06d1] Command: if test ! -d /home/deploy/mydivafashion/repo; then echo "Directory does not exist '/home/deploy/mydivafashion/repo'" 1>&2; false; fi
+ DEBUG [a84b06d1] Finished in 0.165 seconds with exit status 0 (successful).
+  INFO [f2c0836d] Running /usr/bin/env mkdir -p /home/deploy/mydivafashion/releases/20210610111425 as deploy@216.137.181.32
+ DEBUG [f2c0836d] Command: cd /home/deploy/mydivafashion/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-1afab1692833533a980e.sh" ; /usr/bin/env mkdir -p /home/deploy/mydivafashion/releases/20210610111425 )
+  INFO [f2c0836d] Finished in 0.168 seconds with exit status 0 (successful).
+  INFO [a74bcc1e] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/mydivafashion/releases/20210610111425 as deploy@216.137.181.32
+ DEBUG [a74bcc1e] Command: cd /home/deploy/mydivafashion/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-1afab1692833533a980e.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/mydivafashion/releases/20210610111425 )
+  INFO [a74bcc1e] Finished in 4.278 seconds with exit status 0 (successful).
+ DEBUG [2280d503] Running if test ! -d /home/deploy/mydivafashion/repo; then echo "Directory does not exist '/home/deploy/mydivafashion/repo'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [2280d503] Command: if test ! -d /home/deploy/mydivafashion/repo; then echo "Directory does not exist '/home/deploy/mydivafashion/repo'" 1>&2; false; fi
+ DEBUG [2280d503] Finished in 0.167 seconds with exit status 0 (successful).
+ DEBUG [760b2947] Running /usr/bin/env git rev-list --max-count=1 main as deploy@216.137.181.32
+ DEBUG [760b2947] Command: cd /home/deploy/mydivafashion/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-1afab1692833533a980e.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [760b2947] 	2680d20c678baa0f3594333917f93e1517a8332f
+ DEBUG [760b2947] Finished in 0.172 seconds with exit status 0 (successful).
+ DEBUG [a16b6308] Running if test ! -d /home/deploy/mydivafashion/releases/20210610111425; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210610111425'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [a16b6308] Command: if test ! -d /home/deploy/mydivafashion/releases/20210610111425; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210610111425'" 1>&2; false; fi
+ DEBUG [a16b6308] Finished in 0.166 seconds with exit status 0 (successful).
+  INFO [477648b0] Running /usr/bin/env echo "2680d20c678baa0f3594333917f93e1517a8332f" > REVISION as deploy@216.137.181.32
+ DEBUG [477648b0] Command: cd /home/deploy/mydivafashion/releases/20210610111425 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env echo "2680d20c678baa0f3594333917f93e1517a8332f" > REVISION )
+  INFO [477648b0] Finished in 0.167 seconds with exit status 0 (successful).
+  INFO [bad4ae57] Running /usr/bin/env mkdir -p /home/deploy/mydivafashion/releases/20210610111425 /home/deploy/mydivafashion/releases/20210610111425/tmp /home/deploy/mydivafashion/releases/20210610111425/vendor /home/deploy/mydivafashion/releases/20210610111425/public as deploy@216.137.181.32
+ DEBUG [bad4ae57] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env mkdir -p /home/deploy/mydivafashion/releases/20210610111425 /home/deploy/mydivafashion/releases/20210610111425/tmp /home/deploy/mydivafashion/releases/20210610111425/vendor /home/deploy/mydivafashion/releases/20210610111425/public )
+  INFO [bad4ae57] Finished in 0.168 seconds with exit status 0 (successful).
+ DEBUG [ad0a3420] Running [ -L /home/deploy/mydivafashion/releases/20210610111425/log ] as deploy@216.137.181.32
+ DEBUG [ad0a3420] Command: [ -L /home/deploy/mydivafashion/releases/20210610111425/log ]
+ DEBUG [ad0a3420] Finished in 0.170 seconds with exit status 1 (failed).
+ DEBUG [08aed912] Running [ -d /home/deploy/mydivafashion/releases/20210610111425/log ] as deploy@216.137.181.32
+ DEBUG [08aed912] Command: [ -d /home/deploy/mydivafashion/releases/20210610111425/log ]
+ DEBUG [08aed912] Finished in 0.169 seconds with exit status 0 (successful).
+  INFO [149b6704] Running /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210610111425/log as deploy@216.137.181.32
+ DEBUG [149b6704] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210610111425/log )
+  INFO [149b6704] Finished in 0.169 seconds with exit status 0 (successful).
+  INFO [e9f49f62] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/log /home/deploy/mydivafashion/releases/20210610111425/log as deploy@216.137.181.32
+ DEBUG [e9f49f62] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/log /home/deploy/mydivafashion/releases/20210610111425/log )
+  INFO [e9f49f62] Finished in 0.171 seconds with exit status 0 (successful).
+ DEBUG [db3ec534] Running [ -L /home/deploy/mydivafashion/releases/20210610111425/tmp/pids ] as deploy@216.137.181.32
+ DEBUG [db3ec534] Command: [ -L /home/deploy/mydivafashion/releases/20210610111425/tmp/pids ]
+ DEBUG [db3ec534] Finished in 0.169 seconds with exit status 1 (failed).
+ DEBUG [780e4fc9] Running [ -d /home/deploy/mydivafashion/releases/20210610111425/tmp/pids ] as deploy@216.137.181.32
+ DEBUG [780e4fc9] Command: [ -d /home/deploy/mydivafashion/releases/20210610111425/tmp/pids ]
+ DEBUG [780e4fc9] Finished in 0.170 seconds with exit status 0 (successful).
+  INFO [17850352] Running /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210610111425/tmp/pids as deploy@216.137.181.32
+ DEBUG [17850352] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210610111425/tmp/pids )
+  INFO [17850352] Finished in 0.169 seconds with exit status 0 (successful).
+  INFO [2aa034fe] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/tmp/pids /home/deploy/mydivafashion/releases/20210610111425/tmp/pids as deploy@216.137.181.32
+ DEBUG [2aa034fe] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/tmp/pids /home/deploy/mydivafashion/releases/20210610111425/tmp/pids )
+  INFO [2aa034fe] Finished in 0.168 seconds with exit status 0 (successful).
+ DEBUG [8031219a] Running [ -L /home/deploy/mydivafashion/releases/20210610111425/tmp/cache ] as deploy@216.137.181.32
+ DEBUG [8031219a] Command: [ -L /home/deploy/mydivafashion/releases/20210610111425/tmp/cache ]
+ DEBUG [8031219a] Finished in 0.169 seconds with exit status 1 (failed).
+ DEBUG [75051914] Running [ -d /home/deploy/mydivafashion/releases/20210610111425/tmp/cache ] as deploy@216.137.181.32
+ DEBUG [75051914] Command: [ -d /home/deploy/mydivafashion/releases/20210610111425/tmp/cache ]
+ DEBUG [75051914] Finished in 0.168 seconds with exit status 0 (successful).
+  INFO [3d011455] Running /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210610111425/tmp/cache as deploy@216.137.181.32
+ DEBUG [3d011455] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210610111425/tmp/cache )
+  INFO [3d011455] Finished in 0.247 seconds with exit status 0 (successful).
+  INFO [11c86562] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/tmp/cache /home/deploy/mydivafashion/releases/20210610111425/tmp/cache as deploy@216.137.181.32
+ DEBUG [11c86562] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/tmp/cache /home/deploy/mydivafashion/releases/20210610111425/tmp/cache )
+  INFO [11c86562] Finished in 0.168 seconds with exit status 0 (successful).
+ DEBUG [bea974f1] Running [ -L /home/deploy/mydivafashion/releases/20210610111425/tmp/sockets ] as deploy@216.137.181.32
+ DEBUG [bea974f1] Command: [ -L /home/deploy/mydivafashion/releases/20210610111425/tmp/sockets ]
+ DEBUG [bea974f1] Finished in 0.167 seconds with exit status 1 (failed).
+ DEBUG [63af7db7] Running [ -d /home/deploy/mydivafashion/releases/20210610111425/tmp/sockets ] as deploy@216.137.181.32
+ DEBUG [63af7db7] Command: [ -d /home/deploy/mydivafashion/releases/20210610111425/tmp/sockets ]
+ DEBUG [63af7db7] Finished in 0.167 seconds with exit status 1 (failed).
+  INFO [45527d49] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/tmp/sockets /home/deploy/mydivafashion/releases/20210610111425/tmp/sockets as deploy@216.137.181.32
+ DEBUG [45527d49] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/tmp/sockets /home/deploy/mydivafashion/releases/20210610111425/tmp/sockets )
+  INFO [45527d49] Finished in 0.171 seconds with exit status 0 (successful).
+ DEBUG [0342f6ac] Running [ -L /home/deploy/mydivafashion/releases/20210610111425/vendor/bundle ] as deploy@216.137.181.32
+ DEBUG [0342f6ac] Command: [ -L /home/deploy/mydivafashion/releases/20210610111425/vendor/bundle ]
+ DEBUG [0342f6ac] Finished in 0.167 seconds with exit status 1 (failed).
+ DEBUG [2922a474] Running [ -d /home/deploy/mydivafashion/releases/20210610111425/vendor/bundle ] as deploy@216.137.181.32
+ DEBUG [2922a474] Command: [ -d /home/deploy/mydivafashion/releases/20210610111425/vendor/bundle ]
+ DEBUG [2922a474] Finished in 0.168 seconds with exit status 0 (successful).
+  INFO [423a5682] Running /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210610111425/vendor/bundle as deploy@216.137.181.32
+ DEBUG [423a5682] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210610111425/vendor/bundle )
+  INFO [423a5682] Finished in 0.322 seconds with exit status 0 (successful).
+  INFO [380a8895] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/vendor/bundle /home/deploy/mydivafashion/releases/20210610111425/vendor/bundle as deploy@216.137.181.32
+ DEBUG [380a8895] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/vendor/bundle /home/deploy/mydivafashion/releases/20210610111425/vendor/bundle )
+  INFO [380a8895] Finished in 0.168 seconds with exit status 0 (successful).
+ DEBUG [ec5d8535] Running [ -L /home/deploy/mydivafashion/releases/20210610111425/.bundle ] as deploy@216.137.181.32
+ DEBUG [ec5d8535] Command: [ -L /home/deploy/mydivafashion/releases/20210610111425/.bundle ]
+ DEBUG [ec5d8535] Finished in 0.167 seconds with exit status 1 (failed).
+ DEBUG [76844cb3] Running [ -d /home/deploy/mydivafashion/releases/20210610111425/.bundle ] as deploy@216.137.181.32
+ DEBUG [76844cb3] Command: [ -d /home/deploy/mydivafashion/releases/20210610111425/.bundle ]
+ DEBUG [76844cb3] Finished in 0.166 seconds with exit status 1 (failed).
+  INFO [3b4c94cb] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/.bundle /home/deploy/mydivafashion/releases/20210610111425/.bundle as deploy@216.137.181.32
+ DEBUG [3b4c94cb] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/.bundle /home/deploy/mydivafashion/releases/20210610111425/.bundle )
+  INFO [3b4c94cb] Finished in 0.168 seconds with exit status 0 (successful).
+ DEBUG [ae01fb04] Running [ -L /home/deploy/mydivafashion/releases/20210610111425/public/system ] as deploy@216.137.181.32
+ DEBUG [ae01fb04] Command: [ -L /home/deploy/mydivafashion/releases/20210610111425/public/system ]
+ DEBUG [ae01fb04] Finished in 0.167 seconds with exit status 1 (failed).
+ DEBUG [2e46c64b] Running [ -d /home/deploy/mydivafashion/releases/20210610111425/public/system ] as deploy@216.137.181.32
+ DEBUG [2e46c64b] Command: [ -d /home/deploy/mydivafashion/releases/20210610111425/public/system ]
+ DEBUG [2e46c64b] Finished in 0.167 seconds with exit status 1 (failed).
+  INFO [d98b8899] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/public/system /home/deploy/mydivafashion/releases/20210610111425/public/system as deploy@216.137.181.32
+ DEBUG [d98b8899] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/public/system /home/deploy/mydivafashion/releases/20210610111425/public/system )
+  INFO [d98b8899] Finished in 0.169 seconds with exit status 0 (successful).
+ DEBUG [8c3a9f0a] Running [ -L /home/deploy/mydivafashion/releases/20210610111425/public/uploads ] as deploy@216.137.181.32
+ DEBUG [8c3a9f0a] Command: [ -L /home/deploy/mydivafashion/releases/20210610111425/public/uploads ]
+ DEBUG [8c3a9f0a] Finished in 0.168 seconds with exit status 1 (failed).
+ DEBUG [a47f4d48] Running [ -d /home/deploy/mydivafashion/releases/20210610111425/public/uploads ] as deploy@216.137.181.32
+ DEBUG [a47f4d48] Command: [ -d /home/deploy/mydivafashion/releases/20210610111425/public/uploads ]
+ DEBUG [a47f4d48] Finished in 0.167 seconds with exit status 0 (successful).
+  INFO [2c968d61] Running /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210610111425/public/uploads as deploy@216.137.181.32
+ DEBUG [2c968d61] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210610111425/public/uploads )
+  INFO [2c968d61] Finished in 0.176 seconds with exit status 0 (successful).
+  INFO [b07e6e70] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/public/uploads /home/deploy/mydivafashion/releases/20210610111425/public/uploads as deploy@216.137.181.32
+ DEBUG [b07e6e70] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/public/uploads /home/deploy/mydivafashion/releases/20210610111425/public/uploads )
+  INFO [b07e6e70] Finished in 0.171 seconds with exit status 0 (successful).
+ DEBUG [495f2555] Running [ -L /home/deploy/mydivafashion/releases/20210610111425/public/assets ] as deploy@216.137.181.32
+ DEBUG [495f2555] Command: [ -L /home/deploy/mydivafashion/releases/20210610111425/public/assets ]
+ DEBUG [495f2555] Finished in 0.168 seconds with exit status 1 (failed).
+ DEBUG [ed94b444] Running [ -d /home/deploy/mydivafashion/releases/20210610111425/public/assets ] as deploy@216.137.181.32
+ DEBUG [ed94b444] Command: [ -d /home/deploy/mydivafashion/releases/20210610111425/public/assets ]
+ DEBUG [ed94b444] Finished in 0.168 seconds with exit status 0 (successful).
+  INFO [e2e30c9c] Running /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210610111425/public/assets as deploy@216.137.181.32
+ DEBUG [e2e30c9c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210610111425/public/assets )
+  INFO [e2e30c9c] Finished in 0.235 seconds with exit status 0 (successful).
+  INFO [c3fb5463] Running /usr/bin/env ln -s /home/deploy/mydivafashion/shared/public/assets /home/deploy/mydivafashion/releases/20210610111425/public/assets as deploy@216.137.181.32
+ DEBUG [c3fb5463] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/shared/public/assets /home/deploy/mydivafashion/releases/20210610111425/public/assets )
+  INFO [c3fb5463] Finished in 0.169 seconds with exit status 0 (successful).
+ DEBUG [5497af11] Running if test ! -d /home/deploy/mydivafashion/releases/20210610111425; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210610111425'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [5497af11] Command: if test ! -d /home/deploy/mydivafashion/releases/20210610111425; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210610111425'" 1>&2; false; fi
+ DEBUG [5497af11] Finished in 0.165 seconds with exit status 0 (successful).
+  INFO [7e574993] Running $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true as deploy@216.137.181.32
+ DEBUG [7e574993] Command: cd /home/deploy/mydivafashion/releases/20210610111425 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true )
+  INFO [7e574993] Finished in 0.359 seconds with exit status 0 (successful).
+  INFO [471772f1] Running $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/deploy/mydivafashion/shared/bundle as deploy@216.137.181.32
+ DEBUG [471772f1] Command: cd /home/deploy/mydivafashion/releases/20210610111425 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/deploy/mydivafashion/shared/bundle )
+  INFO [471772f1] Finished in 0.338 seconds with exit status 0 (successful).
+  INFO [4e04e088] Running $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test as deploy@216.137.181.32
+ DEBUG [4e04e088] Command: cd /home/deploy/mydivafashion/releases/20210610111425 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test )
+  INFO [4e04e088] Finished in 0.338 seconds with exit status 0 (successful).
+ DEBUG [779d6efe] Running if test ! -d /home/deploy/mydivafashion/releases/20210610111425; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210610111425'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [779d6efe] Command: if test ! -d /home/deploy/mydivafashion/releases/20210610111425; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210610111425'" 1>&2; false; fi
+ DEBUG [779d6efe] Finished in 0.168 seconds with exit status 0 (successful).
+ DEBUG [68745ecb] Running $HOME/.rbenv/bin/rbenv exec bundle check as deploy@216.137.181.32
+ DEBUG [68745ecb] Command: cd /home/deploy/mydivafashion/releases/20210610111425 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; $HOME/.rbenv/bin/rbenv exec bundle check )
+ DEBUG [68745ecb] 	The dependency tzinfo-data (>= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java`.
+ DEBUG [68745ecb] 	The Gemfile's dependencies are satisfied
+ DEBUG [68745ecb] Finished in 0.511 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+ DEBUG [fc5f300f] Running if test ! -d /home/deploy/mydivafashion/releases/20210610111425; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210610111425'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [fc5f300f] Command: if test ! -d /home/deploy/mydivafashion/releases/20210610111425; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210610111425'" 1>&2; false; fi
+ DEBUG [fc5f300f] Finished in 0.165 seconds with exit status 0 (successful).
+  INFO [7f78d790] Running cd /home/deploy/mydivafashion/releases/20210610111425 && yarn install --silent --no-progress --no-audit --no-optional as deploy@216.137.181.32
+ DEBUG [7f78d790] Command: cd /home/deploy/mydivafashion/releases/20210610111425 && yarn install --silent --no-progress --no-audit --no-optional
+ DEBUG [7f78d790] 	warning " > webpack-dev-server@3.11.2" has unmet peer dependency "webpack@^4.0.0 || ^5.0.0".
+ DEBUG [7f78d790] 	warning "webpack-dev-server > webpack-dev-middleware@3.7.3" has unmet peer dependency "webpack@^4.0.0 || ^5.0.0".
+  INFO [7f78d790] Finished in 12.677 seconds with exit status 0 (successful).
+ DEBUG [c5bf267b] Running if test ! -d /home/deploy/mydivafashion/releases/20210610111425; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210610111425'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [c5bf267b] Command: if test ! -d /home/deploy/mydivafashion/releases/20210610111425; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210610111425'" 1>&2; false; fi
+ DEBUG [c5bf267b] Finished in 0.167 seconds with exit status 0 (successful).
+  INFO [625febd1] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile as deploy@216.137.181.32
+ DEBUG [625febd1] Command: cd /home/deploy/mydivafashion/releases/20210610111425 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" RAILS_ENV="production" RAILS_GROUPS="" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile )
+ DEBUG [625febd1] 	yarn install v1.22.5
+ DEBUG [625febd1] 	[1/4] Resolving packages...
+ DEBUG [625febd1] 	success Already up-to-date.
+ DEBUG [625febd1] 	Done in 0.90s.
+ DEBUG [625febd1] 	yarn install v1.22.5
+ DEBUG [625febd1] 	[1/4] Resolving packages...
+ DEBUG [625febd1] 	[2/4] Fetching packages...
+ DEBUG [625febd1] 	info fsevents@2.3.2: The platform "linux" is incompatible with this module.
+ DEBUG [625febd1] 	info "fsevents@2.3.2" is an optional dependency and failed compatibility check. Excluding it from installation.
+ DEBUG [625febd1] 	info fsevents@1.2.13: The platform "linux" is incompatible with this module.
+ DEBUG [625febd1] 	info "fsevents@1.2.13" is an optional dependency and failed compatibility check. Excluding it from installation.
+ DEBUG [625febd1] 	[3/4] Linking dependencies...
+ DEBUG [625febd1] 	warning " > webpack-dev-server@3.11.2" has unmet peer dependency "webpack@^4.0.0 || ^5.0.0".
+ DEBUG [625febd1] 	warning "webpack-dev-server > webpack-dev-middleware@3.7.3" has unmet peer dependency "webpack@^4.0.0 || ^5.0.0".
+ DEBUG [625febd1] 	[4/4] Building fresh packages...
+ DEBUG [625febd1] 	Done in 4.41s.
+ DEBUG [625febd1] 	Everything's up-to-date. Nothing to do
+  INFO [625febd1] Finished in 7.780 seconds with exit status 0 (successful).
+ DEBUG [e901f5ef] Running if test ! -d /home/deploy/mydivafashion/releases/20210610111425; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210610111425'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [e901f5ef] Command: if test ! -d /home/deploy/mydivafashion/releases/20210610111425; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210610111425'" 1>&2; false; fi
+ DEBUG [e901f5ef] Finished in 0.169 seconds with exit status 0 (successful).
+  INFO [4015704f] Running /usr/bin/env mkdir -p /home/deploy/mydivafashion/releases/20210610111425/assets_manifest_backup as deploy@216.137.181.32
+ DEBUG [4015704f] Command: cd /home/deploy/mydivafashion/releases/20210610111425 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env mkdir -p /home/deploy/mydivafashion/releases/20210610111425/assets_manifest_backup )
+  INFO [4015704f] Finished in 0.171 seconds with exit status 0 (successful).
+ DEBUG [8594c88f] Running /usr/bin/env ls /home/deploy/mydivafashion/releases/20210610111425/public/assets/.sprockets-manifest* as deploy@216.137.181.32
+ DEBUG [8594c88f] Command: cd /home/deploy/mydivafashion/releases/20210610111425 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ls /home/deploy/mydivafashion/releases/20210610111425/public/assets/.sprockets-manifest* )
+ DEBUG [8594c88f] 	/home/deploy/mydivafashion/releases/20210610111425/public/assets/.sprockets-manifest-46f61c7c34e1dade128c38c1be8c52f9.json
+ DEBUG [8594c88f] Finished in 0.167 seconds with exit status 0 (successful).
+ DEBUG [68e40fa5] Running /usr/bin/env ls /home/deploy/mydivafashion/releases/20210610111425/public/assets/.sprockets-manifest* as deploy@216.137.181.32
+ DEBUG [68e40fa5] Command: cd /home/deploy/mydivafashion/releases/20210610111425 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ls /home/deploy/mydivafashion/releases/20210610111425/public/assets/.sprockets-manifest* )
+ DEBUG [68e40fa5] 	/home/deploy/mydivafashion/releases/20210610111425/public/assets/.sprockets-manifest-46f61c7c34e1dade128c38c1be8c52f9.json
+ DEBUG [68e40fa5] Finished in 0.168 seconds with exit status 0 (successful).
+  INFO [b6973df2] Running /usr/bin/env cp /home/deploy/mydivafashion/releases/20210610111425/public/assets/.sprockets-manifest-46f61c7c34e1dade128c38c1be8c52f9.json /home/deploy/mydivafashion/releases/20210610111425/assets_manifest_backup as deploy@216.137.181.32
+ DEBUG [b6973df2] Command: cd /home/deploy/mydivafashion/releases/20210610111425 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env cp /home/deploy/mydivafashion/releases/20210610111425/public/assets/.sprockets-manifest-46f61c7c34e1dade128c38c1be8c52f9.json /home/deploy/mydivafashion/releases/20210610111425/assets_manifest_backup )
+  INFO [b6973df2] Finished in 0.171 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [8cccf393] Running if test ! -d /home/deploy/mydivafashion/releases/20210610111425; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210610111425'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [8cccf393] Command: if test ! -d /home/deploy/mydivafashion/releases/20210610111425; then echo "Directory does not exist '/home/deploy/mydivafashion/releases/20210610111425'" 1>&2; false; fi
+ DEBUG [8cccf393] Finished in 0.166 seconds with exit status 0 (successful).
+  INFO [656d30de] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate as deploy@216.137.181.32
+ DEBUG [656d30de] Command: cd /home/deploy/mydivafashion/releases/20210610111425 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" RAILS_ENV="production" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate )
+  INFO [656d30de] Finished in 1.267 seconds with exit status 0 (successful).
+  INFO [586779f6] Running /usr/bin/env ln -s /home/deploy/mydivafashion/releases/20210610111425 /home/deploy/mydivafashion/releases/current as deploy@216.137.181.32
+ DEBUG [586779f6] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ln -s /home/deploy/mydivafashion/releases/20210610111425 /home/deploy/mydivafashion/releases/current )
+  INFO [586779f6] Finished in 0.167 seconds with exit status 0 (successful).
+  INFO [4c1ab697] Running /usr/bin/env mv /home/deploy/mydivafashion/releases/current /home/deploy/mydivafashion as deploy@216.137.181.32
+ DEBUG [4c1ab697] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env mv /home/deploy/mydivafashion/releases/current /home/deploy/mydivafashion )
+  INFO [4c1ab697] Finished in 0.170 seconds with exit status 0 (successful).
+ DEBUG [9e297fa9] Running /usr/bin/env pwd as deploy@216.137.181.32
+ DEBUG [9e297fa9] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env pwd )
+ DEBUG [9e297fa9] 	/home/deploy
+ DEBUG [9e297fa9] Finished in 0.167 seconds with exit status 0 (successful).
+ DEBUG [fbbb3d0f] Running if test ! -d /home/deploy; then echo "Directory does not exist '/home/deploy'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [fbbb3d0f] Command: if test ! -d /home/deploy; then echo "Directory does not exist '/home/deploy'" 1>&2; false; fi
+ DEBUG [fbbb3d0f] Finished in 0.169 seconds with exit status 0 (successful).
+ DEBUG [386b9e53] Running /usr/bin/env passenger -v as deploy@216.137.181.32
+ DEBUG [386b9e53] Command: cd /home/deploy && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env passenger -v )
+ DEBUG [386b9e53] 	Phusion Passenger(R) 6.0.9
+ DEBUG [386b9e53] Finished in 0.256 seconds with exit status 0 (successful).
+  INFO [4395f15e] Running /usr/bin/env passenger-config restart-app /home/deploy/mydivafashion --ignore-app-not-running as deploy@216.137.181.32
+ DEBUG [4395f15e] Command: cd /home/deploy && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env passenger-config restart-app /home/deploy/mydivafashion --ignore-app-not-running )
+ DEBUG [4395f15e] 	*** Cleaning stale instance directory /tmp/passenger.Ur7Krkv
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.Ur7Krkv/.
+*** Cleaning stale instance directory /tmp/passenger.HgrSP2V
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.HgrSP2V/.
+Restarting /home/deploy/mydivafashion/current (production)
+  INFO [4395f15e] Finished in 0.320 seconds with exit status 0 (successful).
+ DEBUG [2aeb7ec1] Running /usr/bin/env ls -x /home/deploy/mydivafashion/releases as deploy@216.137.181.32
+ DEBUG [2aeb7ec1] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env ls -x /home/deploy/mydivafashion/releases )
+ DEBUG [2aeb7ec1] 	20210608024940	20210608025227	20210608031141	20210609102722	20210609185257
+20210610111425
+ DEBUG [2aeb7ec1] Finished in 0.169 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on 216.137.181.32
+ DEBUG [76fa57ad] Running [ -d /home/deploy/mydivafashion/current ] as deploy@216.137.181.32
+ DEBUG [76fa57ad] Command: [ -d /home/deploy/mydivafashion/current ]
+ DEBUG [76fa57ad] Finished in 0.181 seconds with exit status 0 (successful).
+ DEBUG [961f153f] Running /usr/bin/env readlink /home/deploy/mydivafashion/current as deploy@216.137.181.32
+ DEBUG [961f153f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env readlink /home/deploy/mydivafashion/current )
+ DEBUG [961f153f] 	/home/deploy/mydivafashion/releases/20210610111425
+ DEBUG [961f153f] Finished in 0.199 seconds with exit status 0 (successful).
+  INFO [b723c8e4] Running /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210608024940 as deploy@216.137.181.32
+ DEBUG [b723c8e4] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env rm -rf /home/deploy/mydivafashion/releases/20210608024940 )
+  INFO [b723c8e4] Finished in 1.014 seconds with exit status 0 (successful).
+ DEBUG [df4590fa] Running if test ! -d /home/deploy/mydivafashion/releases; then echo "Directory does not exist '/home/deploy/mydivafashion/releases'" 1>&2; false; fi as deploy@216.137.181.32
+ DEBUG [df4590fa] Command: if test ! -d /home/deploy/mydivafashion/releases; then echo "Directory does not exist '/home/deploy/mydivafashion/releases'" 1>&2; false; fi
+ DEBUG [df4590fa] Finished in 0.177 seconds with exit status 0 (successful).
+  INFO [fce9bc5c] Running /usr/bin/env echo "Branch main (at 2680d20c678baa0f3594333917f93e1517a8332f) deployed as release 20210610111425 by jiaqiyu" >> /home/deploy/mydivafashion/revisions.log as deploy@216.137.181.32
+ DEBUG [fce9bc5c] Command: cd /home/deploy/mydivafashion/releases && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.7.1" ; /usr/bin/env echo "Branch main (at 2680d20c678baa0f3594333917f93e1517a8332f) deployed as release 20210610111425 by jiaqiyu" >> /home/deploy/mydivafashion/revisions.log )
+  INFO [fce9bc5c] Finished in 0.169 seconds with exit status 0 (successful).
