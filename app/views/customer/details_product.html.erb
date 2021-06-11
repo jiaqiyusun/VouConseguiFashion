@@ -46,8 +46,8 @@
 
 									<div class="shop-product__big-image-gallery-slider slick-initialized slick-slider slick-dotted"><button class="slick-prev slick-arrow slick-disabled" aria-disabled="true" style=""><i class="ti-angle-left"></i></button><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 4830px; transform: translate3d(0px, 0px, 0px);"><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00" style="width: 690px;"><div><div class="single-image" style="width: 100%; display: inline-block;">
 										
-											<img src="<%= @product.product_images.first.image %>" class="img-fluid" alt="">
-										<img role="presentation" alt="" src="file:///home/cuidado/Transfer%C3%AAncias/themeforest-pe5BB5ST-lezada-multipurpose-ecommerce-bootstrap-4-template/lezada/assets/images/shop-product/soccer-1.png" class="zoomImg" style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 810px; height: 1080px; border: none; max-width: none; max-height: none;"></div></div></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01" style="width: 690px;"><div><div class="single-image" style="width: 100%; display: inline-block;">
+										<img src="<%= @product.product_images.first.image %>" class="img-fluid" alt="">
+										<img src="<%= @product.product_images.last.image %>" class="zoomImg" style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 810px; height: 1080px; border: none; max-width: none; max-height: none;"></div></div></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01" style="width: 690px;"><div><div class="single-image" style="width: 100%; display: inline-block;">
 											<img src="assets/images/shop-product/soccer-2.png" class="img-fluid" alt="">
 										<img role="presentation" alt="" src="file:///home/cuidado/Transfer%C3%AAncias/themeforest-pe5BB5ST-lezada-multipurpose-ecommerce-bootstrap-4-template/lezada/assets/images/shop-product/soccer-2.png" class="zoomImg" style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 810px; height: 1080px; border: none; max-width: none; max-height: none;"></div></div></div><div class="slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide02" aria-describedby="slick-slide-control02" style="width: 690px;"><div><div class="single-image" style="width: 100%; display: inline-block;">
 											<img src="assets/images/shop-product/soccer-3.png" class="img-fluid" alt="">
@@ -179,11 +179,10 @@
 										<div class="shop-product__block__title">Size: </div>
 										<div class="shop-product__block__value">
 											<div class="shop-product-size-list">
-												<span class="single-size">L</span>
-												<span class="single-size">M</span>
-												<span class="single-size">S</span>
-												<span class="single-size">XS</span>
-											</div>
+											<%@product_sizes.each do |s| %>
+												<span class="single-size"><%= s.size.name %></span>
+                  							<% end %>
+											  </div>
 										</div>
 									</div>
 
@@ -197,10 +196,9 @@
 											<div class="shop-product-color-list">
 
 												<ul class="single-filter-widget--list single-filter-widget--list--color">
-													<li class="mb-0 pt-0 pb-0 mr-10"><a class="active" href="#"><span class="color-picker black"></span></a></li>
-													<li class="mb-0 pt-0 pb-0 mr-10"><a href="#"><span class="color-picker blue"></span></a></li>
-													<li class="mb-0 pt-0 pb-0 mr-10"><a href="#"><span class="color-picker brown"></span></a></li>
-
+													<%@product_colors.each do |c| %>
+														<li class="mb-0 pt-0 pb-0 mr-10"><a class="active" href="#"><span class="color-picker <%= c.color.codigo %>"></span></a></li>
+                  									<% end %>
 												</ul>
 											</div>
 										</div>

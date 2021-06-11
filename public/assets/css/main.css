@@ -11907,8 +11907,24 @@ nav.site-nav > ul > li ul.mega-menu-column-5 > li .mega-sub-menu li:last-child a
   background-color: #000;
 }
 
-.single-filter-widget--list--color li a span.blue {
-  background-color: #1e73be;
+.single-filter-widget--list--color li a span.yellow{
+  background-color: yellow;
+}
+
+.single-filter-widget--list--color li a span.red{
+  background-color: red;
+}
+
+.single-filter-widget--list--color li a span.orange {
+  background-color: orange;
+}
+
+.single-filter-widget--list--color li a span.black {
+  background-color: #000;
+}
+
+.single-filter-widget--list--color li a span.purple {
+  background-color: purple;
 }
 
 .single-filter-widget--list--color li a span.brown {

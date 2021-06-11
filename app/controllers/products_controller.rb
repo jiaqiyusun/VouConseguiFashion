@@ -14,6 +14,8 @@ class ProductsController < ApplicationController
   # GET /products/1 or /products/1.json
   def show
     @product_images = @product.product_images.all
+    @product_colors = @product.colorProducts
+    @product_sizes = @product.sizeProducts
   end
 
   # GET /products/new
@@ -35,9 +37,9 @@ class ProductsController < ApplicationController
   # POST /products or /products.json
   def create
 
+    print params['details[color]']
     @product = Product.new(product_params)
     @root_categories = Category.roots
-     
     if @product.save
       respond_to do |format|
         if @product.save
@@ -45,6 +47,13 @@ class ProductsController < ApplicationController
             @product_images = @product.product_images.create!(:image => img,:product_id => @product.id)
            end
 
+           (params[:detail]['color']).each do |c|
+            @product_colors = ColorProduct.create!(:product_id => @product.id, :color_id => c)
+           end
+
+           (params[:detail]['size']).each do |s|
+            @product_colors = SizeProduct.create!(:product_id => @product.id, :size_id => s)
+           end
           format.html { redirect_to @product, notice: "Product was successfully created." }
           format.json { render :show, status: :created, location: @product }
         else
@@ -68,6 +77,14 @@ class ProductsController < ApplicationController
         
         (params[:product_images]['image']).each do |img|
           @product_images = @product.product_images.create!(:image => img,:product_id => @product.id)
+        end
+
+        (params[:detail]['color']).each do |c|
+          @product_colors = ColorProduct.create!(:product_id => @product.id, :color_id => c)
+         end
+
+        (params[:detail]['size']).each do |s|
+          @product_colors = SizeProduct.create!(:product_id => @product.id, :size_id => s)
         end
       end
 

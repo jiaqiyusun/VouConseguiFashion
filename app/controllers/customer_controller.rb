@@ -10,6 +10,8 @@ class CustomerController < ApplicationController
   
   def details_product
     @product = Product.find(params[:id])
+    @product_colors = Product.find(params[:id]).colorProducts
+    @product_sizes = Product.find(params[:id]).sizeProducts
   end
   def productos_desconto
     kids = Category.find(params[:id_categoria]).children

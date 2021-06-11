@@ -65,6 +65,25 @@
                 <%= @product.title %>
               </p>
             </div>
+            <div class="form-group">
+              <label for="color_id" class="col-sm-2 control-label">所属颜色:</label>
+              <div class="col-sm-5">
+              <%@product_colors.each do |c| %>
+                      <%= c.color.name %>
+                      <br>
+                  <% end %>
+              </div>
+            </div>
+
+          <div class="form-group">
+              <label for="color_id" class="col-sm-2 control-label">所属尺寸:</label>
+              <div class="col-sm-5">
+              <%@product_sizes.each do |s| %>
+                      <%= s.size.name %>
+                      <br>
+                  <% end %>
+              </div>
+          </div>
 
             <div class="field">
               <p>

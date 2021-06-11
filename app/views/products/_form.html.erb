@@ -26,7 +26,30 @@
         </select>
       </div>
     </div>
-    
+
+  <div class="form-group">
+       <label for="color_id" class="col-sm-2 control-label">所属颜色:</label>
+      <div class="col-sm-5">
+      <% i =0%>
+       <%  @colors.each do |c| %>
+          <%= check_box_tag 'detail[color][]', c.id, false, :id => c.id %>
+              <%= c.name %>
+              <br>
+          <% end %>
+      </div>
+  </div>
+
+  <div class="form-group">
+       <label for="color_id" class="col-sm-2 control-label">所属尺寸:</label>
+      <div class="col-sm-5">
+      <% i =0%>
+      <%  @sizes.each do |s| %>
+          <%= check_box_tag 'detail[size][]', s.id, false, :id => s.id %>
+              <%= s.name %>
+              <br>
+          <% end %>
+      </div>
+  </div>
 
   <div class="field">
     <%= form.label :title,"产品名字" %>
