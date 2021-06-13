@@ -276,8 +276,8 @@ module ActionView
       #   file_field_tag 'user_pic', accept: 'image/png,image/gif,image/jpeg'
       #   # => <input accept="image/png,image/gif,image/jpeg" id="user_pic" name="user_pic" type="file" />
       #
-      #   file_field_tag 'file', accept: 'text/html', class: 'upload', value: 'index.html'
-      #   # => <input accept="text/html" class="upload" id="file" name="file" type="file" value="index.html" />
+      #   file_field_tag 'file', accept: 'text/html', class: 'upload', value: '/'
+      #   # => <input accept="text/html" class="upload" id="file" name="file" type="file" value="/" />
       def file_field_tag(name, options = {})
         text_field_tag(name, nil, convert_direct_upload_option_to_url(options.merge(type: :file)))
       end

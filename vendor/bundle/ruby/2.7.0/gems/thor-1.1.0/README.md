@@ -25,7 +25,7 @@ which combined with application user input would provide a command injection att
 vector.
 
 [rake]: https://github.com/ruby/rake
-[open-uri]: https://ruby-doc.org/stdlib-2.5.1/libdoc/open-uri/rdoc/index.html
+[open-uri]: https://ruby-doc.org/stdlib-2.5.1/libdoc/open-uri/rdoc//
 
 Installation
 ------------

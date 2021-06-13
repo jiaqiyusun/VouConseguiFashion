@@ -563,7 +563,7 @@ Sun Oct 12 23:27:58 2003  Minero Aoki  <aamine@loveruby.net>
 
 	* doc/debug.rd.m: junk char was inserted.
 
-	* doc/index.html.m: en/ja text were mixed.
+	* doc//.m: en/ja text were mixed.
 
 	* doc/parser.rrd.m: add return values.
 
@@ -579,7 +579,7 @@ Sun Oct 12 22:57:28 2003  Minero Aoki  <aamine@loveruby.net>
 
 	* doc.en/grammar.html, doc.ja/grammar.html -> doc/grammar.rd.m
 
-	* doc.en/index.html,   doc.ja/index.html   -> doc/index.html.m
+	* doc.en//,   doc.ja//   -> doc//.m
 
 	* doc.en/parser.html,  doc.ja/parser.html  -> doc/parser.rrd.m
 
@@ -631,7 +631,7 @@ Sun Oct 12 17:18:47 2003  Minero Aoki  <aamine@loveruby.net>
 
 	* doc.en/grammar.html: ditto.
 
-	* doc.en/index.html: ditto.
+	* doc.en//: ditto.
 
 	* doc.en/parser.html: ditto.
 
@@ -643,7 +643,7 @@ Sun Oct 12 17:18:47 2003  Minero Aoki  <aamine@loveruby.net>
 
 	* doc.ja/debug.html: ditto.
 
-	* doc.ja/index.html: ditto.
+	* doc.ja//: ditto.
 
 	* doc.ja/parser.html: ditto.
 

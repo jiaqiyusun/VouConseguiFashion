@@ -48,7 +48,7 @@ Consider subscribing to [Tidelift][tidelift] which provides license assurances a
 
 Your first stops for learning more about Nokogiri should be:
 
-- [API Documentation](https://nokogiri.org/rdoc/index.html)
+- [API Documentation](https://nokogiri.org/rdoc//)
 - [Tutorials](https://nokogiri.org/tutorials/toc.html)
 - An excellent community-maintained [Cheat Sheet](https://github.com/sparklemotion/nokogiri/wiki/Cheat-sheet)
 

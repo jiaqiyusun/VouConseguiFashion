@@ -104,8 +104,8 @@ puma (4.3.8) lib/puma/server.rb:328:in `block in run'
 puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
 Started GET "/" for ::1 at 2021-05-23 12:50:16 +0100
 Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 3588)
+  Rendering home//.erb within layouts/application
+  Rendered home//.erb within layouts/application (Duration: 5.0ms | Allocations: 3588)
   [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
   ↳ app/views/layouts/_header_two.html.erb:30
   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = '1'[0m

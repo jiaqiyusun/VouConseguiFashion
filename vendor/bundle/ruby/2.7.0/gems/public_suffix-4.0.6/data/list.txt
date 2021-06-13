@@ -318,7 +318,7 @@ bf
 gov.bf
 
 // bg : https://en.wikipedia.org/wiki/.bg
-// https://www.register.bg/user/static/rules/en/index.html
+// https://www.register.bg/user/static/rules/en//
 bg
 a.bg
 b.bg
@@ -965,7 +965,7 @@ sci.eg
 // er : https://en.wikipedia.org/wiki/.er
 *.er
 
-// es : https://www.nic.es/site_ingles/ingles/dominios/index.html
+// es : https://www.nic.es/site_ingles/ingles/dominios//
 es
 com.es
 nom.es
@@ -3655,7 +3655,7 @@ mil.kg
 // kh : http://www.mptc.gov.kh/dns_registration.htm
 *.kh
 
-// ki : http://www.ki/dns/index.html
+// ki : http://www.ki/dns//
 ki
 edu.ki
 biz.ki
@@ -5467,7 +5467,7 @@ våler.hedmark.no
 // np : http://www.mos.com.np/register.html
 *.np
 
-// nr : http://cenpac.net.nr/dns/index.html
+// nr : http://cenpac.net.nr/dns//
 // Submitted by registry <technician@cenpac.net.nr>
 nr
 biz.nr
@@ -5583,13 +5583,13 @@ gop.pk
 gos.pk
 info.pk
 
-// pl http://www.dns.pl/english/index.html
+// pl http://www.dns.pl/english//
 // Submitted by registry
 pl
 com.pl
 net.pl
 org.pl
-// pl functional domains (http://www.dns.pl/english/index.html)
+// pl functional domains (http://www.dns.pl/english//)
 aid.pl
 agro.pl
 atm.pl
@@ -5669,7 +5669,7 @@ mup.gov.pl
 wuoz.gov.pl
 konsulat.gov.pl
 oirm.gov.pl
-// pl regional domains (http://www.dns.pl/english/index.html)
+// pl regional domains (http://www.dns.pl/english//)
 augustow.pl
 babia-gora.pl
 bedzin.pl

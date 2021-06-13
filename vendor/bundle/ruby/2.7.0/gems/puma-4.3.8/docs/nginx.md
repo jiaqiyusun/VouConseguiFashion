@@ -39,12 +39,12 @@ server {
       break;
     }
 
-    # check for index.html for directory index
+    # check for / for directory index
     # if it's there on the filesystem then rewrite
-    # the url to add /index.html to the end of it
+    # the url to add // to the end of it
     # and then break to send it to the next config rules.
-    if (-f $request_filename/index.html) {
-      rewrite (.*) $1/index.html break;
+    if (-f $request_filename//) {
+      rewrite (.*) $1// break;
     }
 
     # this is the meat of the rack page caching config

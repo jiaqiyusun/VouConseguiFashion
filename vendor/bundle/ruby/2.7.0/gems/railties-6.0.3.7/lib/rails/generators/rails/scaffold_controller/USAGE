@@ -15,5 +15,5 @@ Example:
     Credit card controller with URLs like /credit_cards.
         Controller: app/controllers/credit_cards_controller.rb
         Test:       test/controllers/credit_cards_controller_test.rb
-        Views:      app/views/credit_cards/index.html.erb [...]
+        Views:      app/views/credit_cards//.erb [...]
         Helper:     app/helpers/credit_cards_helper.rb

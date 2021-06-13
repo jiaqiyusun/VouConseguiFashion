@@ -11,9 +11,9 @@
 #include <type_traits>
 #include <vector>
 
-// https://lokiastari.com/blog/2014/12/30/c-plus-plus-by-example-smart-pointer/index.html
-// https://lokiastari.com/blog/2015/01/15/c-plus-plus-by-example-smart-pointer-part-ii/index.html
-// https://lokiastari.com/blog/2015/01/23/c-plus-plus-by-example-smart-pointer-part-iii/index.html
+// https://lokiastari.com/blog/2014/12/30/c-plus-plus-by-example-smart-pointer//
+// https://lokiastari.com/blog/2015/01/15/c-plus-plus-by-example-smart-pointer-part-ii//
+// https://lokiastari.com/blog/2015/01/23/c-plus-plus-by-example-smart-pointer-part-iii//
 
 namespace Sass {
 

@@ -929,7 +929,7 @@
     MySQL 8.0.13 and higher supports functional key parts that index
     expression values rather than column or column prefix values.
 
-    https://dev.mysql.com/doc/refman/8.0/en/create-index.html
+    https://dev.mysql.com/doc/refman/8.0/en/create-/
 
     *Ryuta Kamizono*
 

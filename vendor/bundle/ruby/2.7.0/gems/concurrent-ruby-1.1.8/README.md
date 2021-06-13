@@ -65,7 +65,7 @@ would provide consistent behaviour and guarantees on all four of the main Ruby i
 ## Features & Documentation
 
 **The primary site for documentation is the automatically generated 
-[API documentation](http://ruby-concurrency.github.io/concurrent-ruby/index.html) which is up to 
+[API documentation](http://ruby-concurrency.github.io/concurrent-ruby//) which is up to 
 date with latest release.** This readme matches the master so may contain new stuff not yet 
 released.
 
@@ -152,7 +152,7 @@ Thread-safe variables:
 *   [MVar](http://ruby-concurrency.github.io/concurrent-ruby/master/Concurrent/MVar.html) A synchronized
     single element container. Based on Haskell's 
     [MVar](https://hackage.haskell.org/package/base-4.8.1.0/docs/Control-Concurrent-MVar.html) and 
-    Scala's [MVar](http://docs.typelevel.org/api/scalaz/nightly/index.html#scalaz.concurrent.MVar$).
+    Scala's [MVar](http://docs.typelevel.org/api/scalaz/nightly//#scalaz.concurrent.MVar$).
 *   [ThreadLocalVar](http://ruby-concurrency.github.io/concurrent-ruby/master/Concurrent/ThreadLocalVar.html)
     A variable where the value is different for each thread.
 *   [TVar](http://ruby-concurrency.github.io/concurrent-ruby/master/Concurrent/TVar.html) A transactional

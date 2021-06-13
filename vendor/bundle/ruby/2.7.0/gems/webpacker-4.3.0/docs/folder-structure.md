@@ -52,7 +52,7 @@ app/javascript/packs/shop/orders.js
 and reference them in your views like this:
 
 ```erb
-<%# app/views/admin/orders/index.html.erb %>
+<%# app/views/admin/orders//.erb %>
 
 <%= javascript_pack_tag 'admin/orders' %>
 ```
@@ -60,7 +60,7 @@ and reference them in your views like this:
 and
 
 ```erb
-<%# app/views/shop/orders/index.html.erb %>
+<%# app/views/shop/orders//.erb %>
 
 <%= javascript_pack_tag 'shop/orders' %>
 ```

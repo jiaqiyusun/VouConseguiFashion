@@ -50,7 +50,7 @@
 
 							<div class="single-icon advance-filter-icon">
 								<a href="javascript:void(0)" id="advance-filter-active-btn"><i class="ion-android-funnel"></i>
-									Filters</a>
+									Filtro</a>
 							</div>
 
 							<!--=======  End of advance filter icon  =======-->
@@ -77,14 +77,11 @@
 							<!--=======  single advance filte  =======-->
 
 							<div class="single-filter-widget">
-								<h2 class="single-filter-widget--title">Sort by</h2>
+								<h2 class="single-filter-widget--title">NEW</h2>
 								<ul class="single-filter-widget--list">
-									<li><a href="#">Default</a></li>
-									<li><a href="#">Popularity</a></li>
-									<li><a href="#">Average rating</a></li>
-									<li><a href="#">Newness</a></li>
-									<li><a href="#">Price: low to high</a></li>
-									<li><a href="#">Price: high to low</a></li>
+								<li><a href="/roupas/vestidos">MULHER</a></li>
+              <li><a href="/roupas/0">CRIANÇAS</a></li>
+       	
 								</ul>
 							</div>
 
@@ -95,45 +92,14 @@
 							<!--=======  single advance filte  =======-->
 
 							<div class="single-filter-widget">
-								<h2 class="single-filter-widget--title">Categories</h2>
-								<ul class="single-filter-widget--list single-filter-widget--list--category">
-									<li class="has-children">
-										<a href="#">Cosmetic </a> <span class="quantity">5</span>
-										<ul>
-											<li><a href="#">For body</a></li>
-											<li><a href="#">Make up</a></li>
-											<li><a href="#">New</a></li>
-											<li><a href="#">Perfumes</a></li>
-										</ul>
-									<a href="#" class="expand-icon">+</a></li>
-									<li class="has-children">
-										<a href="#">Furniture </a> <span class="quantity">23</span>
-										<ul>
-											<li><a href="#">Sofas</a></li>
-											<li><a href="#">Armchairs</a></li>
-											<li><a href="#">Desk Chairs</a></li>
-											<li><a href="#">Dining Chairs</a></li>
-										</ul>
-									<a href="#" class="expand-icon">+</a></li>
-									<li><a href="#">Watches </a> <span class="quantity">12</span></li>
-								</ul>
-							</div>
-
-							<!--=======  End of single advance filte  =======-->
-						</div>
-
-						<div class="col-lg-2 col-md-4 col-sm-6 mb-50">
-							<!--=======  single advance filte  =======-->
-
-							<div class="single-filter-widget">
-								<h2 class="single-filter-widget--title">Price filter</h2>
+								<h2 class="single-filter-widget--title">SPECIAL PRICES</h2>
 								<ul class="single-filter-widget--list">
-									<li><a href="#">All</a></li>
-									<li><a href="#">$0.00 - $70.00</a></li>
-									<li><a href="#">$70.00 - $140.00</a></li>
-									<li><a href="#">$140.00 - $210.00</a></li>
-									<li><a href="#">$210.00 - $280.00</a></li>
-									<li><a href="#">$280.00 - $350.00</a></li>
+								<% @root_categories.each do |category|%>
+									<li class="has-children">
+											<a href="/roupas/desconto/<%= category.id %>"><%= category.title %></a>
+									</li>
+              					<% end -%>
+       	
 								</ul>
 							</div>
 
@@ -144,18 +110,24 @@
 							<!--=======  single advance filte  =======-->
 
 							<div class="single-filter-widget">
-								<h2 class="single-filter-widget--title">Color</h2>
-								<ul class="single-filter-widget--list single-filter-widget--list--color">
-									<li><a class="active" href="#" data-tippy="Black" data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder"><span class="color-picker black"></span></a></li>
-									<li><a href="#" data-tippy="Blue" data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder"><span class="color-picker blue"></span></a></li>
-									<li><a href="#" data-tippy="Brown" data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder"><span class="color-picker brown"></span></a></li>
-									<li><a href="#" data-tippy="Gold" data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder"><span class="color-picker gold"></span></a></li>
-									<li><a href="#" data-tippy="Green Coral" data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder"><span class="color-picker green-coral"></span></a></li>
-									<li><a href="#" data-tippy="Grey" data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder"><span class="color-picker grey"></span></a></li>
-									<li><a href="#" data-tippy="Oak" data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder"><span class="color-picker oak"></span></a></li>
-									<li><a href="#" data-tippy="Pink" data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder"><span class="color-picker pink"></span></a></li>
-									<li><a href="#" data-tippy="Silver" data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder"><span class="color-picker silver"></span></a></li>
-									<li><a href="#" data-tippy="White" data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder"><span class="color-picker white"></span></a></li>
+								<h2 class="single-filter-widget--title">MULHER</h2>
+								<ul class="single-filter-widget--list">
+									<% @root_categories.each do |category| %>
+										<% if(category.id==1) %>
+									<li class="has-children"><a href="/roupas/<%= category.id %>"></a>
+									
+									
+									<ul class="sub-menu">
+									
+									<% category.children.each do |sub_category| %>
+										
+										<li class="has-children-submenu"> <a href="/roupas/<%= sub_category.id %>"><%= sub_category.title %></a></li>
+										
+									<% end -%>
+									<% end -%>
+									</ul>
+									</li>
+								<% end -%>
 								</ul>
 							</div>
 
@@ -166,13 +138,27 @@
 							<!--=======  single advance filte  =======-->
 
 							<div class="single-filter-widget">
-								<h2 class="single-filter-widget--title">Size</h2>
-								<ul class="single-filter-widget--list single-filter-widget--list--size">
-									<li><a href="#">L</a> <span class="quantity">5</span></li>
-									<li><a href="#">M</a> <span class="quantity">5</span></li>
-									<li><a href="#">S</a> <span class="quantity">5</span></li>
-									<li><a href="#">XS</a> <span class="quantity">5</span></li>
+								<h2 class="single-filter-widget--title">CRIANÇAS</h2>
+								<% @root_categories.each do |category| %>
+								<ul class="single-filter-widget--list">
+									
+										<% if(category.id==4) %>
+									<li class="has-children"><a href="/roupas/<%= category.id %>"></a></li>
+									
+									
+									<ul class="sub-menu">
+									
+									<% category.children.each do |sub_category| %>
+										
+										<li class="has-children-submenu"> <a href="/roupas/<%= sub_category.id %>"><%= sub_category.title %></a></li>
+										
+									<% end -%>
+									<% end -%>
+									</ul>
+									</li>
+								
 								</ul>
+								<% end -%>
 							</div>
 
 							<!--=======  End of single advance filte  =======-->
@@ -181,15 +167,27 @@
 						<div class="col-lg-2 col-md-4 col-sm-6 mb-50">
 							<!--=======  single advance filte  =======-->
 
-							<div class="single-filter-widget">
-								<h2 class="single-filter-widget--title">Brands</h2>
-								<ul class="single-filter-widget--list single-filter-widget--list--brand">
-									<li><a href="#">Alliop</a> <span class="quantity">(12)</span></li>
-									<li><a href="#">Burberry</a> <span class="quantity">(15)</span></li>
-									<li><a href="#">Catmen</a> <span class="quantity">(13)</span></li>
-									<li><a href="#">Houdini</a> <span class="quantity">(10)</span></li>
-									<li><a href="#">Love</a> <span class="quantity">(70)</span></li>
-									<li><a href="#">Made</a> <span class="quantity">(15)</span></li>
+									<div class="single-filter-widget">
+								<h2 class="single-filter-widget--title">MAIS INFORMAÇÕES</h2>
+								<ul class="single-filter-widget--list">
+								<li><li><%= link_to "QUEM SOMOS", home_about_path%></li></li>
+              <li class="has-children-submenu"><%= link_to "CONTACTOS", home_contact_path%>
+          
+								</ul>
+							</div>
+							<!--=======  End of single advance filte  =======-->
+						</div>
+
+						<div class="col-lg-2 col-md-4 col-sm-6 mb-50">
+							<!--=======  single advance filte  =======-->
+
+									<div class="single-filter-widget">
+								<h2 class="single-filter-widget--title">MAIS INFORMAÇÕES</h2>
+								<ul class="single-filter-widget--list">
+								<li><a href="https://www.facebook.com/Dive-Fashion-110178697918789"> <i class="fa fa-facebook"></i> Facebook</a></li>
+                <li><a href="https://www.instagram.com/dive_fashion_lisboa/?hl=en"><i class="fa fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://www.youtube.com/channel/UCBfI0--qUgZ83CSEOorJVNA"> <i class="fa fa-youtube"></i> Youtube</a></li>
+              
 								</ul>
 							</div>
 

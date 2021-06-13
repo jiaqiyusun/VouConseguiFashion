@@ -2,8 +2,8 @@ Started GET "/" for ::1 at 2021-05-20 18:12:02 +0100
   [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 3741)
+  Rendering home//.erb within layouts/application
+  Rendered home//.erb within layouts/application (Duration: 5.7ms | Allocations: 3741)
   [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
   ↳ app/views/layouts/_header_two.html.erb:34
   [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = '1'[0m
@@ -132,8 +132,8 @@ puma (4.3.8) lib/puma/server.rb:328:in `block in run'
 puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
 Started GET "/" for ::1 at 2021-05-20 18:16:27 +0100
 Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 3630)
+  Rendering home//.erb within layouts/application
+  Rendered home//.erb within layouts/application (Duration: 5.7ms | Allocations: 3630)
   [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
   ↳ app/views/layouts/_header_two.html.erb:34
   [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = '1'[0m
@@ -262,8 +262,8 @@ puma (4.3.8) lib/puma/server.rb:328:in `block in run'
 puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
 Started GET "/" for ::1 at 2021-05-20 18:17:49 +0100
 Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 4)
+  Rendering home//.erb within layouts/application
+  Rendered home//.erb within layouts/application (Duration: 5.9ms | Allocations: 4)
   [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
   ↳ app/views/layouts/_header_two.html.erb:34
   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = '1'[0m
@@ -278,8 +278,8 @@ Completed 200 OK in 210ms (Views: 183.8ms | ActiveRecord: 1.6ms | Allocations: 8
 
 Started GET "/" for ::1 at 2021-05-20 18:17:53 +0100
 Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendering home//.erb within layouts/application
+  Rendered home//.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
   ↳ app/views/layouts/_header_two.html.erb:34
   [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = '1'[0m
@@ -294,8 +294,8 @@ Completed 200 OK in 46ms (Views: 44.1ms | ActiveRecord: 0.7ms | Allocations: 890
 
 Started GET "/" for ::1 at 2021-05-20 18:18:51 +0100
 Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (Duration: 13.1ms | Allocations: 3629)
+  Rendering home//.erb within layouts/application
+  Rendered home//.erb within layouts/application (Duration: 13.1ms | Allocations: 3629)
   [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
   ↳ app/views/layouts/_header_two.html.erb:34
   [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = '1'[0m
@@ -424,8 +424,8 @@ puma (4.3.8) lib/puma/server.rb:328:in `block in run'
 puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
 Started GET "/" for ::1 at 2021-05-20 18:19:11 +0100
 Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (Duration: 11.7ms | Allocations: 3624)
+  Rendering home//.erb within layouts/application
+  Rendered home//.erb within layouts/application (Duration: 11.7ms | Allocations: 3624)
   [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
   ↳ app/views/layouts/_header_two.html.erb:34
   [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = '1'[0m
@@ -554,8 +554,8 @@ puma (4.3.8) lib/puma/server.rb:328:in `block in run'
 puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
 Started GET "/" for 127.0.0.1 at 2021-05-20 18:19:33 +0100
 Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 3625)
+  Rendering home//.erb within layouts/application
+  Rendered home//.erb within layouts/application (Duration: 5.5ms | Allocations: 3625)
   [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
   ↳ app/views/layouts/_header_two.html.erb:34
   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = '1'[0m
@@ -684,8 +684,8 @@ puma (4.3.8) lib/puma/server.rb:328:in `block in run'
 puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
 Started GET "/" for 127.0.0.1 at 2021-05-20 18:20:08 +0100
 Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+  Rendering home//.erb within layouts/application
+  Rendered home//.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
   [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
   ↳ app/views/layouts/_header_two.html.erb:34
   [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = '1'[0m
@@ -814,8 +814,8 @@ puma (4.3.8) lib/puma/server.rb:328:in `block in run'
 puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
 Started GET "/" for 127.0.0.1 at 2021-05-20 18:20:34 +0100
 Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 3624)
+  Rendering home//.erb within layouts/application
+  Rendered home//.erb within layouts/application (Duration: 4.3ms | Allocations: 3624)
   [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
   ↳ app/views/layouts/_header_two.html.erb:34
   [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = '1'[0m
@@ -944,8 +944,8 @@ puma (4.3.8) lib/puma/server.rb:328:in `block in run'
 puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
 Started GET "/" for 127.0.0.1 at 2021-05-20 18:20:44 +0100
 Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 3627)
+  Rendering home//.erb within layouts/application
+  Rendered home//.erb within layouts/application (Duration: 6.6ms | Allocations: 3627)
   [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
   ↳ app/views/layouts/_header_two.html.erb:34
   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = '1'[0m
@@ -1074,8 +1074,8 @@ puma (4.3.8) lib/puma/server.rb:328:in `block in run'
 puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
 Started GET "/" for 127.0.0.1 at 2021-05-20 18:20:56 +0100
 Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 3629)
+  Rendering home//.erb within layouts/application
+  Rendered home//.erb within layouts/application (Duration: 4.0ms | Allocations: 3629)
   [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
   ↳ app/views/layouts/_header_two.html.erb:34
   [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = '1'[0m
@@ -1204,8 +1204,8 @@ puma (4.3.8) lib/puma/server.rb:328:in `block in run'
 puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
 Started GET "/" for 127.0.0.1 at 2021-05-20 18:24:04 +0100
 Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 3624)
+  Rendering home//.erb within layouts/application
+  Rendered home//.erb within layouts/application (Duration: 8.6ms | Allocations: 3624)
   [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
   ↳ app/views/layouts/_header_two.html.erb:34
   [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = '1'[0m
@@ -1334,8 +1334,8 @@ puma (4.3.8) lib/puma/server.rb:328:in `block in run'
 puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
 Started GET "/" for 127.0.0.1 at 2021-05-20 18:26:41 +0100
 Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (Duration: 19.6ms | Allocations: 3625)
+  Rendering home//.erb within layouts/application
+  Rendered home//.erb within layouts/application (Duration: 19.6ms | Allocations: 3625)
   [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
   ↳ app/views/layouts/_header_two.html.erb:34
   [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = '1'[0m
@@ -1465,8 +1465,8 @@ puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
 Started GET "/" for 127.0.0.1 at 2021-05-20 18:35:04 +0100
   [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
 Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 3630)
+  Rendering home//.erb within layouts/application
+  Rendered home//.erb within layouts/application (Duration: 8.4ms | Allocations: 3630)
   [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
   ↳ app/views/layouts/_header_two.html.erb:34
   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = '1'[0m
@@ -1595,8 +1595,8 @@ puma (4.3.8) lib/puma/server.rb:328:in `block in run'
 puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
 Started GET "/" for 127.0.0.1 at 2021-05-20 18:37:36 +0100
 Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 3630)
+  Rendering home//.erb within layouts/application
+  Rendered home//.erb within layouts/application (Duration: 6.2ms | Allocations: 3630)
   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
   ↳ app/views/layouts/_header_two.html.erb:34
   [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = '1'[0m
@@ -1725,8 +1725,8 @@ puma (4.3.8) lib/puma/server.rb:328:in `block in run'
 puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
 Started GET "/" for 127.0.0.1 at 2021-05-20 18:41:33 +0100
 Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 4)
+  Rendering home//.erb within layouts/application
+  Rendered home//.erb within layouts/application (Duration: 0.9ms | Allocations: 4)
   [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
   ↳ app/views/layouts/_header_two.html.erb:34
   [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = '1'[0m

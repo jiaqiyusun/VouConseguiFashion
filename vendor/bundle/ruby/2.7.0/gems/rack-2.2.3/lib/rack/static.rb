@@ -24,16 +24,16 @@ module Rack
   #
   #     use Rack::Static, :urls => ["/css", "/images"], :root => "public"
   #
-  # Serve all requests to / with "index.html" from the folder "public" in the
-  # current directory (ie public/index.html):
+  # Serve all requests to / with "/" from the folder "public" in the
+  # current directory (ie public//):
   #
-  #     use Rack::Static, :urls => {"/" => 'index.html'}, :root => 'public'
+  #     use Rack::Static, :urls => {"/" => '/'}, :root => 'public'
   #
   # Serve all requests normally from the folder "public" in the current
-  # directory but uses index.html as default route for "/"
+  # directory but uses / as default route for "/"
   #
   #     use Rack::Static, :urls => [""], :root => 'public', :index =>
-  #     'index.html'
+  #     '/'
   #
   # Set custom HTTP Headers for based on rules:
   #

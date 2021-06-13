@@ -10,7 +10,7 @@ and has been tested to work on MRI (2.0 through 2.2),
 ## Links
 
 * http://rubygems.org/gems/selenium-webdriver
-* http://seleniumhq.github.io/selenium/docs/api/rb/index.html
+* http://seleniumhq.github.io/selenium/docs/api/rb//
 * https://github.com/SeleniumHQ/selenium/wiki/Ruby-Bindings
 * https://github.com/SeleniumHQ/selenium/issues
 

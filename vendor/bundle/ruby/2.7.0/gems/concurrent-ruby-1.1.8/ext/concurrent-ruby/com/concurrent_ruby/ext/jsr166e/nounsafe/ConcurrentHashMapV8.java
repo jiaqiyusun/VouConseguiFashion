@@ -212,7 +212,7 @@ import java.io.Serializable;
  * same forms as those expected for JDK8.</em>
  *
  * <p>This class is a member of the
- * <a href="{@docRoot}/../technotes/guides/collections/index.html">
+ * <a href="{@docRoot}/../technotes/guides/collections//">
  * Java Collections Framework</a>.
  *
  * @since 1.5

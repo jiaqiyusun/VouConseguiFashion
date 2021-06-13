@@ -562,9 +562,9 @@ INDEX = XHTML_PREAMBLE + <<HTML
 
 <frameset cols="20%,*">
     <frameset rows="15%,35%,50%">
-        <frame src="fr_file_index.html"   title="Files" name="Files" />
-        <frame src="fr_class_index.html"  name="Classes" />
-        <frame src="fr_method_index.html" name="Methods" />
+        <frame src="fr_file_/"   title="Files" name="Files" />
+        <frame src="fr_class_/"  name="Classes" />
+        <frame src="fr_method_/" name="Methods" />
     </frameset>
 IF:inline_source
       <frame  src="%initial_page%" name="docwin">
@@ -577,7 +577,7 @@ IFNOT:inline_source
 ENDIF:inline_source
     <noframes>
           <body bgcolor="white">
-            Click <a href="html/index.html">here</a> for a non-frames
+            Click <a href="html//">here</a> for a non-frames
             version of this page.
           </body>
     </noframes>
