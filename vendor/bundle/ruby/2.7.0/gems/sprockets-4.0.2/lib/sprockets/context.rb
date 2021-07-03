@@ -193,7 +193,7 @@ module Sprockets
     #
     # Use `asset_data_uri` from ERB with CSS or JavaScript assets:
     #
-    #     #logo { background: url(<%= asset_data_uri 'logo.png' %>) }
+    #     #logo { background: url(<%= asset_data_uri 'logo.PNG' %>) }
     #
     #     $('<img>').attr('src', '<%= asset_data_uri 'avatar.jpg' %>')
     #
