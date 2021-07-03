@@ -303,7 +303,7 @@ module Sprockets
       # bundle. Any linked assets will automatically be compiled along with the
       # current.
       #
-      #   /*= link "logo.PNG" */
+      #   /*= link "logo.png" */
       #
       def process_link_directive(path)
         uri = to_load(resolve(path))
