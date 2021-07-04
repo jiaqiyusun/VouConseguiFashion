@@ -16,8 +16,7 @@ namespace :deploy do
   task :yarn_install do
     on roles(:web) do
       within release_path do
-        execute("cd #{release_path} && yarn install --silent --no-progress --no-audit --no-optional && bundle exec rake db:purge && bundle exec rake db:seed")
-
+        execute("cd #{release_path} && yarn install --silent --no-progress --no-audit --no-optional")
       end
     end
   end
