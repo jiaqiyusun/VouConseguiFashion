@@ -17532,3 +17532,36 @@ Processing by CustomerController#details_product as HTML
 Completed 200 OK in 64ms (Views: 58.9ms | ActiveRecord: 1.1ms | Allocations: 17848)
 
 
+Started GET "/roupas/detalhes/12" for ::1 at 2021-07-04 01:01:55 +0100
+Processing by CustomerController#details_product as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/customer_controller.rb:12:in `details_product'
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/customer_controller.rb:13:in `details_product'
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/customer_controller.rb:14:in `details_product'
+  Rendering customer/details_product.html.erb within layouts/site
+  [1m[36mProductImage Load (0.2ms)[0m  [1m[34mSELECT "product_images".* FROM "product_images" WHERE "product_images"."product_id" = ?[0m  [["product_id", 12]]
+  ↳ app/views/customer/details_product.html.erb:66
+  [1m[36mSizeProduct Load (0.1ms)[0m  [1m[34mSELECT "size_products".* FROM "size_products" WHERE "size_products"."product_id" = ?[0m  [["product_id", 12]]
+  ↳ app/views/customer/details_product.html.erb:168
+  [1m[36mColorProduct Load (0.1ms)[0m  [1m[34mSELECT "color_products".* FROM "color_products" WHERE "color_products"."product_id" = ?[0m  [["product_id", 12]]
+  ↳ app/views/customer/details_product.html.erb:185
+  Rendered customer/details_product.html.erb within layouts/site (Duration: 7.6ms | Allocations: 2912)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
+  ↳ app/views/layouts/_header_two.html.erb:30
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = ?[0m  [["ancestry", "1"]]
+  ↳ app/views/layouts/_header_two.html.erb:41
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = ?[0m  [["ancestry", "4"]]
+  ↳ app/views/layouts/_header_two.html.erb:41
+  Rendered layouts/_header_two.html.erb (Duration: 4.1ms | Allocations: 2304)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = ?[0m  [["ancestry", "1"]]
+  ↳ app/views/layouts/_header.html.erb:117
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = ?[0m  [["ancestry", "4"]]
+  ↳ app/views/layouts/_header.html.erb:117
+  Rendered layouts/_header.html.erb (Duration: 6.4ms | Allocations: 3809)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 68)
+Completed 200 OK in 38ms (Views: 26.9ms | ActiveRecord: 1.1ms | Allocations: 15000)
+
+
