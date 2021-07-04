@@ -20,4 +20,10 @@ class HomeController < ApplicationController
       format.html { render :size }
     end
   end
+
+  def test_details_product
+    respond_to do |format|
+      format.html { render :test_details_product }
+    end
+  end
 end

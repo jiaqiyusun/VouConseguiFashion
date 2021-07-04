@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get 'roupas/vestidos', to: 'customer#index_customer'
   get 'roupas/:id_categoria', to: 'customer#productos_categoria'
   get 'roupas/detalhes/:id', to: 'customer#details_product'
+  
+  get 'home/test', to: 'home#test_details_product'
   get 'home/contact', to: 'home#contact'
   get 'home/about', to: 'home#about'
   get 'home/size', ti: 'home#size'
